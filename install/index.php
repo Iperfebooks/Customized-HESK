@@ -31,14 +31,14 @@ hesk_iHeader();
 
 <hr />
 
-<form method="get" action="install.php">
+<form method="get" action="/install/install.php">
 <p align="center"><input type="submit" value="Click here to INSTALL HESK &raquo;" class="orangebutton" onmouseover="hesk_btn(this,'orangebuttonover');" onmouseout="hesk_btn(this,'orangebutton');" /></p>
 <p align="center">Install a new copy of HESK</p>
 </form>
 
 <hr />
 
-<form method="get" action="update.php">
+<form method="get" action="/install/update.php">
 <p align="center"><input type="submit" value="Click here to UPDATE HESK &raquo;" class="orangebutton" onmouseover="hesk_btn(this,'orangebuttonover');" onmouseout="hesk_btn(this,'orangebutton');" /></p>
 <p align="center">Update existing HESK to version <?php echo HESK_NEW_VERSION; ?></p>
 </form>
