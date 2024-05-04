@@ -20,6 +20,9 @@ $hesk_settings['languages']=array(
     'English' => array('folder'=>'en','hr'=>'------ Reply above this line ------'),
 );
 
+// --> Custom settings
+$hesk_settings['login_required_to_ticket'] = 1;
+
 // --> Database settings
 $hesk_settings['db_host']='localhost';
 $hesk_settings['db_name']='hesk';

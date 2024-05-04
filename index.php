@@ -24,6 +24,10 @@ hesk_check_maintenance();
 // Are we in "Knowledgebase only" mode?
 hesk_check_kb_only();
 
+if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
+    require_once HESK_PATH . 'inc/customer_ticket_common.inc.php';
+}
+
 // What should we do?
 $action = hesk_REQUEST('a');
 

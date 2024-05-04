@@ -6,3 +6,4 @@ hesk_settings.inc.php
 *.bkp*
 *.log
 *.out
+error_log
