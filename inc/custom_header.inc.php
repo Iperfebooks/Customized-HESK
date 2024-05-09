@@ -2,9 +2,6 @@
 globalThis.CUSTOMER_API_BASE_URL = "<?= hesk_settings_get('customer_api_base_url') ?>";
 </script>
 <?php require_once __DIR__ . '/../head.txt'; ?>
-<script src="/js/libs/toast.js"></script>
-<script src="/js/libs/customer-api.js"></script>
-<script src="//unpkg.com/alpinejs" defer></script>
 <link rel="stylesheet" media="all" href="<?php echo HESK_PATH; ?>css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>">
 <link rel="stylesheet" media="all" href="<?php echo HESK_PATH; ?>css/style.css?<?= date('his') ?>">
 

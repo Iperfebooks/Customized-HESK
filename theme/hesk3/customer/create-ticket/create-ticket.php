@@ -17,6 +17,10 @@ if (!defined('IN_SCRIPT')) {
 require_once(TEMPLATE_PATH . 'customer/util/alerts.php');
 require_once(TEMPLATE_PATH . 'customer/util/custom-fields.php');
 require_once(TEMPLATE_PATH . 'customer/util/attachments.php');
+
+if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
+    require_once HESK_PATH . 'inc/customer_ticket_common.inc.php';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +40,7 @@ require_once(TEMPLATE_PATH . 'customer/util/attachments.php');
     <meta name="msapplication-config" content="<?php echo HESK_PATH; ?>img/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
+    <?= customer_login_check() ?>
     <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/dropzone.min.css?<?php echo $hesk_settings['hesk_version']; ?>" />
     <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
     <!--[if IE]>

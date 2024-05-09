@@ -51,7 +51,8 @@ require_once(TEMPLATE_PATH . 'customer/util/rating.php');
     <style>
         <?php outputSearchStyling(); ?>
     </style>
-    <?php include(TEMPLATE_PATH . '../../head.txt'); ?>
+    <?php require_once TEMPLATE_PATH . '../../head.txt'; ?>
+    <?php require_once __DIR__ . '/../head.txt'; ?>
     <?= customer_login_check() ?>
 </head>
 
