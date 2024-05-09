@@ -12,12 +12,17 @@
  */
 
 /* Check if this is a valid include */
-if (!defined('IN_SCRIPT')) {die('Invalid attempt');} 
+if (!defined('IN_SCRIPT')) {die('Invalid attempt');}
 
 #error_reporting(E_ALL);
 
 // Load Composer dependencies
 require_once(HESK_PATH . 'vendor/autoload.php');
+
+if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
+    require_once HESK_PATH . 'inc/customer_ticket_common.inc.php';
+}
+require_once(HESK_PATH . 'inc/functions/function-loader.php');
 
 /*
  * If code is executed from CLI, don't force SSL
@@ -278,7 +283,7 @@ function hesk_clean_utf8($in)
 	$in = preg_replace('/\xE0[\x80-\x9F][\x80-\xBF]'.
 	 '|\xED[\xA0-\xBF][\x80-\xBF]/S','?', $in );
 
-	return $in;     
+	return $in;
 } // END hesk_clean_utf8()
 
 
@@ -763,7 +768,7 @@ function hesk_autoAssignTicket($ticket_category)
 			hesk_dbFreeResult($res);
 			break;
 		}
-	} 
+	}
 
     return $autoassign_owner;
 
@@ -2491,6 +2496,10 @@ function hesk_session_start()
 {
     global $hesk_settings;
 
+    if (isset($_SESSION)) {
+        return;
+    }
+
     session_name('HESK' . sha1(dirname(__FILE__) . '$r^k*Zkq|w1(G@!-D?3%') );
 
     // PHP < 7.3 doesn't support the SameSite attribute, let's use a trick
@@ -2938,4 +2947,3 @@ function hesk_iso8859_1_to_utf8($s)
 
     return substr($s, 0, $j);
 }
-

@@ -17,7 +17,7 @@ define('LOAD_TABS',1);
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 require(HESK_PATH . 'inc/profile_functions.inc.php');
 hesk_load_database_functions();
@@ -307,8 +307,8 @@ if (hesk_dbNumRows($res) > 0)
                 <tbody>
                 <?php
                 $tickets_per_user = array();
-                $tickets_per_user_rs = hesk_dbQuery('SELECT COUNT(1) AS `cnt`, `owner`, CASE WHEN `status` = 3 THEN 0 ELSE 1 END AS `open` 
-                    FROM `'.hesk_dbEscape($hesk_settings['db_pfix']).'tickets` 
+                $tickets_per_user_rs = hesk_dbQuery('SELECT COUNT(1) AS `cnt`, `owner`, CASE WHEN `status` = 3 THEN 0 ELSE 1 END AS `open`
+                    FROM `'.hesk_dbEscape($hesk_settings['db_pfix']).'tickets`
                     GROUP BY `owner`, CASE WHEN `status` = 3 THEN 0 ELSE 1 END');
                 while ($row = hesk_dbFetchAssoc($tickets_per_user_rs)) {
                     if (!isset($tickets_per_user[$row['owner']])) {

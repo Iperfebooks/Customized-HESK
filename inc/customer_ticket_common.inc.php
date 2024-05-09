@@ -104,6 +104,6 @@ if (!function_exists('customer_login_check')) {
             return;
         }
 
-        require_once TEMPLATE_PATH . 'customer/inc/customer-login-check.inc.php';
+        require TEMPLATE_PATH . 'customer/inc/customer-login-check.inc.php';
     }
 }

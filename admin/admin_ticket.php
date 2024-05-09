@@ -17,7 +17,7 @@ define('CALENDAR',1);
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 hesk_load_database_functions();
 
@@ -1171,7 +1171,7 @@ $options = array(
                                             echo '<a class="tooltip" data-ztt_vertical_offset="0" style="margin-right: 8px;" href="admin_ticket.php?delnote='.$note['id'].'&amp;track='.$trackingID.'&amp;Refresh='.mt_rand(10000,99999).'&amp;token='.hesk_token_echo(0).'" onclick="return hesk_confirmExecute(\''.hesk_makeJsString($hesklang['pda']).'\');" title="'.$hesklang['dela'].'">
                                                     <svg class="icon icon-delete" style="text-decoration: none; vertical-align: text-bottom;">
                                                         <use xlink:href="'. HESK_PATH .'img/sprite.svg#icon-delete"></use>
-                                                    </svg>                                            
+                                                    </svg>
                                                 </a> &raquo;';
                                         }
                                         // Show "delete attachment" link
@@ -1795,7 +1795,7 @@ function hesk_getAdminButtons($isReply=0,$white=1)
             <a id="unlock" href="lock.php?track='.$trackingID.'&amp;locked=0&amp;Refresh='.mt_rand(10000,99999).'&amp;token='.hesk_token_echo(0).'" title="'.$des.'">
                 <svg class="icon icon-lock">
                     <use xlink:href="' . HESK_PATH . 'img/sprite.svg#icon-lock"></use>
-                </svg> 
+                </svg>
                 '.$hesklang['btn_unlock'].'
             </a>';
 		} else {
@@ -1804,7 +1804,7 @@ function hesk_getAdminButtons($isReply=0,$white=1)
             <a id="lock" href="lock.php?track='.$trackingID.'&amp;locked=1&amp;Refresh='.mt_rand(10000,99999).'&amp;token='.hesk_token_echo(0).'" title="'.$des.'">
                 <svg class="icon icon-lock">
                     <use xlink:href="' . HESK_PATH . 'img/sprite.svg#icon-lock"></use>
-                </svg>  
+                </svg>
                 '.$hesklang['btn_lock'].'
             </a>';
 		}
@@ -1817,7 +1817,7 @@ function hesk_getAdminButtons($isReply=0,$white=1)
         	<a id="untag" href="archive.php?track='.$trackingID.'&amp;archived=0&amp;Refresh='.mt_rand(10000,99999).'&amp;token='.hesk_token_echo(0).'" title="'.$hesklang['remove_archive'].'">
         	    <svg class="icon icon-tag">
                     <use xlink:href="'. HESK_PATH .'img/sprite.svg#icon-tag"></use>
-                </svg> 
+                </svg>
                 '.$hesklang['btn_untag'].'
             </a>';
 		} else {
@@ -1825,7 +1825,7 @@ function hesk_getAdminButtons($isReply=0,$white=1)
         	<a id="tag" href="archive.php?track='.$trackingID.'&amp;archived=1&amp;Refresh='.mt_rand(10000,99999).'&amp;token='.hesk_token_echo(0).'" title="'.$hesklang['add_archive'].'">
         	    <svg class="icon icon-tag">
                     <use xlink:href="'. HESK_PATH .'img/sprite.svg#icon-tag"></use>
-                </svg> 
+                </svg>
                 '.$hesklang['btn_tag'].'
             </a>';
 		}
@@ -1861,7 +1861,7 @@ function hesk_getAdminButtons($isReply=0,$white=1)
         <a id="exportticket" href="export_ticket.php?track='.$trackingID.'&amp;Refresh='.mt_rand(10000,99999).'&amp;token='.hesk_token_echo(0).'" title="'.$hesklang['btn_export'].'">
             <svg class="icon icon-export">
                 <use xlink:href="'. HESK_PATH .'img/sprite.svg#icon-export"></use>
-            </svg> 
+            </svg>
             '.$hesklang['btn_export'].'
         </a>';
     }

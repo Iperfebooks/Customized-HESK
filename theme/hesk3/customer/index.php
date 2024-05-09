@@ -42,7 +42,9 @@ require_once(TEMPLATE_PATH . 'customer/util/rating.php');
     <meta name="msapplication-config" content="<?php echo HESK_PATH; ?>img/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
+    <?php require_once HESK_PATH . 'inc/custom_header.inc.php'; ?>
     <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
+    <!-- index.php -->
     <!--[if IE]>
     <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/ie9.css" />
     <![endif]-->
@@ -50,6 +52,7 @@ require_once(TEMPLATE_PATH . 'customer/util/rating.php');
         <?php outputSearchStyling(); ?>
     </style>
     <?php include(TEMPLATE_PATH . '../../head.txt'); ?>
+    <?= customer_login_check() ?>
 </head>
 
 <body class="cust-help">

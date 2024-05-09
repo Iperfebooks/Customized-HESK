@@ -16,7 +16,7 @@ define('HESK_PATH','../');
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 require(HESK_PATH . 'inc/knowledgebase_functions.inc.php');
 hesk_load_database_functions();
@@ -155,13 +155,13 @@ function hesk_kb_search($query)
                         </svg>
                         <a class="link" href="knowledgebase_private.php?article='.$article['id'].'">'.$article['subject'].'</a>
                         '.$rat.'
-                    </div>  
+                    </div>
                     <div>
                         <svg class="icon icon-note" style="visibility: hidden">
                             <use xlink:href="'. HESK_PATH .'img/sprite.svg#icon-note"></use>
                         </svg>
                         <span class="article_list">'.$txt.'</span>
-                    </div>              
+                    </div>
                 </div>';
         }
         ?>

@@ -18,7 +18,7 @@ define('HESK_PATH','../');
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 require(HESK_PATH . 'inc/mfa_functions.inc.php');
 hesk_load_database_functions();
@@ -54,8 +54,8 @@ if ($current_step === 1) {
         $_SESSION['tfa_secret'] = $tfa->createSecret();
         $display_step = 2;
     } elseif ($mfa_method === 0 && $hesk_settings['require_mfa'] === 0) {
-        hesk_dbQuery("UPDATE `" . hesk_dbEscape($hesk_settings['db_pfix']) . "users` 
-                SET `mfa_enrollment` = 0 
+        hesk_dbQuery("UPDATE `" . hesk_dbEscape($hesk_settings['db_pfix']) . "users`
+                SET `mfa_enrollment` = 0
                 WHERE `id` = " . intval($_SESSION['id']));
         delete_mfa_codes($_SESSION['id']);
         delete_mfa_backup_codes($_SESSION['id']);
@@ -71,8 +71,8 @@ if ($current_step === 1) {
 
         if (is_mfa_email_code_valid($_SESSION['id'], $verification_code)) {
             //-- Enable MFA for the user and delete the verification code
-            hesk_dbQuery("UPDATE `" . hesk_dbEscape($hesk_settings['db_pfix']) . "users` 
-                SET `mfa_enrollment` = 1 
+            hesk_dbQuery("UPDATE `" . hesk_dbEscape($hesk_settings['db_pfix']) . "users`
+                SET `mfa_enrollment` = 1
                 WHERE `id` = " . intval($_SESSION['id']));
             $_SESSION['mfa_enrollment'] = 1;
             $_SESSION['mfa_backup_codes'] = generate_and_store_mfa_backup_codes($_SESSION['id']);
@@ -85,9 +85,9 @@ if ($current_step === 1) {
     } elseif ($mfa_method === 2) {
         $secret = $_SESSION['tfa_secret'];
         if (is_mfa_app_code_valid($_SESSION['id'], hesk_POST('verification-code'), $secret)) {
-            hesk_dbQuery("UPDATE `" . hesk_dbEscape($hesk_settings['db_pfix']) . "users` 
+            hesk_dbQuery("UPDATE `" . hesk_dbEscape($hesk_settings['db_pfix']) . "users`
                 SET `mfa_enrollment` = 2,
-                    `mfa_secret` = '" . hesk_dbEscape($secret) . "' 
+                    `mfa_secret` = '" . hesk_dbEscape($secret) . "'
                 WHERE `id` = " . intval($_SESSION['id']));
             $_SESSION['mfa_backup_codes'] = generate_and_store_mfa_backup_codes($_SESSION['id']);
             unset($_SESSION['tfa_secret']);

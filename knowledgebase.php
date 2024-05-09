@@ -18,7 +18,7 @@ define('HESK_PATH','./');
 require(HESK_PATH . 'hesk_settings.inc.php');
 // TODO Pull this from settings
 define('TEMPLATE_PATH', HESK_PATH . "theme/{$hesk_settings['site_theme']}/");
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 
 // Are we in maintenance mode?
 hesk_check_maintenance();

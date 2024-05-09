@@ -16,7 +16,7 @@ define('HESK_PATH','../');
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 hesk_load_database_functions();
 
@@ -1112,7 +1112,7 @@ function save_article()
 	    {
 	    	$hesk_error_buffer[] = $hesklang['kb_e_cont'];
 	    }
-        
+
 	    $content = hesk_getHTML( hesk_POST('content') );
 
         // Clean the HTML code
@@ -2403,8 +2403,8 @@ function show_subnav($hide='',$catid=1)
         <a class="link not-underlined" href="knowledgebase_private.php">
             <svg class="icon icon-search">
                 <use xlink:href="'.HESK_PATH.'img/sprite.svg#icon-search"></use>
-            </svg>        
-        </a> 
+            </svg>
+        </a>
         <a class="link" href="knowledgebase_private.php">'.$hesklang['gopr'].'</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
     $link['newa'] = '
         <a class="link not-underlined" href="manage_knowledgebase.php?a=add_article&amp;catid='.$catid.'">
@@ -2418,11 +2418,11 @@ function show_subnav($hide='',$catid=1)
             <svg style="fill: #9c9c9c" class="icon icon-categories">
                 <use xlink:href="'.HESK_PATH.'img/sprite.svg#icon-categories"></use>
             </svg>
-        </a> 
+        </a>
         <a class="link" href="manage_knowledgebase.php?a=add_category&amp;parent='.$catid.'">'.$hesklang['kb_i_cat'].'</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
     $link['fbid'] = '
         <svg style="fill: #9c9c9c" class="icon icon-edit">
-            <use xlink:href="'.HESK_PATH.'img/sprite.svg#icon-edit"></use>        
+            <use xlink:href="'.HESK_PATH.'img/sprite.svg#icon-edit"></use>
         </svg>
         <form style="display: inline" class="form" method="get" action="manage_knowledgebase.php">
         <input type="hidden" name="a" value="edit_article">

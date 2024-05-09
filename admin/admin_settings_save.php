@@ -22,7 +22,7 @@ if ( function_exists('opcache_reset') )
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 require(HESK_PATH . 'inc/email_functions.inc.php');
 require(HESK_PATH . 'inc/setup_functions.inc.php');
@@ -872,7 +872,7 @@ function hesk_getLanguagesArray($returnArray=0)
 				if ( strpos ($tmp, '[\\\'LANGUAGE\\\']') !== false )
 				{
 					$tmp = stripslashes($tmp);
-				}                
+				}
 
 	            $err = '';
 	        	if ( ! preg_match('/\$hesklang\[\'LANGUAGE\'\]\=\'(.*)\'\;/', $tmp, $l) )

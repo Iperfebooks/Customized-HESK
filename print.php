@@ -17,7 +17,7 @@ define('HESK_PATH','./');
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
 define('TEMPLATE_PATH', HESK_PATH . "theme/{$hesk_settings['site_theme']}/");
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 hesk_load_database_functions();
 
 hesk_session_start();
@@ -106,4 +106,3 @@ $ticket['categoryName'] = $category['name'];
 
 $tickets = array($ticket);
 require_once(HESK_PATH . 'inc/print_template.inc.php');
-

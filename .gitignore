@@ -7,3 +7,4 @@ hesk_settings.inc.php
 *.log
 *.out
 error_log
+.vscode

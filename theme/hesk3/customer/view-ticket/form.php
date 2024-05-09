@@ -14,6 +14,12 @@ if (!defined('IN_SCRIPT')) {
 }
 
 require_once(TEMPLATE_PATH . 'customer/util/alerts.php');
+
+require_once HESK_PATH . 'inc/common.inc.php';
+
+if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
+    require_once HESK_PATH . 'inc/customer_ticket_common.inc.php';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +39,9 @@ require_once(TEMPLATE_PATH . 'customer/util/alerts.php');
     <meta name="msapplication-config" content="<?php echo HESK_PATH; ?>img/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
+    <?php require_once HESK_PATH . 'inc/custom_header.inc.php'; ?>
     <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
+    <!-- form.php -->
     <!--[if IE]>
     <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/ie9.css" />
     <![endif]-->
@@ -143,80 +151,373 @@ require_once(TEMPLATE_PATH . 'customer/util/alerts.php');
                         <button type="submit" class="btn btn-full" ripple="ripple"><?php echo $hesklang['view_ticket']; ?></button>
                         <a href="ticket.php?forgot=1#modal-contents" data-modal="#forgot-modal" class="link"><?php echo $hesklang['forgot_tid']; ?></a>
                     </div>
-                    </form>
+                </form>
 
-                    <!-- Start ticket reminder form -->
-                    <div id="forgot-modal" class="<?php echo !$displayForgotTrackingIdForm ? 'modal' : ''; ?>">
-                        <div id="modal-contents" class="<?php echo !$displayForgotTrackingIdForm ? '' : 'notification orange'; ?>" style="padding-bottom:15px">
-                            <?php
-                            if ($submittedForgotTrackingIdForm) {
-                                hesk3_show_messages($messages);
-                            }
-                            ?>
-                            <b><?php echo $hesklang['forgot_tid']; ?></b><br><br>
-                            <?php echo $hesklang['tid_mail']; ?>
-                            <form action="index.php" method="post" name="form1" id="form1" class="form">
-                                <div class="form-group">
-                                    <label class="label" style="display: none"><?php echo $hesklang['email']; ?></label>
-                                    <input id="forgot-email" type="email" class="form-control" name="email" value="<?php echo $email; ?>">
+                <!-- BEGIN Lista de chamados -->
+                <style>
+                    [data-id="extra-content"] {width: 100% !important;}
+                    .main__content.tools > section,
+                    .main__content.tools > div
+                    {
+                        width: 100% !important;
+                        /* border: 1px black solid; */
+                    }
+                    [data-template-id] { /* display: none !important; */ }
+                </style>
+                <div x-data="ticket_list_table">
+                    <div class="main__content tools">
+                        <section class="tools__between-head">
+                            <a
+                                href="index.php?a=add"
+                                class="btn btn--blue-border"
+                                ripple="ripple"
+                                data-action="create-custom-status"
+                            >Novo chamado</a>
+                            <div
+                                x-data="{
+                                    open: false,
+                                }"
+                                x-on:click.outside.stop="open = false"
+                            >
+                                <button
+                                    type="button"
+                                    x-on:click="open = !open"
+                                    x-text="CUSTOMER_DATA?.name"
+                                ></button>
+                                <div
+                                    class="customer-info"
+                                    x-bind:class="{
+                                        show: open,
+                                    }"
+                                >
+                                    <ul style="">
+                                        <li x-text="CUSTOMER_DATA?.name"></li>
+                                        <li x-on:click="logout">Sair</li>
+                                    </ul>
                                 </div>
-                                <div class="form-group">
-                                    <div class="radio-custom">
-                                        <input type="radio" name="open_only" id="open_only1" value="1" <?php echo $hesk_settings['open_only'] ? 'checked' : ''; ?>>
-                                        <label for="open_only1">
-                                            <?php echo $hesklang['oon1']; ?>
-                                        </label>
-                                    </div>
-                                    <div class="radio-custom">
-                                        <input type="radio" name="open_only" id="open_only0" value="0" <?php echo !$hesk_settings['open_only'] ? 'checked' : ''; ?>>
-                                        <label for="open_only0">
-                                            <?php echo $hesklang['oon2']; ?>
-                                        </label>
-                                    </div>
-                                </div>
+                        </section>
 
-                                <?php
-                                // Use Invisible reCAPTCHA?
-                                if ($hesk_settings['secimg_use'] && $hesk_settings['recaptcha_use'] == 1) {
-                                    define('RECAPTCHA',1);
-                                    ?>
-                                    <div class="g-recaptcha" data-sitekey="<?php echo $hesk_settings['recaptcha_public_key']; ?>" data-bind="forgot-tid-submit" data-callback="recaptcha_submitForm"></div>
-                                <?php
-                                } elseif ($hesk_settings['secimg_use']) {
-                                ?>
-                                <div class="captcha-remind">
-                                    <div class="form-group">
-                                        <?php
-                                        // Use reCAPTCHA V2?
-                                        if ($hesk_settings['recaptcha_use'] == 2) {
-                                            define('RECAPTCHA',1);
-                                            ?>
-                                            <div class="g-recaptcha" data-sitekey="<?php echo $hesk_settings['recaptcha_public_key']; ?>"></div>
-                                        <?php } else { ?>
-                                            <img name="secimg" src="print_sec_img.php?<?php echo rand(10000,99999); ?>" width="150" height="40" alt="<?php echo $hesklang['sec_img']; ?>" title="<?php echo $hesklang['sec_img']; ?>" style="vertical-align:text-bottom">
-                                            <a class="btn btn-refresh" href="javascript:void(0)" onclick="javascript:document.form1.secimg.src='print_sec_img.php?'+ ( Math.floor((90000)*Math.random()) + 10000);">
-                                                <svg class="icon icon-refresh">
-                                                    <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-refresh"></use>
-                                                </svg>
-                                            </a>
-                                            <label class="required"><?php echo $hesklang['sec_enter']; ?></label>
-                                            <input type="text" name="mysecnum" size="20" maxlength="5" autocomplete="off" class="form-control">
-                                            <?php
-                                        }
-                                        ?>
-                                    </div>
-                                </div>
-                                <?php
-                                }
-                                ?>
+                        <div class="table-wrapper status">
+                            <div class="table">
+                                <table id="default-table" class="table sindu-table">
+                                    <thead>
+                                        <tr>
+                                        <th>id</th>
+                                        <th>trackid</th>
+                                        <th>subject</th>
+                                        <th>dt</th>
+                                        <th>lastchange</th>
+                                        <th>status</th>
+                                        <th>-</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template
+                                            x-if="tickets && tickets?.length"
+                                        >
+                                            <template x-for="ticket in tickets">
+                                                <tr>
+                                                    <td x-text="ticket.id"></td>
+                                                    <td x-text="ticket.trackid"></td>
+                                                    <td x-text="ticket.subject"></td>
+                                                    <td x-text="ticket.dt"></td>
+                                                    <td x-text="ticket.lastchange"></td>
+                                                    <td>
+                                                        <div
+                                                            style="display: flex;gap: 0.5rem;justify-content: center;align-content: center;"
+                                                        >
+                                                            <h1 x-text="ticket.status"></h1>
+                                                            <div class="tooltype right out-close">
+                                                                <svg class="icon icon-info">
+                                                                    <use xlink:href="../img/sprite.svg#icon-info"></use>
+                                                                </svg>
+                                                                <div class="tooltype__content">
+                                                                    <div class="tooltype__wrapper">Status</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="nowrap buttons">
+                                                        <button
+                                                            type="button"
+                                                            class="cursor-pointer"
+                                                            x-on:click="showTicketDetail(ticket)"
+                                                        >Ver ticket</button>
+                                                    </td>
+                                                </tr>
+                                            </template>
+                                        </template>
+                                        <template x-else>
+                                            <tr class="title text-center">
+                                                <td colspan="5">Sem registros</td>
+                                            </tr>
+                                        </template>
 
-                                <input type="hidden" name="a" value="forgot_tid">
-                                <input type="hidden" id="js" name="forgot" value="<?php echo (hesk_GET('forgot') ? '1' : '0'); ?>">
-                                <button id="forgot-tid-submit" type="submit" class="btn btn-full"><?php echo $hesklang['tid_send']; ?></button>
-                            </form>
+                                        <template x-if="links && links?.length">
+                                            <tr>
+                                                <td colspan="100%">
+                                                    <div class="nav pagination-container">
+                                                        <template
+                                                            x-for="link in links"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="pagination-item"
+                                                                x-bind:disabled="!link?.url"
+                                                                x-bind:class="{
+                                                                    active: link?.active,
+                                                                    'disabled inactive': !link?.url,
+                                                                }"
+                                                                x-on:click.prevent="fetchFromLink(link)"
+                                                                x-html="link?.label"
+                                                            ></button>
+                                                        </template>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <!-- End ticket reminder form -->
+                </div>
+                <script>
+                    document.addEventListener('alpine:init', () => {
+                        Alpine.data('ticket_list_table', () => ({
+                            responseData: {},
+                            async init() {
+                                await this.fetchTickets();
+                                await globalThis.Customer_API.validateToken();
+                            },
+                            setResponseData(responseData) {
+                                responseData = responseData
+                                    && typeof responseData === 'object'
+                                    && !Array.isArray(responseData) ? responseData : {};
+
+                                this.responseData = responseData;
+                            },
+                            get response() {
+                                return this.responseData || {};
+                            },
+                            get tickets() {
+                                let data = this.response?.data || [];
+                                return data && Array.isArray(data) ? data : [];
+                            },
+                            get links() {
+                                let links = this.response?.links || [];
+                                return links && Array.isArray(links) ? links : [];
+                            },
+                            validString(value, defaultValue = null) {
+                                value = value && typeof value === 'string' && value.trim() ? value.trim() : null;
+
+                                return value ?? (typeof defaultValue === 'string' || defaultValue === null)
+                                    ? defaultValue : null;
+                            },
+                            get BASE_API() {
+                                return globalThis.CUSTOMER_API_BASE_URL || "<?= hesk_settings_get('customer_api_base_url') ?>";
+                            },
+                            get API_TOKEN() {
+                                return globalThis.Customer_API.API_TOKEN || {};
+                            },
+                            get CUSTOMER_DATA() {
+                                return globalThis.Customer_API.CUSTOMER_DATA || {};
+                            },
+                            getCustomer(key, defaultValue) {
+                                let customer_data = this.CUSTOMER_DATA || {};
+
+                                key = this.validString(key);
+
+                                if (!key) {
+                                    return defaultValue;
+                                }
+
+                                if (key in customer_data) {
+                                    return customer_data[key];
+                                }
+
+                                return defaultValue;
+                            },
+                            getHeskURL(uri) {
+                                let url = new URL(location.origin);
+                                uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
+                                url.pathname = uri;
+                                return url;
+                            },
+                            invalidateToken(message = null) {
+                                return globalThis.Customer_API.invalidateToken();
+                            },
+                            async logout() {
+                                return await globalThis.Customer_API.logout();
+                            },
+                            getUrl(uri = '') {
+                                let url = new URL(this.BASE_API);
+                                uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
+                                url.pathname = uri;
+                                return url;
+                            },
+                            showTicketDetail(ticket) {
+                                if (!ticket || typeof ticket !== 'object' || Array.isArray(ticket)) {
+                                    return;
+                                }
+
+                                let ticketIdInput = document.querySelector('form input[name="track"]');
+                                let ticketEmailInput = document.querySelector('form input[type="email"][name="e"]');
+
+                                if (!ticketIdInput || !ticketEmailInput) {
+                                    return;
+                                }
+
+                                let ticketId = ticket?.trackid || null;
+                                let ticketEmail = ticket?.email || null;
+
+                                if (!ticketId || !ticketEmail) {
+                                    return;
+                                }
+
+                                ticketIdInput.value = ticketId || '';
+                                ticketEmailInput.value = ticketEmail || '';
+
+                                document.querySelector('form[action="ticket.php"]')?.submit();
+                            },
+                            async fetchFromLink(link) {
+                                if (!link || typeof link !== 'object' || Array.isArray(link)) {
+                                    return;
+                                }
+
+                                let {url} = (link || {});
+
+                                if (!url) {
+                                    return;
+                                }
+
+                                await this.fetchTickets(url);
+                            },
+                            async fetchTickets(url = null) {
+                                url = url || this.getUrl('/api/tickets');
+
+                                let headers = {
+                                    'Accept': 'application/json',
+                                    'Content-Type': 'application/json',
+                                    'Authorization': `Bearer ${this.API_TOKEN}`,
+                                };
+
+                                let options = {
+                                    method: 'POST',
+                                    headers,
+                                }
+
+                                try {
+                                    let response = await fetch(url, options);
+
+                                    if (!response.ok) {
+                                        this.setResponseData({});
+                                        return;
+                                    }
+
+                                    if (!response?.ok && response?.status === 401) {
+                                        this.invalidateToken('Não autenticado');
+                                        this.setResponseData({});
+                                        return;
+                                    }
+
+                                    let data = await response.json();
+
+                                    this.setResponseData(data);
+                                    return data;
+                                } catch(error) {
+                                    console.error(error);
+                                }
+                            },
+                        }))
+                    })
+                </script>
+
+                <div>
+                    <?php
+                    view_content('login/form', [], true);
+                    // view_content('modules/modal.view.php', [
+                    //     'title' => 'Login',
+                    //     'body' => view_content('login/form', [], true),
+                    // ]);
+                    ?>
+                </div>
+
+                <div data-id="extra-content"></div>
+                <!-- END Lista de chamados -->
+
+                <!-- Start ticket reminder form -->
+                <div id="forgot-modal" class="<?php echo !$displayForgotTrackingIdForm ? 'modal' : ''; ?>">
+                    <div id="modal-contents" class="<?php echo !$displayForgotTrackingIdForm ? '' : 'notification orange'; ?>" style="padding-bottom:15px">
+                        <?php
+                        if ($submittedForgotTrackingIdForm) {
+                            hesk3_show_messages($messages);
+                        }
+                        ?>
+                        <b><?php echo $hesklang['forgot_tid']; ?></b><br><br>
+                        <?php echo $hesklang['tid_mail']; ?>
+                        <form action="index.php" method="post" name="form1" id="form1" class="form">
+                            <div class="form-group">
+                                <label class="label" style="display: none"><?php echo $hesklang['email']; ?></label>
+                                <input id="forgot-email" type="email" class="form-control" name="email" value="<?php echo $email; ?>">
+                            </div>
+                            <div class="form-group">
+                                <div class="radio-custom">
+                                    <input type="radio" name="open_only" id="open_only1" value="1" <?php echo $hesk_settings['open_only'] ? 'checked' : ''; ?>>
+                                    <label for="open_only1">
+                                        <?php echo $hesklang['oon1']; ?>
+                                    </label>
+                                </div>
+                                <div class="radio-custom">
+                                    <input type="radio" name="open_only" id="open_only0" value="0" <?php echo !$hesk_settings['open_only'] ? 'checked' : ''; ?>>
+                                    <label for="open_only0">
+                                        <?php echo $hesklang['oon2']; ?>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <?php
+                            // Use Invisible reCAPTCHA?
+                            if ($hesk_settings['secimg_use'] && $hesk_settings['recaptcha_use'] == 1) {
+                                define('RECAPTCHA',1);
+                                ?>
+                                <div class="g-recaptcha" data-sitekey="<?php echo $hesk_settings['recaptcha_public_key']; ?>" data-bind="forgot-tid-submit" data-callback="recaptcha_submitForm"></div>
+                            <?php
+                            } elseif ($hesk_settings['secimg_use']) {
+                            ?>
+                            <div class="captcha-remind">
+                                <div class="form-group">
+                                    <?php
+                                    // Use reCAPTCHA V2?
+                                    if ($hesk_settings['recaptcha_use'] == 2) {
+                                        define('RECAPTCHA',1);
+                                        ?>
+                                        <div class="g-recaptcha" data-sitekey="<?php echo $hesk_settings['recaptcha_public_key']; ?>"></div>
+                                    <?php } else { ?>
+                                        <img name="secimg" src="print_sec_img.php?<?php echo rand(10000,99999); ?>" width="150" height="40" alt="<?php echo $hesklang['sec_img']; ?>" title="<?php echo $hesklang['sec_img']; ?>" style="vertical-align:text-bottom">
+                                        <a class="btn btn-refresh" href="javascript:void(0)" onclick="javascript:document.form1.secimg.src='print_sec_img.php?'+ ( Math.floor((90000)*Math.random()) + 10000);">
+                                            <svg class="icon icon-refresh">
+                                                <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-refresh"></use>
+                                            </svg>
+                                        </a>
+                                        <label class="required"><?php echo $hesklang['sec_enter']; ?></label>
+                                        <input type="text" name="mysecnum" size="20" maxlength="5" autocomplete="off" class="form-control">
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                            <?php
+                            }
+                            ?>
+
+                            <input type="hidden" name="a" value="forgot_tid">
+                            <input type="hidden" id="js" name="forgot" value="<?php echo (hesk_GET('forgot') ? '1' : '0'); ?>">
+                            <button id="forgot-tid-submit" type="submit" class="btn btn-full"><?php echo $hesklang['tid_send']; ?></button>
+                        </form>
+                    </div>
+                </div>
+                <!-- End ticket reminder form -->
             </div>
         </div>
 <?php

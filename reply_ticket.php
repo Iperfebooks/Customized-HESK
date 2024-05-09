@@ -16,7 +16,7 @@ define('HESK_PATH','./');
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 
 // Are we in maintenance mode?
 hesk_check_maintenance();

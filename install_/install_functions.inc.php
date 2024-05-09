@@ -52,7 +52,7 @@ if ( function_exists('set_time_limit') )
 	set_time_limit(0);
 }
 
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 require(HESK_PATH . 'inc/setup_functions.inc.php');
 hesk_load_database_functions();
@@ -512,7 +512,7 @@ function hesk_iDatabase($problem=0)
 	}
     elseif ($problem == 6)
     {
-        hesk_show_notice('Please select your help desk timezone'); 
+        hesk_show_notice('Please select your help desk timezone');
     }
     else
     {
@@ -557,7 +557,7 @@ function hesk_iDatabase($problem=0)
 		<hr />
 
 		<script language="javascript" type="text/javascript"><!--
-		function hesk_randomPassword()                                                            
+		function hesk_randomPassword()
 		{
 			chars = '23456789abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ!@#$%*()_+-={}[]:?,.';
 			length = Math.floor(Math.random() * (5)) + 10;

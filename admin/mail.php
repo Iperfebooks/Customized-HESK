@@ -16,7 +16,7 @@ define('HESK_PATH','../');
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 hesk_load_database_functions();
 require(HESK_PATH . 'inc/email_functions.inc.php');
@@ -283,7 +283,7 @@ function mail_get_ids()
 		hesk_process_messages($hesklang['nms'],'NOREDIRECT','NOTICE');
 		return false;
 	}
-    
+
 } // END mail_get_ids()
 
 
@@ -345,7 +345,7 @@ function mail_send()
     {
 		$_SESSION['mail']['message'] = hesk_makeURL($_SESSION['mail']['message']);
 		$_SESSION['mail']['message'] = nl2br($_SESSION['mail']['message']);
-        
+
 		hesk_dbQuery("INSERT INTO `".hesk_dbEscape($hesk_settings['db_pfix'])."mail` (`from`,`to`,`subject`,`message`,`dt`,`read`) VALUES ('".intval($_SESSION['id'])."','".intval($_SESSION['mail']['to'])."','".hesk_dbEscape($_SESSION['mail']['subject'])."','".hesk_dbEscape($_SESSION['mail']['message'])."',NOW(),'0')");
 
         /* Notify receiver via e-mail? */

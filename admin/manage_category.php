@@ -16,7 +16,7 @@ define('HESK_PATH','../');
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 require(HESK_PATH . 'inc/setup_functions.inc.php');
 hesk_load_database_functions();
@@ -411,7 +411,7 @@ function try_save_category()
     $sql_friendly_due_date_unit = $sql_friendly_due_date_amount === 'NULL' ? 'NULL' : "'".hesk_dbEscape($category['default_due_date_unit'])."'";
     if ($category['id'] === 0) {
         hesk_dbQuery("INSERT INTO `".hesk_dbEscape($hesk_settings['db_pfix'])."categories` (`name`,`cat_order`,`autoassign`,
-                      `autoassign_config`,`type`, `priority`,`default_due_date_amount`,`default_due_date_unit`) 
+                      `autoassign_config`,`type`, `priority`,`default_due_date_amount`,`default_due_date_unit`)
                     VALUES ('".hesk_dbEscape($category['name'])."',
                             '".intval($my_order)."',
                             '".intval($category['autoassign'])."',
@@ -489,7 +489,7 @@ function build_autoassign_config($catid, $selected_users, $operator) {
     $user_verification_clause = array_map(function($x) {
         return intval($x);
     }, $selected_users);
-    $user_verification_rs = hesk_dbQuery("SELECT `id` FROM `".hesk_dbEscape($hesk_settings['db_pfix'])."users` 
+    $user_verification_rs = hesk_dbQuery("SELECT `id` FROM `".hesk_dbEscape($hesk_settings['db_pfix'])."users`
         WHERE (`isadmin` = '1' OR FIND_IN_SET(".intval($catid).", `categories`) > 0) AND `id` IN (".implode(',', $user_verification_clause).")");
     while ($user = hesk_dbFetchAssoc($user_verification_rs)) {
         $formatted_users[] = $user['id'];

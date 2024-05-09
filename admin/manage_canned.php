@@ -16,7 +16,7 @@ define('HESK_PATH','../');
 
 /* Get all the required files and functions */
 require(HESK_PATH . 'hesk_settings.inc.php');
-require(HESK_PATH . 'inc/common.inc.php');
+require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
 hesk_load_database_functions();
 
@@ -385,7 +385,7 @@ function edit_saved()
 
 	// Avoid problems with utf-8 newline chars in Javascript code, detect and remove them
 	$msg = preg_replace('/\R/u', "\r\n", $msg);
-    
+
 	$_SESSION['canned']['what'] = 'EDIT';
     $_SESSION['canned']['id'] = $id;
     $_SESSION['canned']['name'] = $savename;
