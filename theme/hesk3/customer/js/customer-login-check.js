@@ -31,7 +31,7 @@ globalThis.CustomerAuth = {
     },
 }
 
-globalThis.getHeskURL = (uri) => {
+globalThis.getHeskURL = globalThis.getHeskURL || (uri) => {
     let url = new URL(location.origin);
     uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
     url.pathname = uri;
@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
     if (!isLoggedIn) {
         globalThis.LoadingScreen?.show && globalThis.LoadingScreen?.show(0);
-        console.log('Logoff', isLoggedIn);
 
         if (!globalThis.currentUrl.uriIn(['/customer-login.php', 'customer-login.php',])) {
             location.href = getHeskURL('customer-login.php');
