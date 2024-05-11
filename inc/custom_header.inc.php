@@ -1,7 +1,7 @@
 <script>
 globalThis.CUSTOMER_API_BASE_URL = "<?= hesk_settings_get('customer_api_base_url') ?>";
 </script>
-<?php require_once __DIR__ . '/../head.txt'; ?>
+<?php require_once HESK_PATH . 'head.txt'; ?>
 <link rel="stylesheet" media="all" href="<?php echo HESK_PATH; ?>css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>">
 <link rel="stylesheet" media="all" href="<?php echo HESK_PATH; ?>css/style.css?<?= date('his') ?>">
 
@@ -55,10 +55,24 @@ globalThis.CUSTOMER_API_BASE_URL = "<?= hesk_settings_get('customer_api_base_url
     </div>
 </div>
 <script>
+globalThis.LoadingScreen = {
+    show(after = 500) {
+        after = !isNaN(parseInt(after)) && after >= 0 ? parseInt(after) : 0;
+
+        setTimeout(() => {
+            document.querySelector('.loader-container').style.display = 'block';
+        }, after);
+    },
+    hide(after = 500) {
+        after = !isNaN(parseInt(after)) && after >= 0 ? parseInt(after) : 0;
+
+        setTimeout(() => {
+            document.querySelector('.loader-container').style.display = 'none';
+        }, after);
+    },
+}
 document.addEventListener('DOMContentLoaded', (event) => {
-    setTimeout(() => {
-        document.querySelector('.loader-container').style.display = 'none';
-    }, 500)
+    globalThis.LoadingScreen.hide(500);
 });
 </script>
 <!-- Loader END -->

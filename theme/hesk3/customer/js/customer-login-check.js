@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     console.log('isLoggedIn', isLoggedIn);
 
     if (!isLoggedIn) {
+        globalThis.LoadingScreen?.show && globalThis.LoadingScreen?.show(0);
         console.log('Logoff', isLoggedIn);
 
         if (!globalThis.currentUrl.uriIn(['/customer-login.php', 'customer-login.php',])) {

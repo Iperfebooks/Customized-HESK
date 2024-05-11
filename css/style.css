@@ -151,3 +151,11 @@
 .cursor-not-allowed {
     cursor: not-allowed;
 }
+
+.form-control.form-input-error {
+    border: 1px solid red !important;
+}
+
+.form-group .form-control.form-input-error + .form-control__error {
+    display: block;
+}

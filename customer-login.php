@@ -136,23 +136,56 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
-            })?.then(response => response.json && response.json())
+            })
+            ?.then(response => response.json && response.json())
             ?.then(data => {
-            if (data && data?.success && data?.access_token && data?.access_token?.token) {
-                console.log('login reponse data', data);
-                let access_token = data?.access_token || null;
+                let error = data && (!data?.success || data.error) ? data.error : null;
+                let errors = data && (!data?.success || data.errors) ? data.errors : null;
 
-                if (!access_token) {
-                    localStorage.removeItem('customer_access_token');
+                if (errors && (typeof errors === 'object' && !Array.isArray(errors))) {
+                    for ([inputName, errorMessage] of Object.entries(errors)) {
+                        console.log('event.target', event.target);
+                        event.target?.querySelectorAll(`[name="${inputName}"]`)?.forEach(input => {
+                            console.log('input', input);
+
+                            if (input) {
+                                input.classList.add('form-input-error');
+
+                                event.target?.querySelectorAll(
+                                    `.form-group .form-control.form-input-error[name="${inputName}"] + .form-control__error`
+                                )?.forEach(errorMessageElement => {
+                                    errorMessageElement.innerText = errorMessage;
+                                    errorMessageElement.style.display = 'block';
+                                });
+                            }
+                        });
+                        error && toast.error && toast.error(errorMessage);
+                    }
+                }
+
+                if (data && data?.success && data?.access_token && data?.access_token?.token) {
+                    console.log('login reponse data', data);
+                    let access_token = data?.access_token || null;
+
+                    if (!access_token) {
+                        localStorage.removeItem('customer_access_token');
+                        return;
+                    }
+
+                    localStorage.setItem('customer_access_token', JSON.stringify(access_token));
+                    localStorage.setItem('customer_data', data?.customer ? JSON.stringify(data?.customer) : '');
+
+                    location.href = getHeskURL('/');
+
                     return;
                 }
 
-                localStorage.setItem('customer_access_token', JSON.stringify(access_token));
-                localStorage.setItem('customer_data', data?.customer ? JSON.stringify(data?.customer) : '');
-
-                location.href = getHeskURL('/');
-            }
-        });
+                console.log('data', data);
+            })
+            ?.catch(error => {
+                console.log('error', error);
+                // message && toast.error && toast.error(message);
+            });
     });
 </script>
 </body>
