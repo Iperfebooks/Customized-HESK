@@ -25,6 +25,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
 <html lang="en">
 
 <head>
+    <!-- <?= ltrim(str_replace(HESK_BASE_PATH, '', __FILE__), '/\\') ?> -->
     <meta charset="utf-8" />
     <title><?php echo $hesk_settings['hesk_title']; ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -45,12 +46,14 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
     <!--[if IE]>
     <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/ie9.css" />
     <![endif]-->
+    <script src="<?= HESK_PATH . 'js/libs/customer-api.js'; ?>"></script>
+    <?php require TEMPLATE_PATH . 'customer/inc/customer-login-check.inc.php' ?>
     <style>
         #forgot-tid-submit {
             width: 200px;
         }
     </style>
-    <link rel="stylesheet" href="<?php echo TEMPLATE_PATH; ?>customer/css/jquery.modal.css" />
+    <link rel="stylesheet" href="<?= TEMPLATE_PATH; ?>customer/css/jquery.modal.css" />
     <?php include(TEMPLATE_PATH . '../../head.txt'); ?>
 </head>
 
@@ -213,7 +216,8 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                     </thead>
                                     <tbody>
                                         <template
-                                            x-if="tickets && tickets?.length"
+                                            x-if="showThis(tickets)"
+                                            aaax-if="(tickets && tickets?.length)"
                                         >
                                             <template x-for="ticket in tickets">
                                                 <tr>
@@ -253,7 +257,10 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                             </tr>
                                         </template>
 
-                                        <template x-if="links && links?.length">
+                                        <template
+                                            x-if="showThis(links)"
+                                            aaax-if="(links && links?.length)"
+                                        >
                                             <tr>
                                                 <td colspan="100%">
                                                     <div class="nav pagination-container">
@@ -288,14 +295,36 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                             responseData: {},
                             async init() {
                                 await this.fetchTickets();
-                                await globalThis.Customer_API.validateToken();
+
+                                if (globalThis?.Customer_API) {
+                                    await globalThis?.Customer_API.validateToken();
+                                }
+                            },
+                            showThis(value, type = 'object') {
+                                if (!type || typeof value !== type) {
+                                    return false;
+                                }
+
+                                return true;
                             },
                             setResponseData(responseData) {
-                                responseData = responseData
-                                    && typeof responseData === 'object'
-                                    && !Array.isArray(responseData) ? responseData : {};
+                                try {
+                                    if (!responseData) {
+                                        return;
+                                    }
 
-                                this.responseData = responseData;
+                                    if (typeof responseData !== 'object') {
+                                        return;
+                                    }
+
+                                    if (Array.isArray(responseData)) {
+                                        return;
+                                    }
+
+                                    this.responseData = JSON.parse(JSON.stringify(responseData || {}));
+                                } catch (error) {
+                                    console.error('setResponseData error:', error, responseData);
+                                }
                             },
                             get response() {
                                 return this.responseData || {};
@@ -426,7 +455,8 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                     this.setResponseData(data);
                                     return data;
                                 } catch(error) {
-                                    console.error(error);
+                                    console.error('fetchTickets', error);
+                                    this.setResponseData({});
                                 }
                             },
                         }))

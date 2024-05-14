@@ -25,6 +25,7 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
 <html lang="en">
 
 <head>
+    <!-- <?= ltrim(str_replace(HESK_BASE_PATH, '', __FILE__), '/\\') ?> -->
     <meta charset="utf-8" />
     <title><?php echo $hesk_settings['hesk_title']; ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -46,6 +47,7 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
         <script type="text/javascript" src="<?php echo HESK_PATH; ?>js/prism.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
         <link rel="stylesheet" media="all" href="<?php echo HESK_PATH; ?>css/prism.css?<?php echo $hesk_settings['hesk_version']; ?>">
     <?php endif; ?>
+    <script src="<?= HESK_PATH . 'js/libs/customer-api.js'; ?>"></script>
     <?php include(TEMPLATE_PATH . '../../head.txt'); ?>
 </head>
 

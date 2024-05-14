@@ -26,6 +26,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
 <html lang="en">
 
 <head>
+    <!-- <?= ltrim(str_replace(HESK_BASE_PATH, '', __FILE__), '/\\') ?> -->
     <meta charset="utf-8" />
     <title><?php echo $hesk_settings['tmp_title']; ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -52,6 +53,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
         }
     </style>
     <?php include(TEMPLATE_PATH . '../../head.txt'); ?>
+    <script src="<?= HESK_PATH . 'js/libs/customer-api.js'; ?>"></script>
 </head>
 <body class="cust-help">
 <?php include(TEMPLATE_PATH . '../../header.txt'); ?>

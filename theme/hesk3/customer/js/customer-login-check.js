@@ -1,3 +1,4 @@
+console.log('BEGIN theme/hesk3/customer/js/customer-login-check.js');
 globalThis.currentUrl = {
     get URL() {
         return (new URL(window.location.href));
@@ -22,21 +23,21 @@ globalThis.CustomerAuth = {
         return localStorage.getItem('customer-auth-token') || null
     },
 
+    getCustomerData() {
+        return globalThis?.Customer_API?.CUSTOMER_DATA || {};
+    },
+
     get auth_user() {
-        return {
-            id: 123,
-            name: 'Fulano de Tal',
-            email: 'teste@teste.com',
-        } || null;
+        return this.getCustomerData() || {};
     },
 }
 
-globalThis.getHeskURL = globalThis.getHeskURL || (uri) => {
+globalThis.getHeskURL = globalThis.getHeskURL || ((uri) => {
     let url = new URL(location.origin);
     uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
     url.pathname = uri;
     return url;
-}
+})
 
 document.addEventListener('DOMContentLoaded', async (event) => {
     let isLoggedIn = globalThis.Customer_API.CUSTOMER_DATA && await globalThis.Customer_API.validateToken();
@@ -53,8 +54,8 @@ document.addEventListener('DOMContentLoaded', async (event) => {
         return;
     }
 
-    // console.log('uri', globalThis.currentUrl.uri);
-    // console.log('uriIn()', globalThis.currentUrl.uriIn(['/customer-login.php', 'customer-login.php',]));
-    // console.log('DOMContentLoaded', globalThis.CustomerAuth.auth_token);
-    location.href = getHeskURL('/ticket.php');
+    if (!globalThis.currentUrl.uriIn(['/ticket.php', 'ticket.php',])) {
+        location.href = getHeskURL('ticket.php');
+    }
 });
+console.log('END theme/hesk3/customer/js/customer-login-check.js');
