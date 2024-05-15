@@ -29,8 +29,8 @@ if (!defined('IN_SCRIPT')) {
     <meta name="msapplication-config" content="<?php echo HESK_PATH; ?>img/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
-    <?php include(TEMPLATE_PATH . '../../head.txt'); ?>
+    <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
+    <?php require_once TEMPLATE_PATH . '../../inc/custom_header.inc.php'; ?>
 </head>
 
 <body class="cust-help">
@@ -53,13 +53,13 @@ if (!defined('IN_SCRIPT')) {
                         <span><?php echo $hesk_settings['site_title']; ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <a href="<?php echo $breadcrumbLink; ?>">
                         <span><?php echo $hesk_settings['hesk_title']; ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <div class="last"><?php echo $hesklang['error']; ?></div>
                 </div>

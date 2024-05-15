@@ -1,6 +1,1 @@
-<script src="/js/libs/toast.js"></script>
-<script src="/js/libs/customer-api.js"></script>
-<script src="//unpkg.com/alpinejs" defer></script>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-<script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/toastify-js"></script>
 <!-- Custom code to be included before </head> tag -->

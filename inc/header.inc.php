@@ -39,7 +39,7 @@ $onload='';
     // Do we need to load JS/CSS for attachments? Needs to go before our app.css
     if (defined('ATTACHMENTS')) {
         ?>
-        <link rel="stylesheet" href="<?php echo HESK_PATH; ?>css/dropzone.min.css?<?php echo $hesk_settings['hesk_version']; ?>" type="text/css" />
+        <link rel="stylesheet" href="<?= hesk_url() ?>//dropzone.min.css?<?php echo $hesk_settings['hesk_version']; ?>" type="text/css" />
         <script src="<?php echo HESK_PATH; ?>js/dropzone.min.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
         <?php
     }
@@ -73,7 +73,7 @@ $onload='';
     {
         ?>
         <script type="text/javascript" src="<?php echo HESK_PATH; ?>js/prism.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
-        <link rel="stylesheet" media="all" href="<?php echo HESK_PATH; ?>css/prism.css?<?php echo $hesk_settings['hesk_version']; ?>">
+        <link rel="stylesheet" media="all" href="<?= hesk_url() ?>//prism.css?<?php echo $hesk_settings['hesk_version']; ?>">
         <?php
     }
 
@@ -217,7 +217,7 @@ $onload='';
 	?>
 
     <script type="text/javascript" src="<?php echo HESK_PATH; ?>js/zebra_tooltips.min.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
-    <link rel="stylesheet" href="<?php echo HESK_PATH; ?>css/zebra_tooltips.css">
+    <link rel="stylesheet" href="<?= hesk_url() ?>//zebra_tooltips.css">
     <script type="text/javascript">
     $(document).ready(function() {
         // show tooltips for any element that has a class named "tooltip"

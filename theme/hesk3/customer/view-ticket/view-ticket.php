@@ -40,15 +40,15 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
     <meta name="msapplication-config" content="<?php echo HESK_PATH; ?>img/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/dropzone.min.css?<?php echo $hesk_settings['hesk_version']; ?>" />
-    <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
+    <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/dropzone.min.css?<?php echo $hesk_settings['hesk_version']; ?>" />
+    <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
     <link rel="stylesheet" href="./css/zebra_tooltips.css">
     <?php if ($hesk_settings['staff_ticket_formatting'] == 2): ?>
         <script type="text/javascript" src="<?php echo HESK_PATH; ?>js/prism.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
-        <link rel="stylesheet" media="all" href="<?php echo HESK_PATH; ?>css/prism.css?<?php echo $hesk_settings['hesk_version']; ?>">
+        <link rel="stylesheet" media="all" href="<?= hesk_url() ?>//prism.css?<?php echo $hesk_settings['hesk_version']; ?>">
     <?php endif; ?>
     <script src="<?= HESK_PATH . 'js/libs/customer-api.js'; ?>"></script>
-    <?php include(TEMPLATE_PATH . '../../head.txt'); ?>
+    <?php require_once TEMPLATE_PATH . '../../inc/custom_header.inc.php'; ?>
 </head>
 
 <body class="cust-help">
@@ -88,13 +88,13 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
                         <span><?php echo $hesk_settings['site_title']; ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <a href="<?php echo $hesk_settings['hesk_url']; ?>">
                         <span><?php echo $hesk_settings['hesk_title']; ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <div class="last"><?php echo ($hesk_settings['new_top'] && $ticket['replies'] ? $ticket['subject'] : $hesklang['your_ticket']); ?></div>
                 </div>
@@ -150,7 +150,7 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
                                 </div>
                                 <a title="<?php echo $hesklang['btn_print']; ?>" href="print.php?track=<?php echo $ticket['trackid'].$hesk_settings['e_query']; ?>" target="_blank" class="btn btn-action tooltip">
                                     <svg class="icon icon-print">
-                                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-print"></use>
+                                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-print"></use>
                                     </svg>
                                 </a>
                             </div>
@@ -183,13 +183,13 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
                                 <span><?php echo $hesklang['ticket_details']; ?></span>
                                 <a href="ticket.php?track=<?php echo $ticket['trackid'].$hesk_settings['e_query']; ?>" class="btn link">
                                     <svg class="icon icon-refresh">
-                                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-refresh"></use>
+                                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-refresh"></use>
                                     </svg>
                                     <span class="ml-1"><?php echo $hesklang['refresh_page']; ?></span>
                                 </a>
                                 <button class="btn btn-toggler">
                                     <svg class="icon icon-chevron-down">
-                                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-down"></use>
+                                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-down"></use>
                                     </svg>
                                 </button>
                             </h4>
@@ -290,12 +290,12 @@ END LICENSE CODE
     </main>
 </div>
 <?php include(TEMPLATE_PATH . '../../footer.txt'); ?>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/jquery-3.5.1.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/hesk_functions.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/svg4everybody.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/selectize.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/dropzone.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/jquery-3.5.1.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/hesk_functions.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/svg4everybody.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/selectize.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/dropzone.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
 <?php if ($hesk_settings['time_display']): ?>
     <script src="./js/timeago/jquery.timeago.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
     <?php if ($hesklang['TIMEAGO_LANG_FILE'] != 'jquery.timeago.en.js'): ?>
@@ -339,7 +339,7 @@ function displayReplies($replies, $trackingId) {
                 </div>
                 <a title="<?php echo $hesklang['btn_print']; ?>" href="print.php?track=<?php echo $trackingId.$hesk_settings['e_query']; ?>" target="_blank" class="btn btn-action tooltip">
                     <svg class="icon icon-print">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-print"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-print"></use>
                     </svg>
                 </a>
             </div>
@@ -391,7 +391,7 @@ function listAttachments($attachments, $trackingId) {
         ?>
         &raquo;
         <svg class="icon icon-attach">
-            <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-attach"></use>
+            <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-attach"></use>
         </svg>
         <a title="<?php echo $hesklang['dnl']; ?>" href="download_attachment.php?att_id=<?php echo $att_id; ?>&amp;track=<?php echo $trackingId.$hesk_settings['e_query']; ?>">
             <?php echo $att_name; ?>

@@ -99,7 +99,7 @@ function hesk3_output_custom_fields($customFields) {
                     <div class="calendar--button">
                         <button type="button">
                             <svg class="icon icon-calendar">
-                                <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-calendar"></use>
+                                <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-calendar"></use>
                             </svg>
                         </button>
                         <input name="<?php echo $customField['name']; ?>"
@@ -112,7 +112,7 @@ function hesk3_output_custom_fields($customFields) {
                         <span <?php if ($customField['iserror'] && ! empty($customField['original_value'])) echo 'class="isErrorStr"'; ?>><?php echo $customField['original_value']; ?></span>
                         <i class="close">
                             <svg class="icon icon-close">
-                                <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-close"></use>
+                                <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-close"></use>
                             </svg>
                         </i>
                     </div>

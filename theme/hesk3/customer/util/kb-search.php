@@ -13,7 +13,7 @@ function displayKbSearch() {
                 <div class="form-group">
                     <button class="btn search__submit">
                         <svg class="icon icon-search">
-                            <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-search"></use>
+                            <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-search"></use>
                         </svg>
                     </button>
                     <input id="kb_search" name="search" class="form-control" type="text" placeholder="<?php echo $hesklang['search_for_articles']; ?>">

@@ -30,15 +30,15 @@ require_once(TEMPLATE_PATH . 'customer/util/rating.php');
     <meta name="msapplication-config" content="<?php echo HESK_PATH; ?>img/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
+    <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
     <!-- search-results.php -->
     <!--[if IE]>
-    <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/ie9.css" />
+    <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/ie9.css" />
     <![endif]-->
     <style>
         <?php outputSearchStyling(); ?>
     </style>
-    <?php include(TEMPLATE_PATH . '../../head.txt'); ?>
+    <?php require_once TEMPLATE_PATH . '../../inc/custom_header.inc.php'; ?>
 </head>
 
 <body class="cust-help">
@@ -76,19 +76,19 @@ require_once(TEMPLATE_PATH . 'customer/util/rating.php');
                         <span><?php echo $hesk_settings['site_title']; ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <a href="<?php echo $hesk_settings['hesk_url']; ?>">
                         <span><?php echo $hesk_settings['hesk_title']; ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <a href="knowledgebase.php">
                         <span><?php echo $hesklang['kb_text']; ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <div class="last"><?php echo $hesklang['sr']; ?></div>
                 </div>
@@ -103,7 +103,7 @@ require_once(TEMPLATE_PATH . 'customer/util/rating.php');
                     <div class="block__head">
                         <div class="icon-in-circle">
                             <svg class="icon icon-knowledge">
-                                <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-knowledge"></use>
+                                <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-knowledge"></use>
                             </svg>
                         </div>
                         <h3 class="h-3 ml-1 text-center"><?php echo $hesklang['sr']; ?> (<?php echo count($articles); ?>)</h3>
@@ -112,7 +112,7 @@ require_once(TEMPLATE_PATH . 'customer/util/rating.php');
                         <a href="knowledgebase.php?article=<?php echo $article['id']; ?>" class="preview">
                             <div class="icon-in-circle">
                                 <svg class="icon icon-knowledge">
-                                    <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-knowledge"></use>
+                                    <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-knowledge"></use>
                                 </svg>
                             </div>
                             <div class="preview__text">
@@ -124,7 +124,7 @@ require_once(TEMPLATE_PATH . 'customer/util/rating.php');
                                     <?php if ($hesk_settings['kb_views']): ?>
                                         <div style="margin-right: 10px; display: -ms-flexbox; display: flex;">
                                             <svg class="icon icon-eye-close">
-                                                <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-eye-close"></use>
+                                                <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-eye-close"></use>
                                             </svg>
                                             <span class="lightgrey"><?php echo $article['views_formatted']; ?></span>
                                         </div>
@@ -168,11 +168,11 @@ END LICENSE CODE
     </main>
 </div>
 <?php include(TEMPLATE_PATH . '../../footer.txt'); ?>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/jquery-3.5.1.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/hesk_functions.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/jquery-3.5.1.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/hesk_functions.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
 <?php outputSearchJavascript(); ?>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/svg4everybody.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/selectize.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/svg4everybody.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/selectize.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
 </body>
 </html>

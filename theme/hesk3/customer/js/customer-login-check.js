@@ -33,10 +33,9 @@ globalThis.CustomerAuth = {
 }
 
 globalThis.getHeskURL = globalThis.getHeskURL || ((uri) => {
-    let url = new URL(location.origin);
+    let url = new URL(globalThis.HESK_BASE_URL || location.origin);
     uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
-    url.pathname = uri;
-    return url;
+    return url.href + (uri ? `/${uri}` : '');
 })
 
 document.addEventListener('DOMContentLoaded', async (event) => {
@@ -47,15 +46,16 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     if (!isLoggedIn) {
         globalThis.LoadingScreen?.show && globalThis.LoadingScreen?.show(0);
 
-        if (!globalThis.currentUrl.uriIn(['/customer-login.php', 'customer-login.php',])) {
-            location.href = getHeskURL('customer-login.php');
+        if (!(globalThis.currentUrl?.uri || '').endsWith('customer-login.php')) {
+            console.log('globalThis.getHeskURL', globalThis.getHeskURL(), globalThis.HESK_BASE_URL);
+            location.href = globalThis.getHeskURL('customer-login.php');
         }
 
         return;
     }
 
-    if (!globalThis.currentUrl.uriIn(['/ticket.php', 'ticket.php',])) {
-        location.href = getHeskURL('ticket.php');
+    if (!(globalThis.currentUrl?.uri || '').endsWith('ticket.php')) {
+        location.href = globalThis.getHeskURL('ticket.php');
     }
 });
 console.log('END theme/hesk3/customer/js/customer-login-check.js');

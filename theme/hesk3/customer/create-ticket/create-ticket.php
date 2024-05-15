@@ -42,17 +42,17 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
     <?= customer_login_check() ?>
-    <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/dropzone.min.css?<?php echo $hesk_settings['hesk_version']; ?>" />
-    <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
+    <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/dropzone.min.css?<?php echo $hesk_settings['hesk_version']; ?>" />
+    <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
     <!--[if IE]>
-    <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/ie9.css" />
+    <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/ie9.css" />
     <![endif]-->
     <style>
         .form-footer .btn {
             margin-top: 20px;
         }
     </style>
-    <?php include(TEMPLATE_PATH . '../../head.txt'); ?>
+    <?php require_once TEMPLATE_PATH . '../../inc/custom_header.inc.php'; ?>
     <script src="<?= HESK_PATH . 'js/libs/customer-api.js'; ?>"></script>
 </head>
 <body class="cust-help">
@@ -90,19 +90,19 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                         <span><?php echo $hesk_settings['site_title']; ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <a href="index.php">
                         <span><?php echo $hesk_settings['hesk_title']; ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <a href="index.php?a=add">
                         <span><?php echo $hesklang['submit_ticket'] ?></span>
                     </a>
                     <svg class="icon icon-chevron-right">
-                        <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-chevron-right"></use>
+                        <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-chevron-right"></use>
                     </svg>
                     <div class="last"><?php echo $categoryName; ?></div>
                 </div>
@@ -118,7 +118,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                 <h3 class="article__heading article__heading--form">
                     <div class="icon-in-circle">
                         <svg class="icon icon-submit-ticket">
-                            <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-submit-ticket"></use>
+                            <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-submit-ticket"></use>
                         </svg>
                     </div>
                     <span class="ml-1"><?php echo $hesklang['submit_a_support_request']; ?></span>
@@ -292,7 +292,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                         <img name="secimg" src="print_sec_img.php?<?php echo rand(10000,99999); ?>" width="150" height="40" alt="<?php echo $hesklang['sec_img']; ?>" title="<?php echo $hesklang['sec_img']; ?>" style="vertical-align:text-bottom">
                                         <a class="btn btn-refresh" href="javascript:void(0)" onclick="javascript:document.form1.secimg.src='print_sec_img.php?'+ ( Math.floor((90000)*Math.random()) + 10000);">
                                             <svg class="icon icon-refresh">
-                                                <use xlink:href="<?php echo TEMPLATE_PATH; ?>customer/img/sprite.svg#icon-refresh"></use>
+                                                <use xlink:href="<?= hesk_template_url() ?>/customer/img/sprite.svg#icon-refresh"></use>
                                             </svg>
                                         </a>
                                         <label class="required"><?php echo $hesklang['sec_enter']; ?></label>
@@ -378,12 +378,12 @@ END LICENSE CODE
     <!-- end main -->
 </div>
 <?php include(TEMPLATE_PATH . '../../footer.txt'); ?>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/jquery-3.5.1.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/hesk_functions.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/svg4everybody.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/selectize.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/datepicker.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/dropzone.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/jquery-3.5.1.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/hesk_functions.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/svg4everybody.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/selectize.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/datepicker.min.js"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/dropzone.min.js"></script>
 <script type="text/javascript">
 (function ($) { $.fn.datepicker.language['en'] = {
     days: ['<?php echo $hesklang['d0']; ?>', '<?php echo $hesklang['d1']; ?>', '<?php echo $hesklang['d2']; ?>', '<?php echo $hesklang['d3']; ?>', '<?php echo $hesklang['d4']; ?>', '<?php echo $hesklang['d5']; ?>', '<?php echo $hesklang['d6']; ?>'],
@@ -471,7 +471,7 @@ if (defined('RECAPTCHA'))
     });
 </script>
 <?php endif; ?>
-<script src="<?php echo TEMPLATE_PATH; ?>customer/js/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
+<script src="<?= hesk_template_url() ?>/customer/js/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
 <?php
 // Any adjustments to datepicker?
 if (isset($hesk_settings['datepicker'])):

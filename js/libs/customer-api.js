@@ -96,6 +96,7 @@ globalThis.Customer_API = {
     invalidateToken(message = null) {
         localStorage.removeItem('customer_access_token');
         localStorage.removeItem('customer_data');
+        console.log('this.getHeskURL', this.getHeskURL());
         location.href = this.getHeskURL('customer-login.php');
 
         if (message) {
@@ -103,9 +104,8 @@ globalThis.Customer_API = {
         }
     },
     getHeskURL(uri) {
-        let url = new URL(location.origin);
+        let url = new URL(globalThis.HESK_BASE_URL || location.origin);
         uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
-        url.pathname = uri;
-        return url;
+        return url.href + (uri ? `/${uri}` : '');
     },
 };

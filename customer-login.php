@@ -47,7 +47,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
     <?php require_once HESK_PATH . 'inc/custom_header.inc.php'; ?>
-    <link rel="stylesheet" media="all" href="<?php echo TEMPLATE_PATH; ?>customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
+    <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>" />
     <?= customer_login_check() ?>
     <!-- customer-login.php -->
 </head>
@@ -123,10 +123,9 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
         });
 
         let getHeskURL = (uri) => {
-            let url = new URL(location.origin);
+            let url = new URL(globalThis.HESK_BASE_URL || location.origin);
             uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
-            url.pathname = uri;
-            return url;
+            return url.href + (uri ? `/${uri}` : '');
         }
 
         fetch(`${globalThis.CUSTOMER_API_BASE_URL}/customers/auth/login`, {

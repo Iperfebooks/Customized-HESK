@@ -32,6 +32,50 @@ if (!function_exists('hesk_settings_get')) {
     }
 }
 
+if (!function_exists('hesk_url')) {
+    /**
+     * function hesk_url
+     *
+     * @param ?string $uri
+     * @param array $query
+     * @return string
+     * */
+    function hesk_url(?string $uri = null, array $query = []): string
+    {
+        $heskUrl = hesk_settings_get('hesk_url');
+
+        $query = $query ? '?' . http_build_query($query) : '';
+
+        return implode('/', array_filter([
+            rtrim($heskUrl, '/\\'),
+            trim(strval($uri), '/\\'),
+        ])) . $query;
+    }
+}
+
+if (!function_exists('hesk_template_url')) {
+    /**
+     * function hesk_template_url
+     *
+     * @param ?string $uri
+     * @param array $query
+     * @return string
+     * */
+    function hesk_template_url(?string $uri = null, array $query = []): string
+    {
+        $heskTemplateUrl = hesk_url(
+            trim(TEMPLATE_PATH, '.\.\/'),
+        );
+
+        $query = $query ? '?' . http_build_query($query) : '';
+
+        return implode('/', array_filter([
+            rtrim($heskTemplateUrl, '/\\'),
+            trim(strval($uri), '/\\'),
+        ])) . $query;
+    }
+}
+
 if (!function_exists('hesk_session_get')) {
     /**
      * function hesk_session_get

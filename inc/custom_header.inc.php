@@ -1,9 +1,4 @@
-<script>
-globalThis.CUSTOMER_API_BASE_URL = "<?= hesk_settings_get('customer_api_base_url') ?>";
-</script>
-<?php require_once HESK_PATH . 'head.txt'; ?>
-<link rel="stylesheet" media="all" href="<?php echo HESK_PATH; ?>css/app<?php echo $hesk_settings['debug_mode'] ? '' : '.min'; ?>.css?<?php echo $hesk_settings['hesk_version']; ?>">
-<link rel="stylesheet" media="all" href="<?php echo HESK_PATH; ?>css/style.css?<?= date('his') ?>">
+<?php require HESK_PATH . 'head.php'; ?>
 
 <!-- Loader BEGIN -->
 <style>
