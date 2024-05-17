@@ -1,6 +1,10 @@
 <?php
 // Settings file for HESK 3.4.5
 
+if (!defined('HESK_BASE_PATH')) {
+    define('HESK_BASE_PATH', __DIR__);
+}
+
 // ==> GENERAL
 
 // --> General settings
@@ -231,12 +235,17 @@ $hesk_settings['check_updates']=1;
 #     DO NOT EDIT BELOW     #
 #############################
 $hesk_settings['hesk_version']='3.4.5';
-if ($hesk_settings['debug_mode'])
+if ($hesk_settings['debug_mode'] ?? false)
 {
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 }
 else
 {
+    ini_set('display_errors', 0);
+    ini_set('display_startup_errors', 0);
     error_reporting(0);
 }
+
 if (!defined('IN_SCRIPT')) {die('Invalid attempt!');}
