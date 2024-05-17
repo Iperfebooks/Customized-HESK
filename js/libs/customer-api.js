@@ -63,7 +63,7 @@ globalThis.Customer_API = {
         }
 
         try {
-            let response = await fetch(this.getUrl('/api/customers/auth/me'), {
+            let response = await fetch(this.getUrl('/customers/auth/me'), {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
