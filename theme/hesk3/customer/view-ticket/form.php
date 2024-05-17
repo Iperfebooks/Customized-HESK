@@ -381,8 +381,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                             getUrl(uri = '') {
                                 let url = new URL(this.BASE_API);
                                 uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
-                                url.pathname = uri;
-                                return url;
+                                return url.href + (uri ? `/${uri}` : '');
                             },
                             showTicketDetail(ticket) {
                                 if (!ticket || typeof ticket !== 'object' || Array.isArray(ticket)) {

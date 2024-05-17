@@ -53,8 +53,7 @@ globalThis.Customer_API = {
     getUrl(uri = '') {
         let url = new URL(this.BASE_API);
         uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
-        url.pathname = uri;
-        return url;
+        return url.href + (uri ? `/${uri}` : '');
     },
     async validateToken() {
         if (!this.API_TOKEN) {
