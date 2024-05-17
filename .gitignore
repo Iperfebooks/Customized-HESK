@@ -8,3 +8,4 @@ hesk_settings.inc.php
 *.out
 error_log
 .vscode
+hesk-admin
