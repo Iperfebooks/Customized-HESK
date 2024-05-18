@@ -30,14 +30,14 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
     <title><?php echo $hesk_settings['hesk_title']; ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo HESK_PATH; ?>img/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo HESK_PATH; ?>img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo HESK_PATH; ?>img/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="<?php echo HESK_PATH; ?>img/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="<?php echo HESK_PATH; ?>img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="shortcut icon" href="<?php echo HESK_PATH; ?>img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= hesk_url() . '/'; ?>img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= hesk_url() . '/'; ?>img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= hesk_url() . '/'; ?>img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="<?= hesk_url() . '/'; ?>img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="<?= hesk_url() . '/'; ?>img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="<?= hesk_url('img/favicon/favicon.ico'); ?>" />
     <meta name="msapplication-TileColor" content="#2d89ef" />
-    <meta name="msapplication-config" content="<?php echo HESK_PATH; ?>img/favicon/browserconfig.xml" />
+    <meta name="msapplication-config" content="<?= hesk_url() . '/'; ?>img/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
     <?php require_once HESK_PATH . 'inc/custom_header.inc.php'; ?>
@@ -46,19 +46,19 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
     <!--[if IE]>
     <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/ie9.css" />
     <![endif]-->
-    <script src="<?= HESK_PATH . 'js/libs/customer-api.js'; ?>"></script>
+    <?php hesk_require('head.php', true); ?>
     <?php require_once TEMPLATE_PATH . 'customer/inc/customer-login-check.inc.php' ?>
     <style>
         #forgot-tid-submit {
             width: 200px;
         }
     </style>
-    <link rel="stylesheet" href="<?= TEMPLATE_PATH; ?>customer/css/jquery.modal.css" />
+    <link rel="stylesheet" href="<?= hesk_template_url('customer/css/jquery.modal.css') ?>" />
     <?php require_once TEMPLATE_PATH . '../../inc/custom_header.inc.php'; ?>
 </head>
 
 <body class="cust-help">
-<?php include(TEMPLATE_PATH . '../../header.txt'); ?>
+<?php hesk_require('header.php'); ?>
 <div class="wrapper">
     <main class="main">
         <header class="header">
@@ -379,9 +379,17 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                 return await globalThis.Customer_API.logout();
                             },
                             getUrl(uri = '') {
+                                let str_trim_slashes = globalThis?.Helpers?.str_trim_slashes || ((string) => string.trim().replaceAll(/^\/|\/$/ig, ''));
                                 let url = new URL(this.BASE_API);
                                 uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
-                                return url.href + (uri ? `/${uri}` : '');
+
+                                return [
+                                    url.href,
+                                    (uri ? `${uri}` : ''),
+                                ]
+                                .map(item => str_trim_slashes(item))
+                                .filter(item => item)
+                                .join('/');
                             },
                             showTicketDetail(ticket) {
                                 if (!ticket || typeof ticket !== 'object' || Array.isArray(ticket)) {
@@ -421,7 +429,9 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                 await this.fetchTickets(url);
                             },
                             async fetchTickets(url = null) {
-                                url = url || this.getUrl('/api/tickets');
+                                url = url || this.getUrl('/tickets');
+                                console.log('fetchTickets URL:', url);
+                                console.log('fetchTickets this.BASE_API:', this.BASE_API);
 
                                 let headers = {
                                     'Accept': 'application/json',

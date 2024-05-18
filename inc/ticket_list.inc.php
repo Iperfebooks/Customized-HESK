@@ -382,7 +382,7 @@ if (true)
 				break;
 			default:
 				$ticket['priority'] = 'low';
-		}		
+		}
 
 		// Set message (needed for row title)
 		$ticket['message'] = $first_line . hesk_mb_substr(strip_tags($ticket['message']),0,200).'...';
@@ -675,7 +675,7 @@ if (true)
                 ?>
                 <div>
                     <svg class="icon icon-tag">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tag"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tag"></use>
                     </svg>
                     <?php echo $hesklang['archived2']; ?>
                 </div>
@@ -684,7 +684,7 @@ if (true)
             ?>
             <div>
                 <svg class="icon icon-assign">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-assign"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-assign"></use>
                 </svg> <?php echo $hesklang['tasy2']; ?>
             </div>
             <?php
@@ -693,7 +693,7 @@ if (true)
                 ?>
                 <div>
                     <svg class="icon icon-assign-plus">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-assign-plus"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-assign-plus"></use>
                     </svg> <?php echo $hesklang['taso2']; ?>
                 </div>
                 <?php

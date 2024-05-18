@@ -263,7 +263,7 @@ if (hesk_dbNumRows($res) > 0)
             <?php echo $hesklang['team']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">
@@ -544,7 +544,7 @@ EOC;
         <h3>
             <a href="manage_users.php?a=reset_form">
                 <svg class="icon icon-back">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                 </svg>
                 <span><?php echo $hesklang['add_user']; ?></span>
             </a>
@@ -692,7 +692,7 @@ function edit_user()
             <h3>
                 <a href="manage_users.php">
                     <svg class="icon icon-back">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                     </svg>
                     <span><?php echo $hesklang['editing_user'].' '.$_SESSION['original_user']; ?></span>
                 </a>

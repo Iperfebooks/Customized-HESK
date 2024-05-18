@@ -182,7 +182,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#61','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -195,7 +195,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#62','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -208,7 +208,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#77','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -221,7 +221,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#10','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -234,7 +234,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#11','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -247,7 +247,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#15','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -261,7 +261,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#58','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -274,7 +274,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#84','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -288,7 +288,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#59','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -314,7 +314,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#60','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -345,7 +345,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#78','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -378,7 +378,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#79','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -406,7 +406,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#44','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -416,10 +416,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -431,7 +431,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#51','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -441,10 +441,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -456,7 +456,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#73','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -466,10 +466,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -481,7 +481,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#70','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -491,10 +491,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -511,7 +511,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#72','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -542,7 +542,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#74','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -568,7 +568,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#67','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -578,10 +578,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -593,7 +593,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#16','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -603,10 +603,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -618,7 +618,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#17','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -628,10 +628,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -643,7 +643,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#45','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -653,10 +653,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -668,7 +668,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#49','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -678,10 +678,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -693,7 +693,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#66','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -703,10 +703,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -718,7 +718,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#68','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -728,10 +728,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -743,7 +743,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#14','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -753,10 +753,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -768,7 +768,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#12','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -778,10 +778,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -793,7 +793,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#63','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -803,10 +803,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -818,7 +818,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#65','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -828,10 +828,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -845,10 +845,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -861,7 +861,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#71','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -879,7 +879,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#80','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -904,7 +904,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#13','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -962,7 +962,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#64','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -973,7 +973,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#64','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -987,7 +987,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#64','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -1000,7 +1000,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#64','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -1016,7 +1016,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#42','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1029,10 +1029,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -1063,7 +1063,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#47','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1076,7 +1076,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#47','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1089,7 +1089,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#81','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1103,7 +1103,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#69','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1119,7 +1119,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#46','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1135,7 +1135,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#76','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1151,7 +1151,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#82','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1174,7 +1174,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#75','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1195,7 +1195,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#83','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1215,7 +1215,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#85','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1225,10 +1225,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -1251,7 +1251,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#86','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1280,7 +1280,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#37','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1291,10 +1291,10 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -1331,7 +1331,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#38','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1354,7 +1354,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#39','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1380,7 +1380,7 @@ if ($hesk_settings['attachments']['use'] && ! defined('HESK_DEMO') ) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>helpdesk.html#40','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>

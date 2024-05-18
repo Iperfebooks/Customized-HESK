@@ -39,7 +39,8 @@ globalThis.getHeskURL = globalThis.getHeskURL || ((uri) => {
 })
 
 document.addEventListener('DOMContentLoaded', async (event) => {
-    let isLoggedIn = globalThis.Customer_API.CUSTOMER_DATA && await globalThis.Customer_API.validateToken();
+    let isLoggedIn = Boolean(globalThis.Customer_API.CUSTOMER_DATA);
+    // isLoggedIn = globalThis.Customer_API.CUSTOMER_DATA && await globalThis.Customer_API.validateToken();
 
     console.log('isLoggedIn', isLoggedIn);
 

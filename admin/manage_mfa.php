@@ -128,7 +128,7 @@ require_once(HESK_PATH . 'inc/show_admin_nav.inc.php');
             <?php echo $hesklang['mfa']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">
@@ -273,7 +273,7 @@ require_once(HESK_PATH . 'inc/show_admin_nav.inc.php');
             <?php echo $hesklang['mfa_backup_codes']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">

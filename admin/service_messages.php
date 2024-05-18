@@ -70,7 +70,7 @@ $num = hesk_dbNumRows($res);
             <?php echo $hesklang['sm_title']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">
@@ -180,13 +180,13 @@ $num = hesk_dbNumRows($res);
                                             ?>
                                             <a href="#" style="visibility: hidden">
                                                 <svg class="icon icon-chevron-up">
-                                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                                 </svg>
                                             </a>
                                             <a class="tooltip" href="service_messages.php?a=order_sm&amp;id=<?php echo $sm['id']; ?>&amp;move=15&amp;token=<?php hesk_token_echo(); ?>"
                                                title="<?php echo $hesklang['move_dn']; ?>">
                                                 <svg class="icon icon-chevron-down">
-                                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                                 </svg>
                                             </a>
                                             <?php
@@ -197,13 +197,13 @@ $num = hesk_dbNumRows($res);
                                             <a class="tooltip" href="service_messages.php?a=order_sm&amp;id=<?php echo $sm['id']; ?>&amp;move=-15&amp;token=<?php hesk_token_echo(); ?>"
                                                title="<?php echo $hesklang['move_up']; ?>">
                                                 <svg class="icon icon-chevron-up">
-                                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                                 </svg>
                                             </a>
                                             <a href="#" style="visibility: hidden"
                                                title="<?php echo $hesklang['move_dn']; ?>">
                                                 <svg class="icon icon-chevron-down">
-                                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                                 </svg>
                                             </a>
                                             <?php
@@ -214,13 +214,13 @@ $num = hesk_dbNumRows($res);
                                             <a class="tooltip" href="service_messages.php?a=order_sm&amp;id=<?php echo $sm['id']; ?>&amp;move=-15&amp;token=<?php hesk_token_echo(); ?>"
                                                title="<?php echo $hesklang['move_up']; ?>">
                                                 <svg class="icon icon-chevron-up">
-                                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                                 </svg>
                                             </a>
                                             <a class="tooltip" href="service_messages.php?a=order_sm&amp;id=<?php echo $sm['id']; ?>&amp;move=15&amp;token=<?php hesk_token_echo(); ?>"
                                                title="<?php echo $hesklang['move_dn']; ?>">
                                                 <svg class="icon icon-chevron-down">
-                                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                                 </svg>
                                             </a>
                                             <?php
@@ -229,12 +229,12 @@ $num = hesk_dbNumRows($res);
                                     ?>
                                     <a href="service_messages.php?a=edit_sm&amp;id=<?php echo $sm['id']; ?>" class="edit tooltip" title="<?php echo $hesklang['edit']; ?>">
                                         <svg class="icon icon-edit-ticket">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-edit-ticket"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-edit-ticket"></use>
                                         </svg>
                                     </a>
                                     <a href="javascript:" class="delete tooltip" title="<?php echo $hesklang['delete']; ?>" data-modal="[data-modal-id='<?php echo $modal_id; ?>']">
                                         <svg class="icon icon-delete">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-delete"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-delete"></use>
                                         </svg>
                                     </a>
                                 </p>
@@ -261,7 +261,7 @@ if ($hesk_settings['kb_wysiwyg'])
         <h3 class="">
             <a href="<?php echo $action === 'edit_sm' || isset($_SESSION['preview_sm']) ? 'service_messages.php' : 'javascript:' ?>">
                 <svg class="icon icon-back">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                 </svg>
                 <span><?php echo hesk_SESSION('edit_sm') ? $hesklang['edit_sm'] : $hesklang['new_sm']; ?></span>
             </a>
@@ -310,35 +310,35 @@ if ($hesk_settings['kb_wysiwyg'])
                         <label class="none">
                             <input type="radio" value="0" name="style" <?php if (!isset($_SESSION['new_sm']['style']) || (isset($_SESSION['new_sm']['style']) && $_SESSION['new_sm']['style'] == 0) ) {echo 'checked';} ?>>
                             <svg class="icon icon-tick">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                             </svg>
                             <span><?php echo $hesklang['sm_none']; ?></span>
                         </label>
                         <label class="success">
                             <input type="radio" value="1" name="style" <?php if (isset($_SESSION['new_sm']['style']) && $_SESSION['new_sm']['style'] == 1 ) {echo 'checked';} ?>>
                             <svg class="icon icon-tick">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                             </svg>
                             <span><?php echo $hesklang['sm_success']; ?></span>
                         </label>
                         <label class="info">
                             <input type="radio" value="2" name="style" <?php if (isset($_SESSION['new_sm']['style']) && $_SESSION['new_sm']['style'] == 2) {echo 'checked';} ?>>
                             <svg class="icon icon-tick">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                             </svg>
                             <span><?php echo $hesklang['sm_info']; ?></span>
                         </label>
                         <label class="notice">
                             <input type="radio" value="3" name="style" <?php if (isset($_SESSION['new_sm']['style']) && $_SESSION['new_sm']['style'] == 3) {echo 'checked';} ?>>
                             <svg class="icon icon-tick">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                             </svg>
                             <span><?php echo $hesklang['sm_notice']; ?></span>
                         </label>
                         <label class="error">
                             <input type="radio" value="4" name="style" <?php if (isset($_SESSION['new_sm']['style']) && $_SESSION['new_sm']['style'] == 4) {echo 'checked';} ?>>
                             <svg class="icon icon-tick">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                             </svg>
                             <span><?php echo $hesklang['sm_error']; ?></span>
                         </label>

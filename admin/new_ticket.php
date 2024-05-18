@@ -905,7 +905,7 @@ if ( ! isset($_SESSION['as_status']))
                 <div class="attachments">
                     <div class="block--attach">
                         <svg class="icon icon-attach">
-                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-attach"></use>
+                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-attach"></use>
                         </svg>
                         <div>
                             <?php echo $hesklang['attachments']; ?>:
@@ -961,7 +961,7 @@ if ( ! isset($_SESSION['as_status']))
                 <div class="calendar--button">
                     <button type="button">
                         <svg class="icon icon-calendar">
-                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-calendar"></use>
+                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-calendar"></use>
                         </svg>
                     </button>
                     <input name="due_date" id="due_date"
@@ -972,7 +972,7 @@ if ( ! isset($_SESSION['as_status']))
                 <span><?php echo isset($due_date) ? stripslashes($due_date) : ''; ?></span>
                 <i class="close">
                     <svg class="icon icon-close">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                     </svg>
                 </i>
                 </div>
@@ -1137,7 +1137,7 @@ function print_select_category($number_of_categories)
                 <a href="new_ticket.php?a=add&amp;category=<?php echo $k; ?>" class="navlink <?php if ($number_of_categories > 8) echo "navlink-condensed"; ?>">
                     <div class="icon-in-circle">
                         <svg class="icon icon-chevron-right">
-                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-right"></use>
+                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-right"></use>
                         </svg>
                     </div>
                     <div>

@@ -72,7 +72,7 @@ if ($reached_status_limit && $action !== 'edit_status') {
             <?php echo $hesklang['statuses']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">
@@ -150,7 +150,7 @@ if ($reached_status_limit && $action !== 'edit_status') {
                             <?php if ($is_custom): ?>
                                 <a href="custom_statuses.php?a=edit_status&amp;id=<?php echo $tmp_id; ?>" class="edit tooltip" title="<?php echo $hesklang['edit']; ?>">
                                     <svg class="icon icon-edit-ticket">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-edit-ticket"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-edit-ticket"></use>
                                     </svg>
                                 </a>
                                 <?php if ($status['tickets'] > 0): ?>
@@ -158,13 +158,13 @@ if ($reached_status_limit && $action !== 'edit_status') {
                                        class="delete tooltip not-allowed"
                                        title="<?php echo $hesklang['status_not_empty']; ?>">
                                         <svg class="icon icon-delete">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-delete"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-delete"></use>
                                         </svg>
                                     </a>
                                 <?php else: ?>
                                     <a class="delete tooltip" title="<?php echo $hesklang['delete']; ?>" href="javascript:" data-modal="[data-modal-id='<?php echo $modal_id; ?>']">
                                         <svg class="icon icon-delete">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-delete"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-delete"></use>
                                         </svg>
                                     </a>
                                 <?php
@@ -203,7 +203,7 @@ if ($reached_status_limit && $action !== 'edit_status') {
             <h3>
                 <a href="<?php echo hesk_SESSION('edit_status') ? 'custom_statuses.php' : 'javascript:'; ?>">
                     <svg class="icon icon-back">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                     </svg>
                     <span><?php echo hesk_SESSION('edit_status') ? $hesklang['edit_status'] : $hesklang['new_status']; ?></span>
                 </a>
@@ -248,10 +248,10 @@ if ($reached_status_limit && $action !== 'edit_status') {
                     <div class="switch-checkbox__bullet">
                         <i>
                             <svg class="icon icon-close">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                             </svg>
                             <svg class="icon icon-tick">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                             </svg>
                         </i>
                     </div>

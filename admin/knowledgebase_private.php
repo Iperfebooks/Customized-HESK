@@ -168,7 +168,7 @@ function hesk_kb_search($query)
         <div style="padding-top: 20px">
             <a href="javascript:history.go(-1)">
                 <svg class="icon icon-back" style="width: 20px">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                 </svg>
                 <?php echo $hesklang['back']; ?>
             </a>
@@ -274,7 +274,7 @@ function hesk_show_kb_article($artid)
                 <div class="article__back">
                     <a href="javascript:history.go(-1)">
                         <svg class="icon icon-back">
-                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                         </svg>
                         <?php echo $hesklang['back']; ?>
                     </a>
@@ -412,7 +412,7 @@ function hesk_show_kb_category($catid, $is_search = 0) {
                         <a class="link not-underlined" href="knowledgebase_private.php?category=<?php echo $cat['id']; ?>">
                             <h3>
                                 <svg class="icon icon-knowledge" style="fill: #9c9c9c">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-knowledge"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-knowledge"></use>
                                 </svg>
                                 <?php echo $cat['name'].$private; ?>
                             </h3>
@@ -437,7 +437,7 @@ function hesk_show_kb_category($catid, $is_search = 0) {
                                 <h5>
                                     <a href="knowledgebase_private.php?article=<?php echo $art['id']; ?>" class="article">
                                         <svg class="icon icon-note">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-note"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-note"></use>
                                         </svg>
                                         <?php echo $art['subject']; ?>
                                         <?php echo $private; ?>

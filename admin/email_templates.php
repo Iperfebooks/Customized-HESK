@@ -88,7 +88,7 @@ if ($hesk_settings['email_formatting'] == 0) {
             <?php echo $hesklang['et_title']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">
@@ -145,7 +145,7 @@ if ($hesk_settings['email_formatting'] == 0) {
                             ?>
                             <a title="<?php echo $hesklang['edit']; ?>" href="email_templates.php?a=edit&amp;t=plaintext&amp;id=<?php echo $email; ?>&amp;edit_language=<?php echo urlencode($hesk_settings['edit_language']); ?>" class="edit tooltip">
                                 <svg class="icon icon-edit-ticket">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-edit-ticket"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-edit-ticket"></use>
                                 </svg>
                             </a>
                             <?php
@@ -164,7 +164,7 @@ if ($hesk_settings['email_formatting'] == 0) {
                             ?>
                             <a title="<?php echo $hesklang['edit']; ?>" href="email_templates.php?a=edit&amp;t=html&amp;id=<?php echo $email; ?>&amp;edit_language=<?php echo urlencode($hesk_settings['edit_language']); ?>" class="edit tooltip">
                                 <svg class="icon icon-edit-ticket">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-edit-ticket"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-edit-ticket"></use>
                                 </svg>
                             </a>
                             <?php
@@ -238,7 +238,7 @@ if ($action == 'edit')
             <h3>
                 <a href="email_templates.php">
                     <svg class="icon icon-back">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                     </svg>
                     <span><?php echo $hesklang['edit_email_template']; ?></span>
                 </a>

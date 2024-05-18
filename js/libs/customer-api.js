@@ -51,9 +51,17 @@ globalThis.Customer_API = {
         })
     },
     getUrl(uri = '') {
+        let str_trim_slashes = globalThis?.Helpers?.str_trim_slashes || ((string) => string.trim().replaceAll(/^\/|\/$/ig, ''));
         let url = new URL(this.BASE_API);
         uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
-        return url.href + (uri ? `/${uri}` : '');
+
+        return [
+            url.href,
+            (uri ? `${uri}` : ''),
+        ]
+        .map(item => str_trim_slashes(item))
+        .filter(item => item)
+        .join('/');
     },
     async validateToken() {
         if (!this.API_TOKEN) {

@@ -447,7 +447,7 @@ function show_message($actually_show = true)
                         <div class="head">
                             <button type="button" class="btn btn-empty btn-hide-article">
                                 <svg class="icon icon-back">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                                 </svg>
                             </button>
                             <div>
@@ -575,10 +575,10 @@ EOC;
                                 if ($page > 2) { ?>
                                     <a href="<?php echo $href.'?'.$query.'1'; ?>" class="btn pagination__nav-btn">
                                         <svg class="icon icon-chevron-left">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-left"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-left"></use>
                                         </svg>
                                         <svg class="icon icon-chevron-left">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-left"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-left"></use>
                                         </svg>
                                         <span><?php echo $hesklang['pager_first']; ?></span>
                                     </a>
@@ -587,7 +587,7 @@ EOC;
                                 if ($prev_page) { ?>
                                     <a href="<?php echo $href.'?'.$query.$prev_page; ?>" class="btn pagination__nav-btn">
                                         <svg class="icon icon-chevron-left">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-left"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-left"></use>
                                         </svg>
                                         <span><?php echo $hesklang['pager_previous']; ?></span>
                                     </a>
@@ -620,7 +620,7 @@ EOC;
                                     <a href="<?php echo $href.'?'.$query.$next_page; ?>" class="btn pagination__nav-btn">
                                         <span><?php echo $hesklang['pager_next']; ?></span>
                                         <svg class="icon icon-chevron-right">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-right"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-right"></use>
                                         </svg>
                                     </a>
                                 <?php }
@@ -629,10 +629,10 @@ EOC;
                                     <a href="<?php echo $href.'?'.$query.$pages; ?>" class="btn pagination__nav-btn">
                                         <span><?php echo $hesklang['pager_last']; ?></span>
                                         <svg class="icon icon-chevron-right">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-right"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-right"></use>
                                         </svg>
                                         <svg class="icon icon-chevron-right">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-right"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-right"></use>
                                         </svg>
                                     </a>
                                 <?php }

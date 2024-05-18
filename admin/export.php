@@ -381,7 +381,7 @@ if (isset($success_msg))
         <?php echo $hesklang['export']; ?>
         <div class="tooltype right out-close">
             <svg class="icon icon-info">
-                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
             </svg>
             <div class="tooltype__content">
                 <div class="tooltype__wrapper">
@@ -423,7 +423,7 @@ if (isset($success_msg))
                             <div class="calendar--button">
                                 <button type="button" onclick="document.getElementById('w1').checked = true">
                                     <svg class="icon icon-calendar">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-calendar"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-calendar"></use>
                                     </svg>
                                 </button>
                                 <input name="datefrom"
@@ -435,7 +435,7 @@ if (isset($success_msg))
                                 <span><?php echo $input_datefrom; ?></span>
                                 <i class="close">
                                     <svg class="icon icon-close">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                     </svg>
                                 </i>
                             </div>
@@ -445,7 +445,7 @@ if (isset($success_msg))
                             <div class="calendar--button">
                                 <button type="button" onclick="document.getElementById('w1').checked = true">
                                     <svg class="icon icon-calendar">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-calendar"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-calendar"></use>
                                     </svg>
                                 </button>
                                 <input name="dateto"
@@ -457,7 +457,7 @@ if (isset($success_msg))
                                 <span><?php echo $input_dateto; ?></span>
                                 <i class="close">
                                     <svg class="icon icon-close">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                     </svg>
                                 </i>
                             </div>

@@ -2842,7 +2842,7 @@ function hesk_generate_delete_modal($title, $body, $confirm_link, $delete_text =
         <div class="modal__body" style="white-space: normal; <?php if ($hesk_settings['limit_width']) echo 'max-width:'.$hesk_settings['limit_width'].'px'; ?>">
             <i class="modal__close" data-action="cancel">
                 <svg class="icon icon-close">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                 </svg>
             </i>
             <h3><?php echo $title; ?></h3>

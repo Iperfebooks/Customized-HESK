@@ -82,7 +82,7 @@ $oauth_providers_rs = hesk_dbQuery("SELECT * FROM `".hesk_dbEscape($hesk_setting
             <?php echo $hesklang['email_oauth_providers']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">
@@ -142,7 +142,7 @@ $oauth_providers_rs = hesk_dbQuery("SELECT * FROM `".hesk_dbEscape($hesk_setting
                         <p>
                             <a href="oauth_providers.php?a=edit_provider&amp;id=<?php echo $row['id']; ?>" class="edit tooltip" title="<?php echo $hesklang['edit']; ?>">
                                 <svg class="icon icon-edit-ticket">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-edit-ticket"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-edit-ticket"></use>
                                 </svg>
                             </a>
                             <?php if ($uses !== $hesklang['none']): ?>
@@ -150,13 +150,13 @@ $oauth_providers_rs = hesk_dbQuery("SELECT * FROM `".hesk_dbEscape($hesk_setting
                                    class="delete tooltip not-allowed"
                                    title="<?php echo $hesklang['email_oauth_provider_cannot_be_deleted']; ?>">
                                     <svg class="icon icon-delete">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-delete"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-delete"></use>
                                     </svg>
                                 </a>
                             <?php else: ?>
                                 <a class="delete tooltip" title="<?php echo $hesklang['delete']; ?>" href="javascript:" data-modal="[data-modal-id='<?php echo $modal_id; ?>']">
                                     <svg class="icon icon-delete">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-delete"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-delete"></use>
                                     </svg>
                                 </a>
                             <?php
@@ -178,7 +178,7 @@ $oauth_providers_rs = hesk_dbQuery("SELECT * FROM `".hesk_dbEscape($hesk_setting
             <h3>
                 <a href="<?php echo hesk_SESSION('edit_provider') ? 'oauth_providers.php' : 'javascript:'; ?>">
                     <svg class="icon icon-back">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                     </svg>
                     <span><?php echo hesk_SESSION('edit_provider') ? $hesklang['email_oauth_edit_provider'] : $hesklang['email_oauth_new_provider']; ?></span>
                 </a>
@@ -247,7 +247,7 @@ $oauth_providers_rs = hesk_dbQuery("SELECT * FROM `".hesk_dbEscape($hesk_setting
                     <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#68','400','500')">
                         <div class="tooltype right" style="margin-left: 8px;">
                             <svg class="icon icon-info">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                             </svg>
                         </div>
                     </a>

@@ -149,7 +149,7 @@ require_once(HESK_PATH . 'inc/show_admin_nav.inc.php');
                         <input name="verification-code" id="regInputPassword" type="password" class="form-control">
                         <div class="input-group-append--icon passwordIsHidden">
                             <svg class="icon icon-eye-close">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-eye-close"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-eye-close"></use>
                             </svg>
                         </div>
                     </div>
@@ -190,7 +190,7 @@ require_once(HESK_PATH . 'inc/show_admin_nav.inc.php');
                             <div class="flex">
                                 <div class="mfa-alt-icon" aria-hidden="true">
                                     <svg class="icon icon-mail">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-mail"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-mail"></use>
                                     </svg>
                                 </div>
                                 <div class="mfa-alt-text">
@@ -208,7 +208,7 @@ require_once(HESK_PATH . 'inc/show_admin_nav.inc.php');
                         <div class="flex">
                             <div class="mfa-alt-icon" aria-hidden="true">
                                 <svg class="icon icon-lock">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-lock"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-lock"></use>
                                 </svg>
                             </div>
                             <div class="mfa-alt-text">

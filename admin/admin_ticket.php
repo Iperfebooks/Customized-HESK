@@ -713,7 +713,7 @@ $options = array(
                 <?php if ($ticket['archive']): ?>
                     <div class="tooltype right out-close">
                         <svg class="icon icon-tag">
-                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tag"></use>
+                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tag"></use>
                         </svg>
                         <div class="tooltype__content">
                             <div class="tooltype__wrapper">
@@ -727,7 +727,7 @@ $options = array(
                 ?>
                     <div class="tooltype right out-close">
                         <svg class="icon icon-lock">
-                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-lock"></use>
+                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-lock"></use>
                         </svg>
                         <div class="tooltype__content">
                             <div class="tooltype__wrapper">
@@ -741,7 +741,7 @@ $options = array(
             <div class="note__link">
                 <a href="javascript:" onclick="hesk_toggleLayerDisplay('notesDivTop')">
                     <svg class="icon icon-note">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-note"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-note"></use>
                     </svg>&nbsp;&nbsp;
                     <?php echo $hesklang['addnote']; ?>
                 </a>
@@ -770,12 +770,12 @@ $options = array(
                             <div class="actions">
                                 <a class="tooltip" href="edit_note.php?track=<?php echo $trackingID; ?>&amp;Refresh=<?php echo mt_rand(10000,99999); ?>&amp;note=<?php echo $note['id']; ?>&amp;token=<?php hesk_token_echo(); ?>" title="<?php echo $hesklang['ednote']; ?>">
                                     <svg class="icon icon-edit-ticket">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-edit-ticket"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-edit-ticket"></use>
                                     </svg>
                                 </a>
                                 <a class="tooltip" href="admin_ticket.php?track=<?php echo $trackingID; ?>&amp;Refresh=<?php echo mt_rand(10000,99999); ?>&amp;delnote=<?php echo $note['id']; ?>&amp;token=<?php hesk_token_echo(); ?>" onclick="return hesk_confirmExecute('<?php echo hesk_makeJsString($hesklang['delnote']).'?'; ?>');" title="<?php echo $hesklang['delnote']; ?>">
                                     <svg class="icon icon-delete">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-delete"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-delete"></use>
                                     </svg>
                                 </a>
                             </div>
@@ -848,7 +848,7 @@ $options = array(
                         <div class="attachments">
                             <div class="block--attach">
                                 <svg class="icon icon-attach">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-attach"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-attach"></use>
                                 </svg>
                                 <div>
                                     <?php echo $hesklang['attachments'] . ':<br>'; ?>
@@ -900,7 +900,7 @@ $options = array(
                 <?php if ($ticket['archive']): ?>
                     <div class="tooltype right out-close">
                         <svg class="icon icon-tag">
-                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tag"></use>
+                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tag"></use>
                         </svg>
                         <div class="tooltype__content">
                             <div class="tooltype__wrapper">
@@ -914,7 +914,7 @@ $options = array(
                 ?>
                     <div class="tooltype right out-close">
                         <svg class="icon icon-lock">
-                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-lock"></use>
+                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-lock"></use>
                         </svg>
                         <div class="tooltype__content">
                             <div class="tooltype__wrapper">
@@ -933,7 +933,7 @@ $options = array(
                         <label>
                             <span><?php echo $ticket['name']; ?></span>
                             <svg class="icon icon-chevron-down">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                             </svg>
                         </label>
                         <ul class="dropdown-list">
@@ -1135,12 +1135,12 @@ $options = array(
                             <div class="actions">
                                 <a class="tooltip" href="edit_note.php?track=<?php echo $trackingID; ?>&amp;Refresh=<?php echo mt_rand(10000,99999); ?>&amp;note=<?php echo $note['id']; ?>&amp;token=<?php hesk_token_echo(); ?>" title="<?php echo $hesklang['ednote']; ?>">
                                     <svg class="icon icon-edit-ticket">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-edit-ticket"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-edit-ticket"></use>
                                     </svg>
                                 </a>
                                 <a class="tooltip" href="admin_ticket.php?track=<?php echo $trackingID; ?>&amp;Refresh=<?php echo mt_rand(10000,99999); ?>&amp;delnote=<?php echo $note['id']; ?>&amp;token=<?php hesk_token_echo(); ?>" onclick="return hesk_confirmExecute('<?php echo hesk_makeJsString($hesklang['delnote']).'?'; ?>');" title="<?php echo $hesklang['delnote']; ?>">
                                     <svg class="icon icon-delete">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-delete"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-delete"></use>
                                     </svg>
                                 </a>
                             </div>
@@ -1203,7 +1203,7 @@ $options = array(
                 ?>
                 <button class="btn btn--blue-border" type="button" onclick="hesk_toggleLayerDisplay('notesDiv')">
                     <svg class="icon icon-note">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-note"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-note"></use>
                     </svg>&nbsp;&nbsp;
                     <?php echo $hesklang['addnote']; ?>
                 </button>
@@ -1219,7 +1219,7 @@ $options = array(
                             <div class="attachments">
                                 <div class="block--attach">
                                     <svg class="icon icon-attach">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-attach"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-attach"></use>
                                     </svg>
                                     <div>
                                         <?php echo $hesklang['attachments'] . ':<br>'; ?>
@@ -1444,7 +1444,7 @@ $options = array(
             <h4 class="accordion-title">
                 <span><?php echo $hesklang['ticket_details']; ?></span>
                 <svg class="icon icon-chevron-down">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                 </svg>
             </h4>
             <div class="accordion-body" style="display:block">
@@ -1557,7 +1557,7 @@ $options = array(
                                             <!--
                                             <button type="button">
                                                 <svg class="icon icon-calendar">
-                                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-calendar"></use>
+                                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-calendar"></use>
                                                 </svg>
                                             </button>
                                             -->
@@ -1570,7 +1570,7 @@ $options = array(
                                             <span><?php echo $datepicker_due_date; ?></span>
                                             <i class="close">
                                                 <svg class="icon icon-close">
-                                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                                 </svg>
                                             </i>
                                         </div>
@@ -1613,7 +1613,7 @@ $options = array(
                 <h4 class="accordion-title">
                     <span><?php echo $hesklang['previous_tickets']; ?></span>
                     <svg class="icon icon-chevron-down">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                     </svg>
                 </h4>
                 <div class="accordion-body" <?php if ($past_num > 0) echo 'style="display:block"'; ?>>
@@ -1658,7 +1658,7 @@ $options = array(
                 <h4 class="accordion-title">
                     <span><?php echo $hesklang['thist']; ?></span>
                     <svg class="icon icon-chevron-down">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                     </svg>
                 </h4>
                 <div class="accordion-body">
@@ -2070,7 +2070,7 @@ function hesk_printTicketReplies() {
                     <span><?php echo $hesklang['show_previous_replies']; ?></span>
                     <b><?php echo count($collapsed_replies); ?></b>
                     <svg class="icon icon-chevron-down">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                     </svg>
                 </div>
                 <div class="ticket__replies_list">
@@ -2172,7 +2172,7 @@ function hesk_printTicketReplies() {
                     <span><?php echo $hesklang['show_previous_replies']; ?></span>
                     <b><?php echo count($collapsed_replies); ?></b>
                     <svg class="icon icon-chevron-down">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                     </svg>
                 </div>
                 <div class="ticket__replies_list">
@@ -2268,12 +2268,12 @@ function hesk_printReplyForm() {
 
                 <a href="javascript:" class="tooltip" id="pause_btn" title="<?php echo $hesklang['start']; ?>">
                     <svg class="icon icon-pause">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-pause"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-pause"></use>
                     </svg>
                 </a>
                 <a href="javascript:" class="tooltip" id="reset_btn" title="<?php echo $hesklang['reset']; ?>">
                     <svg class="icon icon-refresh">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-refresh"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-refresh"></use>
                     </svg>
                 </a>
                 <script>
@@ -2391,7 +2391,7 @@ function hesk_printReplyForm() {
             <div class="attachments">
                 <div class="block--attach">
                     <svg class="icon icon-attach">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-attach"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-attach"></use>
                     </svg>
                     <div>
                         <?php echo $hesklang['attachments'] . ':<br>'; ?>

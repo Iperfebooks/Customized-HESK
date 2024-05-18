@@ -112,7 +112,7 @@ if (defined('WARN_PASSWORD'))
             </div>
             <a href="index.php?a=logout&token=<?php hesk_token_echo(); ?>" class="profile-log-out">
                 <svg class="icon icon-log-out">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-log-out"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-log-out"></use>
                 </svg>
                 <span><?php echo $hesklang['logout']; ?></span>
             </a>
@@ -155,7 +155,7 @@ if (defined('WARN_PASSWORD'))
         <h3>
             <a href="javascript:">
                 <svg class="icon icon-back">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                 </svg>
                 <span><?php echo $hesklang['profile_for'].' <b>'.$_SESSION['new']['user']; ?></span>
             </a>
@@ -232,7 +232,7 @@ if (defined('WARN_PASSWORD'))
         <h3>
             <a href="javascript:">
                 <svg class="icon icon-back">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                 </svg>
                 <span><?php echo $hesklang['edit_pass']; ?></span>
             </a>

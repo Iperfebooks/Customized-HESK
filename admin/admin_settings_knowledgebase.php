@@ -110,7 +110,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#22','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -144,7 +144,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#52','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -154,10 +154,10 @@ hesk_handle_messages();
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -169,7 +169,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#23','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -179,10 +179,10 @@ hesk_handle_messages();
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -194,7 +194,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#24','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -204,10 +204,10 @@ hesk_handle_messages();
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -219,7 +219,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#58','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -229,10 +229,10 @@ hesk_handle_messages();
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -244,7 +244,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#59','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -254,10 +254,10 @@ hesk_handle_messages();
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -274,7 +274,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#25','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -300,7 +300,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#26','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -313,7 +313,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#27','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -326,7 +326,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#28','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -339,7 +339,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#29','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -352,7 +352,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#30','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -374,7 +374,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#31','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -396,7 +396,7 @@ hesk_handle_messages();
                         <a onclick="hesk_window('<?php echo $help_folder; ?>knowledgebase.html#60','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>

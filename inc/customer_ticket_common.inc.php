@@ -8,6 +8,46 @@ if (!defined('IN_SCRIPT')) {
     die('Invalid attempt');
 }
 
+if (!function_exists('hesk_require')) {
+    /**
+     * function hesk_require
+     *
+     * @param string $path
+     * @param bool $once
+     *
+     * @return void
+     */
+    function hesk_require(string $path, bool $once = false): void
+    {
+        $heskBasePath = defined('HESK_BASE_PATH') ? constant('HESK_BASE_PATH') : __DIR__ . '/..';
+
+        $path = implode('/', array_filter([
+            realpath($heskBasePath),
+            $path
+        ]));
+
+        if ($once) {
+            require_once $path;
+            return;
+        }
+
+        require $path;
+    }
+}
+
+if (!function_exists('hesk_require_once')) {
+    /**
+     * function hesk_require_once
+     *
+     * @param string $path
+     * @return void
+     */
+    function hesk_require_once(string $path): void
+    {
+        hesk_require($path, true);
+    }
+}
+
 if (function_exists('hesk_session_start')) {
     hesk_session_start();
 }

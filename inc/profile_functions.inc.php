@@ -108,10 +108,10 @@ function hesk_profile_tab($session_array='new',$is_profile_page=true)
                             <div class="switch-checkbox__bullet">
                                 <i>
                                     <svg class="icon icon-close">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                     </svg>
                                     <svg class="icon icon-tick">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                     </svg>
                                 </i>
                             </div>

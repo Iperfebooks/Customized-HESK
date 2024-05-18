@@ -80,7 +80,7 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
             <?php echo $hesklang['tab_4']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">
@@ -201,13 +201,13 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                                         ?>
                                         <a href="#" style="visibility: hidden">
                                             <svg class="icon icon-chevron-up">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                             </svg>
                                         </a>
                                         <a href="#" style="visibility: hidden"
                                            title="<?php echo $hesklang['move_dn']; ?>">
                                             <svg class="icon icon-chevron-down">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                             </svg>
                                         </a>
                                         <?php
@@ -217,13 +217,13 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                                         ?>
                                         <a href="#" style="visibility: hidden">
                                             <svg class="icon icon-chevron-up">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                             </svg>
                                         </a>
                                         <a class="tooltip" href="custom_fields.php?a=order_cf&amp;id=<?php echo $tmp_id; ?>&amp;move=15&amp;token=<?php hesk_token_echo(); ?>"
                                            title="<?php echo $hesklang['move_dn']; ?>">
                                             <svg class="icon icon-chevron-down">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                             </svg>
                                         </a>
                                         <?php
@@ -234,13 +234,13 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                                         <a class="tooltip" href="custom_fields.php?a=order_cf&amp;id=<?php echo $tmp_id; ?>&amp;move=-15&amp;token=<?php hesk_token_echo(); ?>"
                                            title="<?php echo $hesklang['move_up']; ?>">
                                             <svg class="icon icon-chevron-up">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                             </svg>
                                         </a>
                                         <a href="#" style="visibility: hidden"
                                            title="<?php echo $hesklang['move_dn']; ?>">
                                             <svg class="icon icon-chevron-down">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                             </svg>
                                         </a>
                                         <?php
@@ -251,13 +251,13 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                                         <a class="tooltip" href="custom_fields.php?a=order_cf&amp;id=<?php echo $tmp_id; ?>&amp;move=-15&amp;token=<?php hesk_token_echo(); ?>"
                                            title="<?php echo $hesklang['move_up']; ?>">
                                             <svg class="icon icon-chevron-up">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                             </svg>
                                         </a>
                                         <a class="tooltip" href="custom_fields.php?a=order_cf&amp;id=<?php echo $tmp_id; ?>&amp;move=15&amp;token=<?php hesk_token_echo(); ?>"
                                            title="<?php echo $hesklang['move_dn']; ?>">
                                             <svg class="icon icon-chevron-down">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                             </svg>
                                         </a>
                                         <?php
@@ -268,7 +268,7 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                                    title="<?php echo $hesklang['edit']; ?>"
                                    class="edit tooltip">
                                     <svg class="icon icon-edit-ticket">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-edit-ticket"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-edit-ticket"></use>
                                     </svg>
                                 </a>
                                 <a href="javascript:"
@@ -276,7 +276,7 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                                    title="<?php echo $hesklang['delete']; ?>"
                                    class="delete tooltip">
                                     <svg class="icon icon-delete">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-delete"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-delete"></use>
                                     </svg>
                                 </a>
                             </p>
@@ -297,7 +297,7 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
         <h3>
             <a href="<?php echo $action === 'edit_cf' ? 'custom_fields.php' : 'javascript:' ?>">
                 <svg class="icon icon-back">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                 </svg>
                 <span><?php echo hesk_SESSION('edit_cf') ? $hesklang['edit_cf'] : $hesklang['new_cf']; ?></span>
             </a>
@@ -383,10 +383,10 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -409,10 +409,10 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -488,7 +488,7 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                             <div class="calendar--button">
                                 <button type="button" onclick="document.getElementById('dmin_rf1').checked = true">
                                     <svg class="icon icon-calendar">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-calendar"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-calendar"></use>
                                     </svg>
                                 </button>
                                 <input name="dmin"
@@ -500,7 +500,7 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                                 <span><?php echo $dmin; ?></span>
                                 <i class="close">
                                     <svg class="icon icon-close">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                     </svg>
                                 </i>
                             </div>
@@ -578,7 +578,7 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                             <div class="calendar--button">
                                 <button type="button" onclick="document.getElementById('dmax_rf1').checked = true">
                                     <svg class="icon icon-calendar">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-calendar"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-calendar"></use>
                                     </svg>
                                 </button>
                                 <input name="dmax"
@@ -590,7 +590,7 @@ $hesk_settings['datepicker']['#dmax']['position'] = 'left bottom';
                                 <span><?php echo $dmax; ?></span>
                                 <i class="close">
                                     <svg class="icon icon-close">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                     </svg>
                                 </i>
                             </div>

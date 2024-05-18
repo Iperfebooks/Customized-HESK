@@ -62,7 +62,7 @@ if (!hesk_SESSION('error')) {
             <?php echo $hesklang['menu_cat']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">
@@ -87,7 +87,7 @@ if (!hesk_SESSION('error')) {
                         <?php if ($hesk_settings['cust_urgency']): ?>
                         <div class="tooltype right out-close">
                             <svg class="icon icon-info">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                             </svg>
                             <div class="tooltype__content">
                                 <div class="tooltype__wrapper">
@@ -219,13 +219,13 @@ if (!hesk_SESSION('error')) {
                                data-action="generate-link"
                                data-link="<?php echo htmlspecialchars($hesk_settings['hesk_url']) . '/index.php?a=add&catid=' . intval($mycat['id']); ?>">
                                 <svg class="icon icon-export">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-export"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-export"></use>
                                 </svg>
                             </a>
                             <a class="tooltip" href="manage_category.php?id=<?php echo $mycat['id']; ?>"
                                title="<?php echo $hesklang['edit']; ?>">
                                 <svg class="icon icon-edit-ticket">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-edit-ticket"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-edit-ticket"></use>
                                 </svg>
                             </a>
                             <?php
@@ -234,13 +234,13 @@ if (!hesk_SESSION('error')) {
                                     ?>
                                     <a href="#" style="visibility: hidden">
                                         <svg class="icon icon-chevron-up">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                         </svg>
                                     </a>
                                     <a class="tooltip" href="manage_categories.php?a=order&amp;catid=<?php echo $mycat['id']; ?>&amp;move=15&amp;token=<?php hesk_token_echo(); ?>"
                                        title="<?php echo $hesklang['move_dn']; ?>">
                                         <svg class="icon icon-chevron-down">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                         </svg>
                                     </a>
                                     <?php
@@ -250,13 +250,13 @@ if (!hesk_SESSION('error')) {
                                     <a class="tooltip" href="manage_categories.php?a=order&amp;catid=<?php echo $mycat['id']; ?>&amp;move=-15&amp;token=<?php hesk_token_echo(); ?>"
                                        title="<?php echo $hesklang['move_up']; ?>">
                                         <svg class="icon icon-chevron-up">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                         </svg>
                                     </a>
                                     <a href="#" style="visibility: hidden"
                                        title="<?php echo $hesklang['move_dn']; ?>">
                                         <svg class="icon icon-chevron-down">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                         </svg>
                                     </a>
                                     <?php
@@ -265,13 +265,13 @@ if (!hesk_SESSION('error')) {
                                     <a class="tooltip" href="manage_categories.php?a=order&amp;catid=<?php echo $mycat['id']; ?>&amp;move=-15&amp;token=<?php hesk_token_echo(); ?>"
                                        title="<?php echo $hesklang['move_up']; ?>">
                                         <svg class="icon icon-chevron-up">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                         </svg>
                                     </a>
                                     <a class="tooltip" href="manage_categories.php?a=order&amp;catid=<?php echo $mycat['id']; ?>&amp;move=15&amp;token=<?php hesk_token_echo(); ?>"
                                        title="<?php echo $hesklang['move_dn']; ?>">
                                         <svg class="icon icon-chevron-down">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                         </svg>
                                     </a>
                                     <?php
@@ -303,7 +303,7 @@ if (!hesk_SESSION('error')) {
                                 ?>
                             <a class="tooltip delete" title="<?php echo $hesklang['delcat']; ?>" href="javascript:" data-modal="[data-modal-id='<?php echo $modal_id; ?>']">
                                 <svg class="icon icon-delete">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-delete"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-delete"></use>
                                 </svg>
                             </a>
                             <?php
@@ -320,7 +320,7 @@ if (!hesk_SESSION('error')) {
 <div class="notification-flash green" data-type="link-generate-message">
     <i class="close">
         <svg class="icon icon-close">
-            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
         </svg>
     </i>
     <div class="notification--title"><?php echo $hesklang['genl']; ?></div>

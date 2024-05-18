@@ -30,14 +30,14 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
     <title><?php echo $hesk_settings['hesk_title']; ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo HESK_PATH; ?>img/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo HESK_PATH; ?>img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo HESK_PATH; ?>img/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="<?php echo HESK_PATH; ?>img/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="<?php echo HESK_PATH; ?>img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="shortcut icon" href="<?php echo HESK_PATH; ?>img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= hesk_url() . '/'; ?>img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= hesk_url() . '/'; ?>img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= hesk_url() . '/'; ?>img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="<?= hesk_url() . '/'; ?>img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="<?= hesk_url() . '/'; ?>img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="<?= hesk_url('img/favicon/favicon.ico'); ?>" />
     <meta name="msapplication-TileColor" content="#2d89ef" />
-    <meta name="msapplication-config" content="<?php echo HESK_PATH; ?>img/favicon/browserconfig.xml" />
+    <meta name="msapplication-config" content="<?= hesk_url() . '/'; ?>img/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" media="all" href="<?= hesk_template_url() ?>/customer/css/dropzone.min.css?<?php echo $hesk_settings['hesk_version']; ?>" />
@@ -47,12 +47,12 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
         <script type="text/javascript" src="<?php echo HESK_PATH; ?>js/prism.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
         <link rel="stylesheet" media="all" href="<?= hesk_url() ?>//prism.css?<?php echo $hesk_settings['hesk_version']; ?>">
     <?php endif; ?>
-    <script src="<?= HESK_PATH . 'js/libs/customer-api.js'; ?>"></script>
+    <?php hesk_require('head.php', true); ?>
     <?php require_once TEMPLATE_PATH . '../../inc/custom_header.inc.php'; ?>
 </head>
 
 <body class="cust-help">
-<?php include(TEMPLATE_PATH . '../../header.txt'); ?>
+<?php hesk_require('header.php'); ?>
 <div class="wrapper">
     <main class="main">
         <header class="header">
@@ -134,7 +134,7 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
                                                 <label>
                                                     <span><?php echo $ticket['name']; ?></span>
                                                     <svg class="icon icon-chevron-down">
-                                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                                                     </svg>
                                                 </label>
                                                 <ul class="dropdown-list">

@@ -12,7 +12,7 @@
  */
 
 /* Check if this is a valid include */
-if (!defined('IN_SCRIPT')) {die('Invalid attempt');} 
+if (!defined('IN_SCRIPT')) {die('Invalid attempt');}
 
 $num_mail = hesk_checkNewMail();
 
@@ -25,7 +25,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
         <div class="navbar__header">
             <button class="btn navbar__toggler" id="navbarToggler" type="button" aria-label="Toggle navigation">
                 <svg class="icon icon-menu">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-menu"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-menu"></use>
                 </svg>
             </button>
             <a class="navbar__logo" href="admin_main.php">
@@ -38,7 +38,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                     <div class="listitem__icon">
                         <a href="admin_main.php">
                             <svg class="icon icon-tickets">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tickets"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tickets"></use>
                             </svg>
                         </a>
                     </div>
@@ -58,7 +58,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                     <div class="listitem__icon">
                         <a href="#">
                             <svg class="icon icon-templates">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-templates"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-templates"></use>
                             </svg>
                         </a>
                     </div>
@@ -83,7 +83,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                         <div class="listitem__icon">
                             <a href="manage_canned.php">
                                 <svg class="icon icon-tickets">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-templates"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-templates"></use>
                                 </svg>
                             </a>
                         </div>
@@ -98,7 +98,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                         <div class="listitem__icon">
                             <a href="manage_ticket_templates.php">
                                 <svg class="icon icon-tickets">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-templates"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-templates"></use>
                                 </svg>
                             </a>
                         </div>
@@ -119,7 +119,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                         <div class="listitem__icon">
                             <a href="manage_knowledgebase.php">
                                 <svg class="icon icon-knowledge">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-knowledge"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-knowledge"></use>
                                 </svg>
                             </a>
                         </div>
@@ -146,7 +146,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                         <div class="listitem__icon">
                             <a href="knowledgebase_private.php">
                                 <svg class="icon icon-knowledge">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-knowledge"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-knowledge"></use>
                                 </svg>
                             </a>
                         </div>
@@ -164,7 +164,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                     <div class="listitem__icon">
                         <a href="manage_categories.php">
                             <svg class="icon icon-categories">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-categories"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-categories"></use>
                             </svg>
                         </a>
                     </div>
@@ -181,7 +181,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                     <div class="listitem__icon">
                         <a href="manage_users.php">
                             <svg class="icon icon-team">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-team"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-team"></use>
                             </svg>
                         </a>
                     </div>
@@ -203,7 +203,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                     <div class="listitem__icon">
                         <a href="#">
                             <svg class="icon icon-reports">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-reports"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-reports"></use>
                             </svg>
                         </a>
                     </div>
@@ -237,7 +237,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                         <div class="listitem__icon">
                             <a href="export.php">
                                 <svg class="icon icon-team">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-team"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-team"></use>
                                 </svg>
                             </a>
                         </div>
@@ -260,7 +260,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                     <div class="listitem__icon">
                         <a href="#">
                             <svg class="icon icon-modules">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-modules"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-modules"></use>
                             </svg>
                         </a>
                     </div>
@@ -314,7 +314,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                     <div class="listitem__icon">
                         <a href="#">
                             <svg class="icon icon-tools">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tools"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tools"></use>
                             </svg>
                         </a>
                     </div>
@@ -398,7 +398,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                         <div class="listitem__icon">
                             <a href="#">
                                 <svg class="icon icon-settings">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-settings"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-settings"></use>
                                 </svg>
                             </a>
                         </div>
@@ -448,7 +448,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                     <div class="listitem__icon">
                         <a href="mail.php">
                             <svg class="icon icon-mail">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-mail"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-mail"></use>
                             </svg>
                         </a>
                     </div>
@@ -496,7 +496,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                     <a href="mail.php" class="btn btn-empty tooltip" title="<?php echo $hesklang['m_h']; ?>">
                         <div class="profile__item_rel">
                             <svg class="icon icon-mail">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-mail"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-mail"></use>
                             </svg>
                             <?php if ($num_mail > 0): ?>
                             <div class="badge"><?php echo ($num_mail > 99) ? '99+' : $num_mail; ?></div>
@@ -518,7 +518,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                         <p>
                             <span><?php echo $_SESSION['name']; ?></span>
                             <svg class="icon icon-chevron-down">
-                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-chevron-down"></use>
+                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-chevron-down"></use>
                             </svg>
                         </p>
                     </div>
@@ -529,7 +529,7 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
                         <div class="profile--logout">
                             <a href="index.php?a=logout&token=<?php hesk_token_echo(); ?>">
                                 <svg class="icon icon-log-out">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-log-out"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-log-out"></use>
                                 </svg>
                                 <span><?php echo $hesklang['logout']; ?></span>
                             </a>
@@ -541,17 +541,17 @@ $calling_script = basename($_SERVER['PHP_SELF'], '.php');
         <div class="header__mobile">
             <button class="btn btn-empty header__menu" data-action="toggle-menu">
                 <svg class="icon icon-menu-mobile">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-menu-mobile"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-menu-mobile"></use>
                 </svg>
                 <svg class="icon icon-close-mobile">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close-mobile"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close-mobile"></use>
                 </svg>
             </button>
             <a class="navbar__logo" href="admin_main.php"><?php echo $hesklang['help_desk']; ?></a>
             <div class="header__mobile_actions">
                 <a href="new_ticket.php" class="btn btn-empty" data-action="create-ticket">
                     <svg class="icon icon-add">
-                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-add"></use>
+                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-add"></use>
                     </svg>
                 </a>
             </div>

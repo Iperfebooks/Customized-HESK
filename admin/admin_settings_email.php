@@ -153,7 +153,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>general.html#5','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -166,7 +166,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>general.html#6','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -179,7 +179,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#69','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -242,7 +242,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#55','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -269,7 +269,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#55','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -282,7 +282,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#55','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -295,7 +295,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#55','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -313,7 +313,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#55','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -338,7 +338,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                                     <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#68','400','500')">
                                         <div class="tooltype right">
                                             <svg class="icon icon-info">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                             </svg>
                                         </div>
                                     </a>
@@ -371,7 +371,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#55','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -400,7 +400,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#55','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -414,7 +414,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#55','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -429,7 +429,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#55','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -518,7 +518,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#54','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -528,10 +528,10 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -566,7 +566,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -583,10 +583,10 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -600,7 +600,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -614,7 +614,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -627,7 +627,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -645,7 +645,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -670,7 +670,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                                     <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#68','400','500')">
                                         <div class="tooltype right">
                                             <svg class="icon icon-info">
-                                                <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                                <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                             </svg>
                                         </div>
                                     </a>
@@ -684,7 +684,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -694,10 +694,10 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <div class="switch-checkbox__bullet">
                                 <i>
                                     <svg class="icon icon-close">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                     </svg>
                                     <svg class="icon icon-tick">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                     </svg>
                                 </i>
                             </div>
@@ -728,7 +728,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -757,7 +757,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -771,7 +771,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -786,7 +786,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#67','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -888,7 +888,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -901,10 +901,10 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -917,7 +917,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -931,7 +931,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -944,7 +944,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -957,7 +957,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -967,10 +967,10 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <div class="switch-checkbox__bullet">
                                 <i>
                                     <svg class="icon icon-close">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                     </svg>
                                     <svg class="icon icon-tick">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                     </svg>
                                 </i>
                             </div>
@@ -982,7 +982,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -992,10 +992,10 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <div class="switch-checkbox__bullet">
                                 <i>
                                     <svg class="icon icon-close">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                     </svg>
                                     <svg class="icon icon-tick">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                     </svg>
                                 </i>
                             </div>
@@ -1026,7 +1026,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1055,7 +1055,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1069,7 +1069,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -1084,7 +1084,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                                 <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#59','400','500')">
                                     <div class="tooltype right">
                                         <svg class="icon icon-info">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                         </svg>
                                     </div>
                                 </a>
@@ -1163,7 +1163,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#61','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1179,7 +1179,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#66','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1195,7 +1195,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#64','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1214,7 +1214,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#70','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1230,7 +1230,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#71','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1246,7 +1246,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#72','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1262,7 +1262,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#60','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1276,7 +1276,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#60','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1303,7 +1303,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#62','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1315,10 +1315,10 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <div class="switch-checkbox__bullet">
                             <i>
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                                 <svg class="icon icon-tick">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-tick"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-tick"></use>
                                 </svg>
                             </i>
                         </div>
@@ -1331,7 +1331,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                             <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#63','400','500')">
                                 <div class="tooltype right">
                                     <svg class="icon icon-info">
-                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1348,7 +1348,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#65','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1382,7 +1382,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#57','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1398,7 +1398,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#50','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>
@@ -1414,7 +1414,7 @@ while ($row = hesk_dbFetchAssoc($oauth_providers_rs)) {
                         <a onclick="hesk_window('<?php echo $help_folder; ?>email.html#58','400','500')">
                             <div class="tooltype right">
                                 <svg class="icon icon-info">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                                 </svg>
                             </div>
                         </a>

@@ -493,7 +493,7 @@ function print_login()
                                         <?php if (defined('HESK_DEMO')) {echo ' value="demo1"';} ?>>
                                     <div class="input-group-append--icon passwordIsHidden">
                                         <svg class="icon icon-eye-close">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-eye-close"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-eye-close"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -678,7 +678,7 @@ function print_mfa_verification()
                                             <div class="flex">
                                                 <div class="mfa-alt-icon" aria-hidden="true">
                                                     <svg class="icon icon-mail">
-                                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-mail"></use>
+                                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-mail"></use>
                                                     </svg>
                                                 </div>
                                                 <div class="mfa-alt-text">
@@ -697,7 +697,7 @@ function print_mfa_verification()
                                             <div class="flex">
                                                 <div class="mfa-alt-icon" aria-hidden="true">
                                                     <svg class="icon icon-lock">
-                                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-lock"></use>
+                                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-lock"></use>
                                                     </svg>
                                                 </div>
                                                 <div class="mfa-alt-text">
@@ -732,7 +732,7 @@ function print_mfa_verification()
                                             <div class="flex">
                                                 <div class="mfa-alt-icon" aria-hidden="true">
                                                     <svg class="icon icon-assign">
-                                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-assign"></use>
+                                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-assign"></use>
                                                     </svg>
                                                 </div>
                                                 <div class="mfa-alt-text">
@@ -745,7 +745,7 @@ function print_mfa_verification()
                                             <div class="flex">
                                                 <div class="mfa-alt-icon" aria-hidden="true">
                                                     <svg class="icon icon-move-to">
-                                                        <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-move-to"></use>
+                                                        <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-move-to"></use>
                                                     </svg>
                                                 </div>
                                                 <div class="mfa-alt-text">

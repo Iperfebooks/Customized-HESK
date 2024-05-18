@@ -80,7 +80,7 @@ $num = hesk_dbNumRows($result);
             <?php echo $hesklang['ticket_tpl']; ?>
             <div class="tooltype right out-close">
                 <svg class="icon icon-info">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-info"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-info"></use>
                 </svg>
                 <div class="tooltype__content">
                     <div class="tooltype__wrapper">
@@ -193,7 +193,7 @@ $num = hesk_dbNumRows($result);
         <h3>
             <a href="javascript:">
                 <svg class="icon icon-back">
-                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-back"></use>
+                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-back"></use>
                 </svg>
                 <span <?php if (isset($_SESSION['canned']['what']) && $_SESSION['canned']['what'] !== 'NEW') { echo 'style="display: none"'; } ?> id="add-title"><?php echo $hesklang['ticket_tpl_add']; ?></span>
                 <span <?php if (isset($_SESSION['canned']['what']) && $_SESSION['canned']['what'] !== 'EDIT') { echo 'style="display: none"'; } ?> id="edit-title"><?php echo $hesklang['ticket_tpl_edit']; ?></span>

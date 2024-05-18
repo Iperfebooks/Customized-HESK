@@ -12,7 +12,7 @@
  */
 
 /* Check if this is a valid include */
-if (!defined('IN_SCRIPT')) {die('Invalid attempt');} 
+if (!defined('IN_SCRIPT')) {die('Invalid attempt');}
 
 if ( ! isset($status) )
 {
@@ -272,7 +272,7 @@ $more2 = empty($_GET['more2']) ? 0 : 1;
                                 <div class="calendar--button">
                                     <button type="button" onclick="document.getElementById('duedate_specific').checked = true">
                                         <svg class="icon icon-calendar">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-calendar"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-calendar"></use>
                                         </svg>
                                     </button>
                                     <input name="duedate_specific_date" id="duedate_specific_date"
@@ -283,7 +283,7 @@ $more2 = empty($_GET['more2']) ? 0 : 1;
                                     <span><?php echo $duedate_input; ?></span>
                                     <i class="close">
                                         <svg class="icon icon-close">
-                                            <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                            <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                         </svg>
                                     </i>
                                 </div>
@@ -469,7 +469,7 @@ $("#toggleAllShow").click(function(event) {
                     <option value="ip" <?php if ($what=='ip') {echo 'selected="selected"';} ?> ><?php echo $hesklang['IP_addr']; ?></option>
                 </select>
             </div>
-        </div>    
+        </div>
         <div class="search-option">
             <div class="search-name">
                 <?php echo $hesklang['s_for']; ?>
@@ -528,7 +528,7 @@ $("#toggleAllShow").click(function(event) {
                         <div class="calendar--button">
                             <button type="button">
                                 <svg class="icon icon-calendar">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-calendar"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-calendar"></use>
                                 </svg>
                             </button>
                             <input name="dt" id="find-date"
@@ -539,7 +539,7 @@ $("#toggleAllShow").click(function(event) {
                             <span><?php echo $date_input; ?></span>
                             <i class="close">
                                 <svg class="icon icon-close">
-                                    <use xlink:href="<?php echo HESK_PATH; ?>img/sprite.svg#icon-close"></use>
+                                    <use xlink:href="<?= hesk_url() . '/'; ?>img/sprite.svg#icon-close"></use>
                                 </svg>
                             </i>
                     </div>
