@@ -39,7 +39,7 @@ globalThis.Customer_API = {
             return;
         }
 
-        fetch(this.getUrl('/api/customers/auth/logout'), {
+        fetch(this.getUrl('/customers/auth/logout'), {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
