@@ -159,3 +159,8 @@
 .form-group .form-control.form-input-error + .form-control__error {
     display: block;
 }
+
+.display-none { display: none; }
+.display-block { display: block; }
+.display-flex { display: flex; }
+.display-inline { display: inline; }

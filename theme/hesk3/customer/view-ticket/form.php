@@ -134,12 +134,12 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                         {
                             $tmp = 'document.form1.email.value=document.form2.e.value;';
                             ?>
-                            <div class="form-group required">
+                            <div class="form-group required display-none">
                                 <label class="label"><?php echo $hesklang['email']; ?></label>
                                 <input type="email" class="form-control" name="e" size="35" value="<?php echo $email; ?>" required>
                                 <div class="form-control__error"><?php echo $hesklang['this_field_is_required']; ?></div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group display-none">
                                 <div class="checkbox-custom">
                                     <input type="hidden" name="f" value="1">
                                     <input type="checkbox" name="r" value="Y" id="inputRememberMyEmail" <?php if ($rememberEmail) { ?>checked<?php } ?>>
@@ -368,9 +368,17 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                 return defaultValue;
                             },
                             getHeskURL(uri) {
+                                let str_trim_slashes = globalThis?.Helpers?.str_trim_slashes || ((string) => string.trim().replaceAll(/^\/|\/$/ig, ''));
                                 let url = new URL(globalThis.HESK_BASE_URL || location.origin);
                                 uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
-                                return url.href + (uri ? `/${uri}` : '');
+
+                                return [
+                                    url.href,
+                                    (uri ? `${uri}` : ''),
+                                ]
+                                .map(item => str_trim_slashes(item))
+                                .filter(item => item)
+                                .join('/');
                             },
                             invalidateToken(message = null) {
                                 return globalThis.Customer_API.invalidateToken();

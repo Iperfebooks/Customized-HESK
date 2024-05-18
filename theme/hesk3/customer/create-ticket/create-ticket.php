@@ -133,13 +133,15 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                             <label class="label required"><?php echo $hesklang['name']; ?>:</label>
                             <input type="text" name="name" class="form-control <?php if (in_array('name',$_SESSION['iserror'])) {echo 'isError';} ?>" maxlength="50" value="<?php if (isset($_SESSION['c_name'])) {echo stripslashes(hesk_input($_SESSION['c_name']));} ?>" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group display-none">
                             <label class="label <?php if ($hesk_settings['require_email']) { ?>required<?php } ?>"><?php echo $hesklang['email']; ?>:</label>
                             <input type="<?php echo $hesk_settings['multi_eml'] ? 'text' : 'email'; ?>"
                                    class="form-control <?php if (in_array('email',$_SESSION['iserror'])) {echo 'isError';} elseif (in_array('email',$_SESSION['isnotice'])) {echo 'isNotice';} ?>"
                                    name="email" id="email" maxlength="1000"
                                    value="<?php if (isset($_SESSION['c_email'])) {echo stripslashes(hesk_input($_SESSION['c_email']));} ?>" <?php if($hesk_settings['detect_typos']) { echo ' onblur="HESK_FUNCTIONS.suggestEmail(\'email\', \'email_suggestions\', 0)"'; } ?>
-                                   <?php if ($hesk_settings['require_email']) { ?>required<?php } ?>>
+                                   <?php if ($hesk_settings['require_email']) { ?>required<?php } ?>
+                                   data-customer-info="customerEmail"
+                            >
                             <div id="email_suggestions"></div>
                         </div>
                         <?php if ($hesk_settings['confirm_email']): ?>

@@ -29,3 +29,24 @@ globalThis.Helpers['str_trim_slashes'] = (string) => {
 
     return string.trim().replaceAll(/^\/|\/$/ig, '')
 }
+
+globalThis.Helpers['tryUrl'] = (url, defaultValue = null) => {
+    try {
+        return new URL(url);
+    } catch (error) {
+       return defaultValue;
+    }
+}
+
+globalThis.Helpers['urlMaker'] = (baseUrl = null, uri = '') => {
+    let url = globalThis.Helpers['tryUrl'](baseUrl || location.origin);
+    uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';
+
+    return [
+        url.href,
+        (uri ? `${uri}` : ''),
+    ]
+    .map(item => globalThis?.Helpers['str_trim_slashes'](item))
+    .filter(item => item)
+    .join('/');
+}

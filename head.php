@@ -21,4 +21,5 @@ globalThis.CUSTOMER_API_BASE_URL = "<?= hesk_settings_get('customer_api_base_url
     media="all"
     href="<?= hesk_url() ?>/css/app<?= hesk_settings_get('debug_mode') ? '' : '.min'; ?>.css?<?= hesk_settings_get('hesk_version'); ?>"
 >
-<link rel="stylesheet" media="all" href="<?= hesk_url() ?>/css/style.css?<?= date('his') ?>">
+
+<link rel="stylesheet" media="all" href="<?= hesk_url('/css/styles.css') ?>?<?= date('his') ?>">
