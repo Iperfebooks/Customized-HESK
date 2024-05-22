@@ -18,6 +18,12 @@ define('HESK_PATH','../');
 require(HESK_PATH . 'hesk_settings.inc.php');
 require_once HESK_PATH . 'inc/common.inc.php';
 require(HESK_PATH . 'inc/admin_functions.inc.php');
+
+if (!defined('TEMPLATE_PATH')) {
+    define('TEMPLATE_PATH', HESK_PATH . "theme/{$hesk_settings['site_theme']}/");
+}
+
+
 hesk_load_database_functions();
 
 hesk_session_start();
