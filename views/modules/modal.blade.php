@@ -4,15 +4,46 @@ $triggerLabel ??= $title ?: 'Modal';
 $body ??= '';
 $footer ??= '';
 $uid ??= 'form_' . uniqid();
+
+$wraperTag ??= 'div';
+$wraperTag = in_array($wraperTag, ['li', 'div']) ? $wraperTag : 'div';
+
+$triggerTag ??= 'button';
+$triggerTag = in_array($triggerTag, ['li', 'button', 'div', 'span', 'a']) ? $triggerTag : 'button';
+
+$triggerClass ??= [];
+$triggerClass = is_array($triggerClass) || is_string($triggerClass) ? $triggerClass : [];
+$triggerClass = is_string($triggerClass) ? explode(' ', $triggerClass) : $triggerClass;
+$triggerClass = array_filter($triggerClass);
+
+foreach ($triggerClass as $key => $value) {
+    unset($triggerClass[$key]);
+    $key = is_numeric($key) ? $value : $key;
+    $key = is_string($key) && trim($key) ? trim($key) : null;
+    $value = is_string($value) && trim($value) ? trim($value) : null;
+
+    if (is_null($key) || is_null($value)) {
+        continue;
+    }
+
+    $triggerClass[$key] = $value;
+}
+
+$triggerClass = implode(' ', $triggerClass);
 @endphp
-<div
+
+<{{ $wraperTag }}
     x-data="{
         show: false,
     }"
     data-form-uid="{{ $uid }}"
 >
     <!-- Trigger Button -->
-    <button type="button" x-on:click.stop="show = true">{{ $triggerLabel }}</button>
+    <{{ $triggerTag }}
+        @if($triggerTag === 'button') type="button" @endif
+        x-on:click.stop="show = true"
+        class="{{ $triggerClass ?? '' }}"
+    >{{ $triggerLabel }}</{{ $triggerTag }}>
     <!-- Modal Structure -->
     <div
         class="custom-modal"
@@ -31,4 +62,4 @@ $uid ??= 'form_' . uniqid();
             <div class="custom-modal-footer"><?= $footer ?? null ?></div>
         </div>
     </div>
-</div>
+</{{ $wraperTag }}>

@@ -195,13 +195,15 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                 >
                                     <ul style="">
                                         <li x-text="CUSTOMER_DATA?.name"></li>
-                                        <li>
-                                        <?= blade_view('modules.modal', [
-                                            'title' => 'Change password',
-                                            'body' => blade_view('login.update-password-form', []),
-                                            'uid' => 'update-password-form',
-                                        ]) ?>
-                                        </li>
+                                            <?= blade_view('modules.modal', [
+                                                'body' => blade_view('login.update-password-form', []),
+                                                'uid' => 'update-password-form',
+                                                'title' => 'Change password',
+                                                'wraperTag' => 'li',
+                                                'triggerLabel' => 'Change password',
+                                                'triggerTag' => 'div',
+                                                'triggerClass' => 'update-password-form',
+                                            ]) ?>
                                         <li x-on:click="logout">Sair</li>
                                     </ul>
                                 </div>
