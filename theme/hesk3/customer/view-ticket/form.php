@@ -198,9 +198,9 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                             <?= blade_view('modules.modal', [
                                                 'body' => blade_view('login.update-password-form', []),
                                                 'uid' => 'update-password-form',
-                                                'title' => 'Change password',
+                                                'title' => 'Alterar senha',
                                                 'wraperTag' => 'li',
-                                                'triggerLabel' => 'Change password',
+                                                'triggerLabel' => 'Alterar senha',
                                                 'triggerTag' => 'div',
                                                 'triggerClass' => 'update-password-form',
                                             ]) ?>

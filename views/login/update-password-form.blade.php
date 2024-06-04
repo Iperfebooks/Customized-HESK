@@ -84,7 +84,7 @@
             x-bind:class="{
                 disabled: !canSubmit,
             }"
-        >Update password</button>
+        >Confirmar alteração</button>
     </div>
     <script>
         document.addEventListener('alpine:init', () => {
