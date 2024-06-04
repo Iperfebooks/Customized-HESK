@@ -38,6 +38,20 @@ globalThis.Helpers['tryUrl'] = (url, defaultValue = null) => {
     }
 }
 
+globalThis.Helpers['isAValidUrl'] = (url) => {
+    try {
+        new URL(url);
+
+        return true;
+    } catch(error) {
+        return false;
+    }
+}
+
+globalThis.Helpers['generateUrl'] = (url) => {
+    return globalThis.Helpers['isAValidUrl'](url) ? new URL(url) : null;
+}
+
 globalThis.Helpers['urlMaker'] = (baseUrl = null, uri = '') => {
     let url = globalThis.Helpers['tryUrl'](baseUrl || location.origin);
     uri = uri && typeof uri === 'string' && uri.trim() ? uri.trim() : '';

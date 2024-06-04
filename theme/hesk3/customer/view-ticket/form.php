@@ -195,6 +195,13 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                 >
                                     <ul style="">
                                         <li x-text="CUSTOMER_DATA?.name"></li>
+                                        <li>
+                                        <?= blade_view('modules.modal', [
+                                            'title' => 'Change password',
+                                            'body' => blade_view('login.update-password-form', []),
+                                            'uid' => 'update-password-form',
+                                        ]) ?>
+                                        </li>
                                         <li x-on:click="logout">Sair</li>
                                     </ul>
                                 </div>
@@ -263,23 +270,10 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                         >
                                             <tr>
                                                 <td colspan="100%">
-                                                    <div class="nav pagination-container">
-                                                        <template
-                                                            x-for="link in links"
-                                                        >
-                                                            <button
-                                                                type="button"
-                                                                class="pagination-item"
-                                                                x-bind:disabled="!link?.url"
-                                                                x-bind:class="{
-                                                                    active: link?.active,
-                                                                    'disabled inactive': !link?.url,
-                                                                }"
-                                                                x-on:click.prevent="fetchFromLink(link)"
-                                                                x-html="link?.label"
-                                                            ></button>
-                                                        </template>
-                                                    </div>
+                                                    <div
+                                                        class="nav pagination-container"
+                                                        x-html="paginationContent"
+                                                    ></div>
                                                 </td>
                                             </tr>
                                         </template>
@@ -336,6 +330,31 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                             get links() {
                                 let links = this.response?.links || [];
                                 return links && Array.isArray(links) ? links : [];
+                            },
+                            get paginationContent() {
+                                let links = this.links || [];
+                                links = links && Array.isArray(links) ? links : [];
+                                let buttons = [];
+
+                                for (let link of links) {
+                                    let button = document.createElement('button');
+                                    button.setAttribute('type', 'button');
+                                    button.disabled = !link?.url ? true : false;
+                                    button.innerHTML = link?.label || '';
+                                    button.setAttribute('x-on:click.prevent', `fetchFromLink('${link?.url}')`);
+
+                                    button.classList.add(
+                                        ...([
+                                            'pagination-item',
+                                            link?.active ? 'active' : null,
+                                            !link?.url ? 'disabled inactive' : null,
+                                        ].join(' ').split(' ').filter(item => item)),
+                                    );
+
+                                    buttons.push(button.outerHTML);
+                                }
+
+                                return buttons.join('');
                             },
                             validString(value, defaultValue = null) {
                                 value = value && typeof value === 'string' && value.trim() ? value.trim() : null;
@@ -424,17 +443,19 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                 document.querySelector('form[action="ticket.php"]')?.submit();
                             },
                             async fetchFromLink(link) {
+                                link = link ? globalThis.Helpers['generateUrl'](link) : null;
+
                                 if (!link || typeof link !== 'object' || Array.isArray(link)) {
                                     return;
                                 }
 
-                                let {url} = (link || {});
+                                let {href} = (link || {});
 
-                                if (!url) {
+                                if (!href) {
                                     return;
                                 }
 
-                                await this.fetchTickets(url);
+                                await this.fetchTickets(href);
                             },
                             async fetchTickets(url = null) {
                                 url = url || this.getUrl('/tickets');
@@ -481,10 +502,9 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
 
                 <div>
                     <?php
-                    view_content('login/form', [], true);
-                    // view_content('modules/modal.view.php', [
+                    // view_render('modules.modal', [
                     //     'title' => 'Login',
-                    //     'body' => view_content('login/form', [], true),
+                    //     'body' => blade_view('login.form', []),
                     // ]);
                     ?>
                 </div>

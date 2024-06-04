@@ -1,11 +1,17 @@
 <?php
 
+use Jenssegers\Blade\Blade;
+
 if (!defined('HESK_REALPATH_PATH')) {
     define('HESK_REALPATH_PATH', realpath(__DIR__ . '/../..'));
 }
 
 if (!defined('VIEWS_DIR')) {
     define('VIEWS_DIR', HESK_REALPATH_PATH . '/views');
+}
+
+if (!defined('VIEWS_CACHE_DIR')) {
+    define('VIEWS_CACHE_DIR', HESK_REALPATH_PATH . '/cache/views-cache');
 }
 
 if (!function_exists('views_dir')) {
@@ -21,6 +27,37 @@ if (!function_exists('views_dir')) {
         }
 
         return trim(rtrim(HESK_REALPATH_PATH . '/views', '/\\'));
+    }
+}
+
+if (!function_exists('views_cache_dir')) {
+    /**
+     * function views_cache_dir
+     *
+     * @return string
+     */
+    function views_cache_dir(): string
+    {
+        if (defined('VIEWS_CACHE_DIR')) {
+            return trim(rtrim(VIEWS_CACHE_DIR, '/\\'));
+        }
+
+        return trim(rtrim(HESK_REALPATH_PATH . '/cache/views-cache', '/\\'));
+    }
+}
+
+if (!function_exists('blade')) {
+    /**
+     * function blade
+     *
+     * @return Blade
+     */
+    function blade(): Blade
+    {
+        return new Blade(
+            views_dir(),
+            views_cache_dir(),
+        );
     }
 }
 
@@ -63,43 +100,45 @@ if (!function_exists('view_content')) {
         extract($data);
         $path = view_path($view);
         $content = function () use ($path) {
-            return file_get_contents($path);
+            return require $path;
         };
 
-        $content();
+        $content = $content();
 
-        // $content = rtrim($content, '1');
+        $content = rtrim($content, '1');
 
         if ($return) {
-            // return $content;
+            return $content;
         }
 
-        // echo $content;
+        echo $content;
 
         return null;
     }
 }
 
-if (!function_exists('view')) {
+if (!function_exists('blade_view')) {
     /**
-     * function view
+     * function blade_view
      *
      * @param string $view
      * @param array $data
-     * @param bool $return
+     * @param bool $render
      *
-     * @return ?string
+     * @render Blade|string
      */
-    function view(
+    function blade_view(
         string $view,
         array $data = [],
-        bool $return = true,
-    ): ?string {
-        return view_content(
-            $view,
-            $data,
-            $return,
-        );
+        bool $render = false,
+    ): Blade|string {
+        $blade = blade()->make($view, $data);
+
+        if (!$render) {
+            return $blade;
+        }
+
+        return $blade->render();
     }
 }
 
@@ -116,6 +155,6 @@ if (!function_exists('view_render')) {
         string $view,
         array $data = [],
     ): void {
-        echo view_content($view, $data, true);
+        echo blade_view($view, $data, true);
     }
 }

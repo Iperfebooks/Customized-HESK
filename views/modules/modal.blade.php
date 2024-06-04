@@ -1,16 +1,18 @@
-<?php
+@php
 $title ??= '';
-$triggerLabel ??= 'Modal';
+$triggerLabel ??= $title ?: 'Modal';
 $body ??= '';
 $footer ??= '';
-?>
+$uid ??= 'form_' . uniqid();
+@endphp
 <div
     x-data="{
         show: false,
     }"
+    data-form-uid="{{ $uid }}"
 >
     <!-- Trigger Button -->
-    <button type="button" x-on:click.stop="show = true"><?= $triggerLabel ?></button>
+    <button type="button" x-on:click.stop="show = true">{{ $triggerLabel }}</button>
     <!-- Modal Structure -->
     <div
         class="custom-modal"
