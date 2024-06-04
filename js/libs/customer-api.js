@@ -50,6 +50,32 @@ globalThis.Customer_API = {
             this.invalidateToken();
         })
     },
+    async updatePassword(formData) {
+        if (!this.API_TOKEN) {
+            console.log('this.API_TOKEN', this.API_TOKEN);
+            this.invalidateToken('Token inválido');
+            return;
+        }
+
+        if (
+            !formData
+            || typeof formData !== 'object'
+            || Array.isArray(formData)
+        ) {
+            console.log('Invalid form data');
+            return null;
+        }
+
+        return await fetch(this.getUrl('/customers/auth/update-password'), {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${this.API_TOKEN}`,
+            },
+            body: JSON.stringify(formData),
+        });
+    },
     getUrl(uri = '') {
         let str_trim_slashes = globalThis?.Helpers?.str_trim_slashes || ((string) => string.trim().replaceAll(/^\/|\/$/ig, ''));
         let url = new URL(this.BASE_API);
