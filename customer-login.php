@@ -81,7 +81,12 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
 
             <div class="form-footer">
                 <button type="submit" class="btn btn-full" ripple="ripple">Login<div class="ripple--container"></div></button>
-                <a href="ticket.php?forgot=1#modal-contents" data-modal="#forgot-modal" class="link">Esqueceu sua senha?</a>
+                <a
+                    href="ticket.php?forgot=1#modal-contents"
+                    data-modal="#forgot-modal"
+                    class="link"
+                    style="display: none;"
+                >Esqueceu sua senha?</a>
             </div>
         </form>
         <!-- BEGIN Lista de chamados -->

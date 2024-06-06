@@ -25,7 +25,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
 <html lang="en">
 
 <head>
-    <!-- <?= ltrim(str_replace(HESK_BASE_PATH, '', __FILE__), '/\\') ?> -->
+    <!-- <?= ltrim(str_replace(constant('HESK_BASE_PATH'), '', __FILE__), '/\\') ?> -->
     <meta charset="utf-8" />
     <title><?php echo $hesk_settings['hesk_title']; ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -193,7 +193,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                                         show: open,
                                     }"
                                 >
-                                    <ul style="">
+                                    <ul>
                                         <li x-text="CUSTOMER_DATA?.name"></li>
                                             <?= blade_view('modules.modal', [
                                                 'body' => blade_view('login.update-password-form', []),
