@@ -179,7 +179,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
                     localStorage.setItem('customer_access_token', JSON.stringify(access_token));
                     localStorage.setItem('customer_data', data?.customer ? JSON.stringify(data?.customer) : '');
 
-                    location.href = getHeskURL('/');
+                    location.href = getHeskURL('ticket.php');
 
                     return;
                 }
