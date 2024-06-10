@@ -218,7 +218,7 @@ $onload='';
 	?>
 
     <script type="text/javascript" src="<?php echo HESK_PATH; ?>js/zebra_tooltips.min.js?<?php echo $hesk_settings['hesk_version']; ?>"></script>
-    <link rel="stylesheet" href="<?= hesk_url() ?>//zebra_tooltips.css">
+    <link rel="stylesheet" href="<?= hesk_url() ?>/css/zebra_tooltips.css">
     <script type="text/javascript">
     $(document).ready(function() {
         // show tooltips for any element that has a class named "tooltip"
