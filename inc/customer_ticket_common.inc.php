@@ -3,6 +3,15 @@
  * Custom file
  */
 
+// Get all the required files and functions
+require(HESK_PATH . 'hesk_settings.inc.php');
+
+if (!defined('TEMPLATE_PATH')) {
+    define('TEMPLATE_PATH', HESK_PATH . "theme/{$hesk_settings['site_theme']}/");
+}
+
+require_once HESK_PATH . 'inc/common.inc.php';
+
 /* Check if this is a valid include */
 if (!defined('IN_SCRIPT')) {
     die('Invalid attempt');
