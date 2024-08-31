@@ -19,7 +19,7 @@ if (defined('SHOW_ONLINE'))
 {
     hesk_printOnline();
 }
-require HESK_PATH . 'hesk/hidden-footer.php';
+require HESK_BASE_PATH . '/hidden-footer.php';
 ?>
 </main> <!-- End main -->
 <?php

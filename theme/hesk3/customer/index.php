@@ -262,7 +262,7 @@ require_once(TEMPLATE_PATH . 'customer/util/rating.php');
             </div>
         </div>
 <?php
-require HESK_PATH . 'hesk/hidden-footer.php';
+require HESK_BASE_PATH . '/hidden-footer.php';
 ?>
     </main>
 </div>
