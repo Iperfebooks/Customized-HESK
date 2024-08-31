@@ -38,6 +38,8 @@
     -webkit-mask-composite: source-out;
     mask-composite: subtract;
     animation: l3 1s infinite linear;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes l3 {
