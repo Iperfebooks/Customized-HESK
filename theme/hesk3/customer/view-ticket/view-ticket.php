@@ -267,7 +267,7 @@ require(TEMPLATE_PATH . 'customer/view-ticket/partial/add-reply.php');
             </div>
         </div>
 <?php
-require HESK_BASE_PATH . '/hesk/hidden-footer.php';
+require HESK_BASE_PATH . '/hidden-footer.php';
 ?>
     </main>
 </div>

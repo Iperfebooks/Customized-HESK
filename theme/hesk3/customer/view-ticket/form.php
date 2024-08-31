@@ -589,7 +589,7 @@ if (is_file(HESK_PATH . 'inc/customer_ticket_common.inc.php')) {
             </div>
         </div>
 <?php
-require HESK_BASE_PATH . '/hesk/hidden-footer.php';
+require HESK_BASE_PATH . '/hidden-footer.php';
 ?>
     </main>
 </div>
