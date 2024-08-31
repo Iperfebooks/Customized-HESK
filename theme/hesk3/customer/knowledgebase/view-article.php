@@ -236,7 +236,7 @@ require_once(TEMPLATE_PATH . 'customer/util/kb-search.php');
             </div>
         </div>
 <?php
-require HESK_PATH . 'hesk/hidden-footer.php';
+require HESK_BASE_PATH . '/hesk/hidden-footer.php';
 ?>
     </main>
 </div>
