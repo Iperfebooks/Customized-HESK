@@ -1,4 +1,8 @@
 <?php
+
+require_once HESK_PATH . 'hesk_settings.inc.php';
+require_once HESK_PATH . 'default_hesk_settings.inc.php';
+
 /**
  *
  * This file is part of HESK - PHP Help Desk Software.
@@ -10,6 +14,10 @@
  * https://www.hesk.com/eula.php
  *
  */
+
+if (!defined('HESK_BASE_PATH')) {
+    define('HESK_BASE_PATH', realpath(__DIR__ . '/..'));
+}
 
 /* Check if this is a valid include */
 if (!defined('IN_SCRIPT')) {die('Invalid attempt');}

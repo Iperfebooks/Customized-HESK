@@ -6,6 +6,10 @@
 // Get all the required files and functions
 require(HESK_PATH . 'hesk_settings.inc.php');
 
+if (!defined('HESK_BASE_PATH')) {
+    define('HESK_BASE_PATH', realpath(__DIR__ . '/..'));
+}
+
 if (!defined('TEMPLATE_PATH')) {
     define('TEMPLATE_PATH', HESK_PATH . "theme/{$hesk_settings['site_theme']}/");
 }
