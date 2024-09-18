@@ -57,7 +57,7 @@ a.btn, .not-underlined {
 }
 
 th>a, h3>a {
-    color: #133e5e;
+    color: #2c59a4;
     text-decoration: none;
 }
 
@@ -91,13 +91,13 @@ a:hover {
 .icon-actions {
     width: 1.23em;
     height: 1em;
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .icon-add {
     width: 1em;
     height: 1em;
-    fill: #2c70a2;
+    fill: #2c59a4;
 }
 
 .icon-anonymize {
@@ -133,7 +133,7 @@ a:hover {
 .icon-back {
     width: 3.33em;
     height: 1em;
-    fill: #133e5e;
+    fill: #2c59a4;
 }
 
 .icon-calendar {
@@ -182,7 +182,7 @@ a:hover {
 .icon-close {
     width: 1em;
     height: 1em;
-    fill: #133e5e;
+    fill: #2c59a4;
 }
 
 .icon-cross {
@@ -200,7 +200,7 @@ a:hover {
 .icon-dismiss {
     width: 1em;
     height: 1em;
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .icon-down {
@@ -212,13 +212,13 @@ a:hover {
 .icon-edit-ticket {
     width: 1em;
     height: 1em;
-    fill: #2c70a2;
+    fill: #2c59a4;
 }
 
 .icon-edit {
     width: 1em;
     height: 1em;
-    fill: #2c70a2;
+    fill: #2c59a4;
 }
 
 .icon-export {
@@ -242,7 +242,7 @@ a:hover {
 .icon-filters {
     width: 1em;
     height: 1em;
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .icon-info {
@@ -500,7 +500,7 @@ a:hover {
 .icon-tick {
     width: 1.38em;
     height: 1em;
-    fill: #133e5e;
+    fill: #2c59a4;
 }
 
 .icon-tickets {
@@ -641,7 +641,7 @@ a:hover {
 }
 
 .selectize-dropdown, .selectize-input, .selectize-input input {
-    color: #2c70a2;
+    color: #2c59a4;
     font-family: inherit;
     font-size: 13px;
     line-height: 18px;
@@ -856,7 +856,7 @@ a:hover {
     height: 0;
     border-style: solid;
     border-width: 5px 5px 0;
-    border-color: #2c70a2 transparent transparent;
+    border-color: #2c59a4 transparent transparent;
 }
 
 .selectize-control.single .selectize-input.dropdown-active:after {
@@ -887,7 +887,7 @@ a:hover {
 }
 
 .selectize-input.input-active {
-    border: solid 1px #2c70a2!important
+    border: solid 1px #2c59a4!important
 }
 
 .selectize-input:hover {
@@ -914,7 +914,7 @@ a:hover {
 
 .selectize-control .selectize-input {
     border-radius: 2px;
-    border: solid 1px #2c70a2;
+    border: solid 1px #2c59a4;
     box-shadow: none;
     min-width: 100px;
     padding: 0 30px 0 12px;
@@ -953,11 +953,11 @@ a:hover {
     align-items: center;
     height: 40px;
     padding: 0 32px 0 16px;
-    color: #133e5e;
+    color: #2c59a4;
 }
 
 .selectize-control .selectize-dropdown .option.active {
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     color: #fff;
 }
 
@@ -1140,7 +1140,7 @@ a:hover {
     box-sizing: content-box;
     font-family: Tahoma, sans-serif;
     font-size: 14px;
-    color: #133e5e;
+    color: #2c59a4;
     width: 250px;
     position: absolute;
     left: -100000px;
@@ -1680,7 +1680,7 @@ picture source, picture img {
 }
 
 a {
-    color: #133e5e;
+    color: #2c59a4;
     transition: color 100ms ease;
 }
 
@@ -1790,7 +1790,7 @@ img:not([src]):not([srcset]) {
 }
 
 .link {
-    color: #2c70a2;
+    color: #2c59a4;
 }
 
 .d-flex {
@@ -1819,7 +1819,7 @@ img:not([src]):not([srcset]) {
 }
 
 .c_battleship-grey {
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .badge {
@@ -1854,12 +1854,12 @@ img:not([src]):not([srcset]) {
 }
 
 .dropdown .icon-chevron-down, .dropdown-select .icon-chevron-down {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .dropdown label, .dropdown-select label {
     cursor: pointer;
-    color: #133e5e;
+    color: #2c59a4;
     white-space: nowrap;
 }
 
@@ -1868,7 +1868,7 @@ img:not([src]):not([srcset]) {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    color: #133e5e;
+    color: #2c59a4;
     cursor: pointer;
 }
 
@@ -1968,7 +1968,7 @@ img:not([src]):not([srcset]) {
     position: absolute;
     top: 100%;
     z-index: 100;
-    border: 1px solid #2c70a2;
+    border: 1px solid #2c59a4;
 }
 
 .dropdown .dropdown-list .separator, .dropdown-select .dropdown-list .separator {
@@ -1984,7 +1984,7 @@ img:not([src]):not([srcset]) {
     align-items: center;
     white-space: nowrap;
     padding: 0 16px;
-    color: #133e5e;
+    color: #2c59a4;
 }
 
 .dropdown .dropdown-list>li {
@@ -2002,7 +2002,7 @@ img:not([src]):not([srcset]) {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    color: #133e5e;
+    color: #2c59a4;
 }
 
 .dropdown .dropdown-list>li a {
@@ -2025,7 +2025,7 @@ img:not([src]):not([srcset]) {
 }
 
 .dropdown .dropdown-list>li:hover, .dropdown-select .dropdown-list>li:hover {
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     color: #fff !important;
 }
 
@@ -2107,7 +2107,7 @@ body.noscroll {
 }
 
 .modal .modal__body .modal__close:hover .icon-close {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .modal .modal__body h3 {
@@ -2223,24 +2223,24 @@ button {
 
 .btn-transparent {
     background-color: #fff;
-    border: 1px solid #133e5e;
+    border: 1px solid #2c59a4;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: .1px;
-    color: #133e5e;
+    color: #2c59a4;
 }
 
 .btn-transparent:hover {
-    background-color: #2c70a2;
-    border: 1px solid #133e5e;
+    background-color: #2c59a4;
+    border: 1px solid #2c59a4;
     color: #fff;
 }
 
 .btn.cancel {
     width: 120px;
     height: 40px;
-    border: 1px solid #002d73;
-    color: #002d73
+    border: 1px solid #2c59a4;
+    color: #2c59a4
 }
 
 .btn-empty {
@@ -2250,11 +2250,11 @@ button {
 .btn-full {
     min-width: 152px;
     height: 40px;
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     color: #fff;
     font-weight: 600;
     transition: all 100ms ease;
-    border: 1px solid #133e5e;
+    border: 1px solid #2c59a4;
 }
 
 .btn-full.inline-flex {
@@ -2263,7 +2263,7 @@ button {
 }
 
 .btn-full:hover {
-    background-color: #133e5e
+    background-color: #1483c5;
 }
 
 .btn-full.disabled, .btn-full:disabled {
@@ -2273,7 +2273,7 @@ button {
 }
 
 .btn--blue {
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .btn--blue .icon {
@@ -2283,8 +2283,8 @@ button {
 .btn-border {
     min-width: 152px;
     height: 40px;
-    border: 1px solid #2c70a2;
-    color: #002d73;
+    border: 1px solid #2c59a4;
+    color: #2c59a4;
     padding: 0;
     background-color: #e9f0f3;
 }
@@ -2295,22 +2295,22 @@ button {
     display: -ms-inline-flexbox;
     display: inline-flex;
     height: 48px;
-    border: 1px solid #2c70a2;
-    color: #2c70a2;
+    border: 1px solid #2c59a4;
+    color: #2c59a4;
     font-weight: 600;
     background-color: #fff;
 }
 
 .btn--blue-border:hover {
-    border-color: #133e5e;
-    background-color: #2c70a2 !important;
+    border-color: #1483c5;
+    background-color: #1483c5 !important;
     color: #fff;
 }
 
 .btn-banner {
     min-width: 176px;
     background-color: #f0f2f5;
-    color: #002d73;
+    color: #2c59a4;
     font-weight: 600
 }
 
@@ -2367,7 +2367,7 @@ button {
 }
 
 ::-webkit-input-placeholder {
-    color: #2c70a2;
+    color: #2c59a4;
 }
 
 ::-moz-placeholder {
@@ -2439,7 +2439,7 @@ input::-ms-clear {
 }
 
 .input-group-append--icon:hover .icon {
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .input-group-append--icon .icon {
@@ -2459,7 +2459,7 @@ input::-ms-clear {
 .form-group label {
     display: block;
     margin-bottom: 4px;
-    color: #133e5e;
+    color: #2c59a4;
 }
 
 .isError > label {
@@ -2489,7 +2489,7 @@ input::-ms-clear {
     padding: 4px 12px;
     font-size: 14px;
     border-radius: 2px;
-    border: solid 1px #2c70a2;
+    border: solid 1px #2c59a4;
     background-color: #f1f9ff;
     font-weight: 400;
     font-style: normal;
@@ -2498,7 +2498,7 @@ input::-ms-clear {
     letter-spacing: .1px;
     -webkit-appearance: none;
     outline: none;
-    color: #133e5e;
+    color: #2c59a4;
     transition: all 100ms ease;
 }
 
@@ -2534,7 +2534,7 @@ input::-ms-clear {
 
 .form input.form-control:focus, .form textarea.form-control:focus, .form select.form-control:focus {
     color: #000;
-    border-color: #2c70a2;
+    border-color: #2c59a4;
     outline: none;
     box-shadow: none;
 }
@@ -2645,7 +2645,7 @@ input::-ms-clear {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #002d73;
+    color: #2c59a4;
     height: 40px;
     transition: all 100ms ease;
     padding: 0 16px;
@@ -2685,7 +2685,7 @@ input::-ms-clear {
     font-stretch: normal;
     line-height: 1.5;
     letter-spacing: .1px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .form__search .form__search_results .results--list {
@@ -2725,7 +2725,7 @@ input::-ms-clear {
 }
 
 .form__search .form__search_results .results--list li a {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -2738,11 +2738,11 @@ input::-ms-clear {
 }
 
 .form__search.focus .icon-search {
-    fill: #002d73!important
+    fill: #2c59a4!important
 }
 
 .form__search.value .icon-search {
-    fill: #002d73!important
+    fill: #2c59a4!important
 }
 
 .form__search.value .search-clear {
@@ -2797,19 +2797,19 @@ input::-ms-clear {
 }
 
 .form__search .form__control:hover::-webkit-input-placeholder {
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .form__search .form__control:hover::-moz-placeholder {
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .form__search .form__control:hover:-ms-input-placeholder {
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .form__search .form__control:hover:-moz-placeholder {
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .form__search.type .form__control {
@@ -2840,7 +2840,7 @@ input::-ms-clear {
     cursor: pointer;
     line-height: 1.2;
     letter-spacing: normal;
-    color: #2c70a2;
+    color: #2c59a4;
 }
 
 .checkbox-custom [type='checkbox']:checked+label {
@@ -2849,7 +2849,7 @@ input::-ms-clear {
     cursor: pointer;
     line-height: 1.2;
     letter-spacing: normal;
-    color: #002d73
+    color: #2c59a4
 }
 
 .checkbox-custom [type='checkbox']:checked+label:before, .checkbox-custom [type='checkbox']:not(:checked)+label:before {
@@ -2861,7 +2861,7 @@ input::-ms-clear {
     height: 16px;
     border-radius: 2px;
     background: #fff;
-    border: 1px solid #2c70a2;
+    border: 1px solid #2c59a4;
     /* color: #fff; */
 }
 
@@ -2923,7 +2923,7 @@ input::-ms-clear {
     cursor: pointer;
     line-height: 1.2;
     letter-spacing: normal;
-    color: #2c70a2;
+    color: #2c59a4;
 }
 
 .radio-custom [type='radio']:checked+label:before, .radio-custom [type='radio']:not(:checked)+label:before {
@@ -2936,7 +2936,7 @@ input::-ms-clear {
     border-radius: 2px;
     background: #fff;
     border-radius: 50%;
-    border: 1px solid #133e5e;
+    border: 1px solid #2c59a4;
 }
 
 .radio-custom [type='radio']:checked+label:after, .radio-custom [type='radio']:not(:checked)+label:after {
@@ -2947,7 +2947,7 @@ input::-ms-clear {
     top: 4px;
     left: 4px;
     transition: all .2s ease;
-    background-color: #133e5e;
+    background-color: #2c59a4;
     border-radius: 50%;
 }
 
@@ -3031,7 +3031,7 @@ input::-ms-clear {
 }
 
 .select-items div:hover, .same-as-selected {
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .select-custom--stretched {
@@ -3139,7 +3139,7 @@ input::-ms-clear {
 }
 
 .switch-checkbox input[type="checkbox"]:checked+.switch-checkbox__bullet {
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     border-color: #092639;
 }
 
@@ -3166,7 +3166,7 @@ input::-ms-clear {
 .switch-checkbox a {
     margin-left: 16px;
     transition: all 100ms ease;
-    color: #2c70a2;
+    color: #2c59a4;
     line-height: 1.2
 }
 
@@ -3381,7 +3381,7 @@ input::-ms-clear {
 
 .table thead {
     height: 48px;
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     font-size: 10px;
     font-weight: 700;
     line-height: normal;
@@ -3556,7 +3556,7 @@ input::-ms-clear {
     top: 0;
     bottom: 0;
     left: 0;
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     border-top: 1px solid #bdd4e2;
 }
 
@@ -3568,7 +3568,7 @@ input::-ms-clear {
         top: 0;
         bottom: 0;
         left: 0;
-        background-color: #2c70a2
+        background-color: #2c59a4
     }
 }
 
@@ -3657,7 +3657,7 @@ input::-ms-clear {
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     font-size: 18px;
     font-weight: 700;
     font-style: normal;
@@ -3767,7 +3767,7 @@ input::-ms-clear {
     line-height: 1.57;
     letter-spacing: .1px;
     text-align: center;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -3775,7 +3775,7 @@ input::-ms-clear {
     margin: 0 0 4px;
     width: 24px;
     height: 24px;
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .table tbody .dropdown.assignment .dropdown-list li .assign__body>li a:hover {
@@ -3860,7 +3860,7 @@ input::-ms-clear {
     font-stretch: normal;
     line-height: 1.5;
     letter-spacing: .1px;
-    color: #002d73;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -3872,7 +3872,7 @@ input::-ms-clear {
 .tickets__mobile_head .btn .icon {
     width: 16px;
     height: 16px;
-    fill: #002d73
+    fill: #2c59a4
 }
 
 @media screen and (max-width: 899px) {
@@ -3933,7 +3933,7 @@ input::-ms-clear {
     font-size: 12px;
     background-color: #fff;
     transition: all 100ms ease;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .filters__listing .filter-item .item--body:hover {
@@ -3984,9 +3984,9 @@ input::-ms-clear {
 }
 
 .filters__listing .btn.is-selected {
-    border-color: #133e5e;
+    border-color: #2c59a4;
     box-shadow: 0 2px 8px 0 rgba(38, 40, 42, 0.1);
-    background-color: #133e5e;
+    background-color: #2c59a4;
     color: #fff;
 }
 
@@ -4246,11 +4246,11 @@ input::-ms-clear {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
-    /* color: #2c70a2; */
+    /* color: #2c59a4; */
 }
 
 .ticket__body_block .block--head .contact>span {
-    color: #2c70a2;
+    color: #2c59a4;
 }
 
 .ticket__body_block .block--head .contact b {
@@ -4301,11 +4301,11 @@ input::-ms-clear {
 }
 
 .ticket__body_block .block--head .contact .dropdown .dropdown-list li a {
-    color: #002d73
+    color: #2c59a4
 }
 
 .ticket__body_block .block--head .contact .dropdown .dropdown-list li.noclose a:hover {
-    color: #2c70a2;
+    color: #2c59a4;
 }
 
 .ticket__body_block .block--head .contact .dropdown .dropdown-list li a:hover {
@@ -4319,7 +4319,7 @@ input::-ms-clear {
 
 .ticket__body_block .block--head time {
     margin: 0 10px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .ticket__body_block .block--head .more {
@@ -4356,23 +4356,23 @@ input::-ms-clear {
 }
 
 .ticket__body_block .block--head .more a:hover {
-    color: #002d73;
+    color: #2c59a4;
 }
 
 .ticket__body_block .block--head .more a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .ticket__body_block .block--head .more label:hover>span {
-    color: #002d73
+    color: #2c59a4
 }
 
 .ticket__body_block .block--head .more label:hover>svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .ticket__body_block .block--head .more .dropdown-list a {
-    color: #002d73;
+    color: #2c59a4;
     -ms-flex-pack: normal;
     justify-content: normal
 }
@@ -4442,7 +4442,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .ticket__body_block .block--notes .note .note__head .name span {
@@ -4455,7 +4455,7 @@ p.rate {
 }
 
 .ticket__body_block .block--notes .note .note__head .name time {
-    color: #2c70a2;
+    color: #2c59a4;
     white-space: nowrap
 }
 
@@ -4484,7 +4484,7 @@ p.rate {
 }
 
 .ticket__body_block .block--notes .note .note__head .actions button:hover svg, .ticket__body_block .block--notes .note .note__head .actions a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .ticket__body_block .block--notes .note .note__description {
@@ -4521,7 +4521,7 @@ p.rate {
 }
 
 .ticket__body_block .block--uploads a {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -4562,7 +4562,7 @@ p.rate {
 
 .ticket__body_block .block--timer {
     height: 48px;
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -4675,7 +4675,7 @@ p.rate {
     letter-spacing: .1px;
     resize: vertical;
     transition: none;
-    border: 1px solid #2c70a2;
+    border: 1px solid #2c59a4;
 }
 
 .ticket__body_block .block--message textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -4707,7 +4707,7 @@ p.rate {
 }
 
 .ticket__body_block .block--message .placeholder a {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -4794,7 +4794,7 @@ p.rate {
 }
 
 .ticket__body_block .block--checkboxs .checkbox-custom .dropdown-select>span, .ticket__body_block .block--checkboxs .checkbox-custom .dropdown-select li {
-    color: #133e5e;
+    color: #2c59a4;
     transition: all 100ms ease;
 }
 
@@ -4816,15 +4816,15 @@ p.rate {
 }
 
 .ticket__body_block .block--checkboxs .checkbox-custom input[type="checkbox"]:checked+label::before {
-    border-color: #002d73
+    border-color: #2c59a4
 }
 
 .ticket__body_block .block--checkboxs .checkbox-custom input[type="checkbox"]:checked+label svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .ticket__body_block .block--checkboxs .checkbox-custom.checked .dropdown-select>span, .ticket__body_block .block--checkboxs .checkbox-custom.checked .dropdown-select li {
-    color: #002d73
+    color: #2c59a4
 }
 
 .ticket__body_block .block--submit {
@@ -4853,19 +4853,19 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .ticket__body_block .block--submit .submit-us span {
     margin-left: 6px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .ticket__body_block .block--submit .submit-us .icon-chevron-down {
     width: 8px;
     height: 8px;
     margin-left: 4px;
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .ticket__body_block .block--submit .submit-us .dropdown-list {
@@ -4887,7 +4887,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-align: center;
@@ -4914,7 +4914,7 @@ p.rate {
     margin-left: 8px;
     width: 8px;
     height: 8px;
-    fill: #2c70a2;
+    fill: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -4956,7 +4956,7 @@ p.rate {
     -ms-flex-align: center;
     align-items: center;
     flex-grow: 1;
-    color: #2c70a2;
+    color: #2c59a4;
 }
 
 .ticket__params .params--bar .modal__buttons a {
@@ -4964,18 +4964,18 @@ p.rate {
 }
 
 .ticket__params .params--bar a:hover {
-    color: #133e5e;
+    color: #2c59a4;
 }
 
 .ticket__params .params--bar a svg {
     width: 16px;
     height: 16px;
-    fill: #2c70a2;
+    fill: #2c59a4;
     margin-right: 10px;
 }
 
 .ticket__params .params--bar a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .ticket__params .params--bar .dropdown {
@@ -5005,13 +5005,13 @@ p.rate {
 .ticket__params .params--bar .dropdown label svg {
     width: 16px;
     height: 16px;
-    fill: #2c70a2;
+    fill: #2c59a4;
     transition: all 100ms ease;
     margin: 0;
 }
 
 .ticket__params .params--bar .dropdown:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .ticket__params .params--bar .dropdown .dropdown-list li a {
@@ -5075,7 +5075,7 @@ p.rate {
 }
 
 .ticket__params .params--block .row .title {
-    color: #133e5e;
+    color: #2c59a4;
     -ms-flex-negative: 0;
     flex-shrink: 0;
 }
@@ -5195,7 +5195,7 @@ p.rate {
 }
 
 .right-bar.filter-list .filter-list__section .section--title a {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -5241,7 +5241,7 @@ p.rate {
 }
 
 .right-bar.filter-list .filter-list__section .filter--search .form-group .search-clear:hover .icon {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .right-bar.filter-list .filter-list__section .filter--search .search--list {
@@ -5305,7 +5305,7 @@ p.rate {
 }
 
 .right-bar.filter-list .filter-switchers .form-switcher input[type="checkbox"]:checked+.switch-checkbox__bullet+span {
-    color: #002d73
+    color: #2c59a4
 }
 
 @media screen and (max-width: 899px) {
@@ -5406,7 +5406,7 @@ p.rate {
 }
 
 .right-bar.ticket-create .step-item.step-3 a {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -5461,7 +5461,7 @@ p.rate {
 
 .param.calendar label {
     margin-bottom: 4px;
-    color: #133e5e;
+    color: #2c59a4;
     margin-right: 8px;
 }
 
@@ -5482,7 +5482,7 @@ p.rate {
 .param.calendar .calendar--button button {
     width: 48px;
     height: 48px;
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     border: none;
     outline: none;
     display: -ms-flexbox;
@@ -5507,7 +5507,7 @@ p.rate {
 }
 
 .param.calendar .calendar--button button:hover {
-    border: 1px solid #2c70a2;
+    border: 1px solid #2c59a4;
     background-color: #fff;
 }
 
@@ -5523,7 +5523,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     padding-right: 25px;
     position: relative;
     display: none;
@@ -5550,13 +5550,13 @@ p.rate {
 }
 
 .calendar--value .close:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .param.calendar .calendar--value .close svg {
     width: 10px;
     height: 10px;
-    fill: #133e5e;
+    fill: #2c59a4;
     transition: all 100ms ease;
 }
 
@@ -5579,7 +5579,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.5;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     margin-right: 4px
 }
 
@@ -5599,7 +5599,7 @@ p.rate {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     position: absolute;
     top: 6px;
     left: 0
@@ -5637,7 +5637,7 @@ p.rate {
     line-height: 1.57;
     letter-spacing: .1px;
     padding: 0 16px;
-    color: #002d73;
+    color: #2c59a4;
     transition: all 100ms ease;
     cursor: pointer
 }
@@ -5695,7 +5695,7 @@ p.rate {
     margin-bottom: 12px;
     font-size: 12px;
     text-transform: uppercase;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .filter-list__footer {
@@ -5808,7 +5808,7 @@ p.rate {
 }
 
 .main__content.templates .ticket__list li a:hover svg, .main__content.templates .response__list li a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .template-create .template-create__body h3 a {
@@ -5846,7 +5846,7 @@ p.rate {
 }
 
 .template-create .template-create__body .template--type a {
-    color: #2c70a2;
+    color: #2c59a4;
     margin-left: 8px;
     transition: all 100ms ease
 }
@@ -5878,7 +5878,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     margin-bottom: 12px;
 }
 
@@ -5906,7 +5906,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.33;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     height: 28px;
     background-color: #f5f8ff;
     transition: all 100ms ease
@@ -6048,11 +6048,11 @@ p.rate {
 .main__content.categories .table-wrap tbody .generate a svg {
     width: 16px;
     height: 16px;
-    fill: #2c70a2;
+    fill: #2c59a4;
 }
 
 .main__content.categories .table-wrap tbody .generate a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.categories .table-wrap tbody .dropdown a {
@@ -6148,11 +6148,11 @@ p.rate {
 }
 
 .right-bar.category-create .category-create__select .dropdown-select span {
-    color: #002d73
+    color: #2c59a4
 }
 
 .right-bar.category-create .category-create__select .dropdown-select .icon-chevron-down {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .right-bar.category-create #select-users-window .autoassign-users {
@@ -6177,7 +6177,7 @@ p.rate {
 }
 
 .right-bar.category-create .category-create__autoassign .switch-checkbox input[type="checkbox"]:checked+.switch-checkbox__bullet+span {
-    color: #002d73
+    color: #2c59a4
 }
 
 @media screen and (max-width: 899px) {
@@ -6262,7 +6262,7 @@ p.rate {
 
 .main__content.team .table-wrap tbody a {
     transition: all 100ms ease;
-    color: #2c70a2;
+    color: #2c59a4;
     vertical-align: middle;
 }
 
@@ -6306,11 +6306,11 @@ p.rate {
 .main__content.team .table-wrap .buttons p a svg {
     width: 16px;
     height: 16px;
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .main__content.team .table-wrap .buttons p a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.team .table-wrap .assign {
@@ -6525,7 +6525,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -6561,7 +6561,7 @@ p.rate {
 
 .main__content.knowledge .knowledge__head .knowledge__head_buttons a {
     margin-left: 24px;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -6656,7 +6656,7 @@ p.rate {
 }
 
 .main__content.knowledge .knowledge__tabs .knowledge__list .item--head ul li a:hover .icon {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.knowledge .knowledge__tabs .knowledge__list .item--head ul li .icon {
@@ -6685,7 +6685,7 @@ p.rate {
 }
 
 .main__content.knowledge .knowledge__tabs .knowledge__list .item--list li h5 a {
-    color: #002d73;
+    color: #2c59a4;
     white-space: nowrap;
     overflow: hidden;
     display: block;
@@ -6702,7 +6702,7 @@ p.rate {
 }
 
 .main__content.knowledge .knowledge__tabs .knowledge__list .all a {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -6789,7 +6789,7 @@ p.rate {
 }
 
 .main__content.knowledge.category .category__list .category__list_head a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.knowledge.category .category__list .category__list_head .show {
@@ -6797,7 +6797,7 @@ p.rate {
 }
 
 .main__content.knowledge.category .category__list .category__list_head .icon-down {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.knowledge.category .category__list.visible .category__list_head .icon-down {
@@ -6830,7 +6830,7 @@ p.rate {
 }
 
 .main__content.knowledge.category .category__list .category__list_table table tr.pin .actions .icon-pin {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.knowledge.category .category__list .category__list_table table td {
@@ -6847,11 +6847,11 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #002d73
+    color: #2c59a4
 }
 
 .main__content.knowledge.category .category__list .category__list_table table td.title a {
-    color: #002d73
+    color: #2c59a4
 }
 
 .main__content.knowledge.category .category__list .category__list_table table td.view {
@@ -6932,7 +6932,7 @@ p.rate {
 }
 
 .main__content.knowledge.category .category__list .category__list_table table td.actions a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.knowledge.article {
@@ -7010,7 +7010,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -7024,7 +7024,7 @@ p.rate {
 
 .main__content.knowledge.article .article__body .article__back .icon-back {
     width: 20px;
-    fill: #2c70a2;
+    fill: #2c59a4;
     margin-right: 10px
 }
 
@@ -7082,7 +7082,7 @@ p.rate {
 }
 
 .main__content.knowledge.article .article__body .article__description blockquote {
-    border-left: 8px solid #002d73;
+    border-left: 8px solid #2c59a4;
     padding: 8px;
     font-style: italic
 }
@@ -7128,7 +7128,7 @@ p.rate {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     margin: 0 8px 8px 0
 }
 
@@ -7149,11 +7149,11 @@ p.rate {
     font-stretch: normal;
     line-height: 2;
     letter-spacing: .1px;
-    color: #002d73
+    color: #2c59a4
 }
 
 .main__content.knowledge.article .article__related p a {
-    color: #002d73
+    color: #2c59a4
 }
 
 .main__content.knowledge.article .article__title {
@@ -7214,7 +7214,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.33;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     margin-bottom: 0
 }
 
@@ -7235,7 +7235,7 @@ p.rate {
 }
 
 .main__content.knowledge.article .form-group.article__keywords .selectize-input .item a:hover {
-    color: #002d73;
+    color: #2c59a4;
     background-color: transparent
 }
 
@@ -7288,7 +7288,7 @@ p.rate {
 
 .main__content.knowledge .article__detalies .article__detalies_list li .descr a {
     display: inline-block;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease;
     margin-left: 4px
 }
@@ -7343,8 +7343,8 @@ p.rate {
 }
 
 .main__content.knowledge .article__detalies.edit .article__detalies_action .btn--blue-border {
-    color: #002d73;
-    border-color: #002d73
+    color: #2c59a4;
+    border-color: #2c59a4
 }
 
 .right-bar.knowledge-category-create h3, .knowledge-sub-category-create h3, .knowledge-sub-category-edit h3, .knowledge-category-edit h3 {
@@ -7480,7 +7480,7 @@ p.rate {
     line-height: 1.57;
     letter-spacing: .1px;
     text-align: center;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease;
 }
 
@@ -7510,7 +7510,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -7623,7 +7623,7 @@ p.rate {
 }
 
 .body a {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -7671,7 +7671,7 @@ p.rate {
 }
 
 .main__content.emails .email__tabs .email__list .list--item.new {
-    border-left-color: #2c70a2
+    border-left-color: #2c59a4
 }
 
 .main__content.emails .email__tabs .email__list .list--item.current {
@@ -7721,7 +7721,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.5;
     letter-spacing: .1px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .main__content.emails .email__tabs[data-current='inbox'] .email__list[data-tab='inbox'] {
@@ -8047,7 +8047,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -8070,15 +8070,15 @@ p.rate {
 
 .main__content.profile .profile__info .profile__info_list .info-lng .dropdown-select {
     margin-top: 8px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .main__content.profile .profile__info .profile__info_list .info-lng .dropdown-select span {
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .main__content.profile .profile__info .profile__info_list .info-lng .dropdown-select .icon-chevron-down {
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .main__content.profile .profile__edit {
@@ -8146,12 +8146,12 @@ p.rate {
 }
 
 .main__content.profile .profile__control a.profile-log-out {
-    color: #2c70a2;
+    color: #2c59a4;
     margin-top: 12px;
 }
 
 .main__content.profile .profile__control a.profile-log-out svg {
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .main__content.profile .profile__control a.profile-log-out:hover {
@@ -8444,7 +8444,7 @@ p.rate {
 }
 
 .main__content.reports .reports__checkbox .checkbox-custom input:checked+label {
-    color: #002d73
+    color: #2c59a4
 }
 
 .main__content.reports .reports__export {
@@ -8521,11 +8521,11 @@ p.rate {
 }
 
 .main__content.settings .dropdown-select .label {
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .main__content.settings .dropdown-select svg {
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .main__content.settings .settings__status {
@@ -8556,7 +8556,7 @@ p.rate {
 
 .main__content.settings .settings__status .settings__status_list .list--name {
     width: 155px;
-    color: #2c70a2;
+    color: #2c59a4;
 }
 
 .main__content.settings .settings__form h3 {
@@ -8627,7 +8627,7 @@ p.rate {
 
 .main__content.settings .settings__form .form-group.list .input-list li a {
     transition: all 100ms ease;
-    color: #2c70a2;
+    color: #2c59a4;
     white-space: nowrap
 }
 
@@ -8974,7 +8974,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.5;
     letter-spacing: .1px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .main__content.tools h3 {
@@ -9073,11 +9073,11 @@ p.rate {
 .main__content.tools .table-wrapper.service-message table .buttons p a svg {
     width: 16px;
     height: 16px;
-    fill: #2c70a2;
+    fill: #2c59a4;
 }
 
 .main__content.tools .table-wrapper.service-message table .buttons p a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.tools .table-wrapper.email-templates {
@@ -9113,7 +9113,7 @@ p.rate {
 }
 
 .main__content.tools .table-wrapper.email-templates table .buttons a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.tools .table-wrapper.custom-field {
@@ -9166,11 +9166,11 @@ p.rate {
 .main__content.tools .table-wrapper.custom-field .buttons p a svg {
     width: 16px;
     height: 16px;
-    fill: #2c70a2;
+    fill: #2c59a4;
 }
 
 .main__content.tools .table-wrapper.custom-field .buttons p a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.tools .table-wrapper.status {
@@ -9183,7 +9183,7 @@ p.rate {
 }
 
 .main__content.tools .table-wrapper.status table tbody a {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -9232,11 +9232,11 @@ p.rate {
 .main__content.tools .table-wrapper.status .buttons p a svg {
     width: 16px;
     height: 16px;
-    fill: #2c70a2;
+    fill: #2c59a4;
 }
 
 .main__content.tools .table-wrapper.status .buttons p a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.tools .table-wrapper table {
@@ -9249,7 +9249,7 @@ p.rate {
 
 .main__content.tools .table-wrapper table .unban a {
     font-size: 12px;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -9418,11 +9418,11 @@ p.rate {
 .right-bar.service-message-create .styles__radio label.none {
     border: solid 1px #9c9c9c;
     background-color: #fff;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .right-bar.service-message-create .styles__radio label.none .icon-tick {
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .right-bar.service-message-create .styles__radio label.success {
@@ -9536,7 +9536,7 @@ p.rate {
 
 .right-bar.tools-email-template-edit .param>span {
     display: inline-block;
-    color: #2c70a2;
+    color: #2c59a4;
     margin-right: 8px;
 }
 
@@ -9559,7 +9559,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     margin-bottom: 12px;
 }
 
@@ -9587,7 +9587,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.33;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     height: 28px;
     background-color: #f5f8ff
 }
@@ -9768,7 +9768,7 @@ p.rate {
 }
 
 .main__content.notifications .notifications__list li.new {
-    border-left: 2px solid #2c70a2
+    border-left: 2px solid #2c59a4
 }
 
 .main__content.notifications .notifications__list li.new h5 {
@@ -9786,7 +9786,7 @@ p.rate {
 }
 
 .main__content.notifications .notifications__list li h5 a {
-    color: #002d73
+    color: #2c59a4
 }
 
 .main__content.notifications .notifications__list li time {
@@ -9797,7 +9797,7 @@ p.rate {
     line-height: normal;
     letter-spacing: .1px;
     text-align: right;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .main__content.notifications .pagination-wrap {
@@ -9807,7 +9807,7 @@ p.rate {
 }
 
 .main-menu {
-    background-color: #133e5e;
+    background-color: #2c59a4;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -9854,7 +9854,7 @@ p.rate {
     display: block;
     width: 8px;
     height: 8px;
-    background: #2c70a2;
+    background: #2c59a4;
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 4px);
@@ -9927,7 +9927,7 @@ p.rate {
         left: 72px;
         top: 0;
         z-index: 10;
-        background-color: #133e5e;
+        background-color: #2c59a4;
     }
     .main-menu.is-toggled .listitem__menu .listitem__caption, .main-menu.is-toggled .listitem__menu .submenu__listitem {
         padding-left: 40px
@@ -9945,7 +9945,7 @@ p.rate {
         opacity: 1
     }
     .main-menu.is-toggled .listitem:hover .listitem__icon {
-        /* background-color: #133e5e; */
+        /* background-color: #2c59a4; */
     }
     .main-menu.is-toggled .listitem__menu .submenu__listitem:hover {
         background-color: rgba(255, 255, 255, 0.1)
@@ -10211,19 +10211,19 @@ p.rate {
 }
 
 .header .header__left .search-clear:hover .icon {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .header .icon {
-    fill: #2c70a2;
+    fill: #2c59a4;
 }
 
 .header .icon:hover {
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .header button:hover .icon {
-    fill: #2c70a2
+    fill: #2c59a4
 }
 
 .header .icon-mail {
@@ -10253,7 +10253,7 @@ p.rate {
 }
 
 .header .profile__item .btn:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .header .profile__item.profile__item--mail {
@@ -10366,7 +10366,7 @@ p.rate {
 
 .header .profile__item.profile__item--notification .notification-list ul li a span {
     margin-left: 16px;
-    color: #002d73
+    color: #2c59a4
 }
 
 .header .profile__item.profile__item--notification .notification-list ul li .close {
@@ -10395,7 +10395,7 @@ p.rate {
 }
 
 .header .profile__item.profile__item--notification .notification-list ul li .close:hover .icon-close {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .header .profile__item.profile__item--notification .notification-list ul li:hover {
@@ -10429,7 +10429,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -10442,7 +10442,7 @@ p.rate {
 }
 
 .header .profile__item.profile__item--notification.active .icon-notificaton {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .header .profile__user {
@@ -10456,7 +10456,7 @@ p.rate {
 }
 
 .header .profile__user.active {
-    background-color: #2c70a2;
+    background-color: #2c59a4;
 }
 
 .header .profile__user.active .icon-chevron-down {
@@ -10509,7 +10509,7 @@ p.rate {
 }
 
 .header .profile__user .profile__menu .profile--logout a:hover {
-    background-color: #133e5e
+    background-color: #2c59a4
 }
 
 .header .profile__user .profile__menu .profile--logout a .icon-log-out {
@@ -10529,7 +10529,7 @@ p.rate {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     color: #fff;
 }
 
@@ -10542,7 +10542,7 @@ p.rate {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #133e5e;
+    color: #2c59a4;
     background-color: #9eb1be;
     font-weight: 700;
 }
@@ -10566,7 +10566,7 @@ p.rate {
     overflow: hidden;
     display: block;
     text-overflow: ellipsis;
-    color: #2c70a2;
+    color: #2c59a4;
 }
 
 .header .user__name p .icon-chevron-down {
@@ -10691,7 +10691,7 @@ p.rate {
     .header .header__mobile {
         display: -ms-flexbox;
         display: flex;
-        background-color: #133e5e;
+        background-color: #2c59a4;
         z-index: 1;
     }
     .header .header__right {
@@ -10753,7 +10753,7 @@ p.rate {
 .footer {
     padding: 10px 16px 16px;
     font-size: 16px;
-    /* color:#2c70a2 */
+    /* color:#2c59a4 */
 }
 
 .pagination-wrap {
@@ -10770,7 +10770,7 @@ p.rate {
 }
 
 .pagination a {
-    color: #002d73;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -10807,7 +10807,7 @@ p.rate {
     font-weight: 500;
     letter-spacing: normal;
     text-align: center;
-    color: #002d73
+    color: #2c59a4
 }
 
 .pagination__link {
@@ -10824,7 +10824,7 @@ p.rate {
     font-weight: 500;
     letter-spacing: normal;
     text-align: center;
-    color: #002d73
+    color: #2c59a4
 }
 
 .pagination__amount {
@@ -10845,7 +10845,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .main__content.search h2 {
@@ -10883,7 +10883,7 @@ p.rate {
 .main__content.search .article__list li .article__list_title .icon {
     width: 24px;
     height: 24px;
-    fill: #2c70a2;
+    fill: #2c59a4;
     margin-right: 8px
 }
 
@@ -10905,7 +10905,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.57;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -11055,7 +11055,7 @@ p.rate {
 }
 
 .main__content.search .templates__list li a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .main__content.search .templates__list li span {
@@ -11087,7 +11087,7 @@ p.rate {
 }
 
 .main__content.search .table.team td.buttons a:hover svg {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .right-bar.advanced-search .right-bar__body {
@@ -11206,7 +11206,7 @@ p.rate {
     width: 100%;
     min-height: 100vh;
     font-family: "Lato", Arial, sans-serif;
-    color: #133e5e;
+    color: #2c59a4;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
@@ -11268,7 +11268,7 @@ p.rate {
 @media screen and (max-width: 899px) {
     .banner {
         padding: 16px 21px;
-        background-color: #2c70a2;
+        background-color: #2c59a4;
         font-size: 12px;
         color: #fff;
         -ms-flex-wrap: wrap;
@@ -11382,7 +11382,7 @@ p.rate {
 }
 
 .toplist__icon:hover .icon {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 .topmenu__dropdown {
@@ -11403,7 +11403,7 @@ p.rate {
 
 .topmenu__dropdown-list li {
     padding: 9px 9px 9px 40px;
-    color: #002d73
+    color: #2c59a4
 }
 
 .topmenu__dropdown-list li:hover {
@@ -11495,7 +11495,7 @@ p.rate {
 }
 
 .right-bar .right-bar__body .checkbox-custom label {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -11504,7 +11504,7 @@ p.rate {
 }
 
 .right-bar .right-bar__body .checkbox-custom input:checked+label {
-    color: #002d73
+    color: #2c59a4
 }
 
 .right-bar .right-bar__body .right-bar__footer {
@@ -11606,7 +11606,7 @@ p.rate {
     line-height: 1.5;
     letter-spacing: .1px;
     text-align: center;
-    color: #2c70a2;
+    color: #2c59a4;
     position: relative;
     cursor: pointer
 }
@@ -11992,7 +11992,7 @@ p.rate {
 }
 
 .notification.blue::before {
-    background-color: #002d73
+    background-color: #2c59a4
 }
 
 .notification > .icon {
@@ -12055,7 +12055,7 @@ p.rate {
 }
 
 .notification-flash.blue::before {
-    background-color: #002d73
+    background-color: #2c59a4
 }
 
 .notification-flash .close {
@@ -12097,7 +12097,7 @@ p.rate {
     font-stretch: normal;
     line-height: 1.5;
     letter-spacing: .1px;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .notification-flash .btn {
@@ -12132,7 +12132,7 @@ p.rate {
 .tooltype .icon-info {
     width: 16px;
     height: 16px;
-    fill: #2c70a2;
+    fill: #2c59a4;
     transition: all 100ms ease;
 }
 
@@ -12141,7 +12141,7 @@ th > .tooltype .icon-info {
 }
 
 .tooltype:hover .icon-info {
-    fill: #002d73
+    fill: #2c59a4
 }
 
 th > .tooltype:hover .icon-info {
@@ -12163,7 +12163,7 @@ th > .tooltype:hover .icon-info {
     font-stretch: normal;
     line-height: 1.5;
     letter-spacing: .1px;
-    color: #2c70a2;
+    color: #2c59a4;
     text-transform: initial;
     width: 260px;
     display: none
@@ -12178,7 +12178,7 @@ th > .tooltype:hover .icon-info {
 }
 
 .tooltype .tooltype__content a {
-    color: #2c70a2;
+    color: #2c59a4;
     transition: all 100ms ease
 }
 
@@ -12313,7 +12313,7 @@ th > .tooltype:hover .icon-info {
 }
 
 .datepicker .datepicker--cells .datepicker--cell:hover:not(.-selected-) {
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     color: #fff;
 }
 
@@ -12327,7 +12327,7 @@ th > .tooltype:hover .icon-info {
 .datepicker .datepicker--days-names .datepicker--day-name {
     width: 48px;
     font-family: "Lato", Arial, sans-serif;
-    color: #2c70a2;
+    color: #2c59a4;
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
@@ -12354,7 +12354,7 @@ th > .tooltype:hover .icon-info {
     left: 0;
     width: 100%;
     display: none;
-    background-color: #2c70a2
+    background-color: #2c59a4
 }
 
 .notification-bar.notice-flash {
@@ -12418,7 +12418,7 @@ th > .tooltype:hover .icon-info {
 }
 
 .notification-bar.blue {
-    background-color: #002d73
+    background-color: #2c59a4
 }
 
 .notification-bar.white {
@@ -12432,8 +12432,8 @@ th > .tooltype:hover .icon-info {
 }
 
 .notification-bar.white .btn {
-    color: #002d73;
-    border-color: #002d73
+    color: #2c59a4;
+    border-color: #2c59a4
 }
 
 .notification-bar.white svg {
@@ -12705,7 +12705,7 @@ sub {
 
 .browser-default a {
     text-decoration: underline;
-    color: #2c70a2;
+    color: #2c59a4;
     transition: color 100ms ease
 }
 
@@ -12834,12 +12834,12 @@ sub {
 }
 
 #submit-as-div .label {
-    background-color: #2c70a2;
+    background-color: #2c59a4;
     border-radius: 0 2px 2px 0;
 }
 
 #submit-as-div .label span {
-    border: 1px solid #2c70a2;
+    border: 1px solid #2c59a4;
     outline: none;
     cursor: pointer;
     font-size: 13px;
@@ -12848,7 +12848,7 @@ sub {
     min-width: 152px;
     height: 40px;
     background-color: #e9f0f3;
-    color: #002d73;
+    color: #2c59a4;
     font-weight: 600;
     transition: all 100ms ease;
     text-align: center;
@@ -12916,7 +12916,7 @@ sub {
 
 .header .profile__user.active .user__ava {
     background-color: #fff;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .header .profile__user.active .user__name p span {
@@ -12929,13 +12929,13 @@ sub {
 
 .header .profile__user .profile__menu .profile--view .btn-border {
     border: 1px solid #002257!important;
-    background-color: #2c70a2!important;
+    background-color: #2c59a4!important;
     color: #fff
 }
 
 .header .profile__user .profile__menu .profile--view .btn-border:hover {
     background-color: #fff!important;
-    color: #2c70a2
+    color: #2c59a4
 }
 
 .inprogress {
@@ -12947,7 +12947,7 @@ sub {
 }
 
 #ul_category li:hover {
-    background-color: #2c70a2 !important
+    background-color: #2c59a4 !important
 }
 
 #ul_category li a:hover {
@@ -12955,7 +12955,7 @@ sub {
 }
 
 .param.calendar .calendar--button button:hover .icon-calendar {
-    fill: #2c70a2 !important;
+    fill: #2c59a4 !important;
 }
 
 @media screen and (min-width: 900px) {
@@ -12965,7 +12965,7 @@ sub {
 }
 
 .radio-custom [type='radio']:checked+label {
-    color: #133e5e!important
+    color: #2c59a4!important
 }
 
 .note__link > a {
@@ -13096,7 +13096,7 @@ sub {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
-    color: #002d73;
+    color: #2c59a4;
 }
 
 .navlink .navlink__descr {
@@ -13198,7 +13198,7 @@ sub {
 
 @media screen and (max-width: 899px) {
   .navbar__list ul.submenu__list {
-    width: calc(100% + 800px) !important;    
+    width: calc(100% + 800px) !important;
     left: -100px !important;
     position: relative !important;
     margin-left: 0px !important;
@@ -13224,7 +13224,7 @@ sub {
     padding: 0;
     border: none;
     background: inherit;
-    color: #133e5e;
+    color: #2c59a4;
     transition: color 250ms ease;
     text-decoration: underline;
     font-size: inherit;
@@ -13353,7 +13353,7 @@ sub {
 }
 
 .attachment-row svg:hover {
-    fill: #002d73;
+    fill: #2c59a4;
 }
 
 .dz-error div.error {
