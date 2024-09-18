@@ -3,6 +3,11 @@
 require_once HESK_PATH . 'hesk_settings.inc.php';
 require_once HESK_PATH . 'default_hesk_settings.inc.php';
 
+// --> Custom settings
+$hesk_settings['login_required_to_ticket'] ??= 1;
+$hesk_settings['hesk_url'] ??= 'http://example.com/hesk'
+$hesk_settings['customer_api_base_url'] ??= rtrim(strval($hesk_settings['hesk_url'] ?? ''), '\/') . '/hesk-admin/api'; // Aplicacao Laravel
+
 /**
  *
  * This file is part of HESK - PHP Help Desk Software.
