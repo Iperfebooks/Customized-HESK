@@ -11,6 +11,13 @@
  *
  */
 
+ if ($_REQUEST['_debug'] ?? null) {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1); // Enable displaying errors
+    ini_set('display_startup_errors', 1); // Enable displaying startup errors
+    error_reporting(E_ALL); // Report all errors
+}
+
 define('IN_SCRIPT',1);
 define('HESK_PATH','../');
 

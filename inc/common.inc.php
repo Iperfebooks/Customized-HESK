@@ -1,11 +1,18 @@
 <?php
 
+if ($_REQUEST['_debug'] ?? null) {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1); // Enable displaying errors
+    ini_set('display_startup_errors', 1); // Enable displaying startup errors
+    error_reporting(E_ALL); // Report all errors
+}
+
 require_once HESK_PATH . 'hesk_settings.inc.php';
 require_once HESK_PATH . 'default_hesk_settings.inc.php';
 
 // --> Custom settings
 $hesk_settings['login_required_to_ticket'] ??= 1;
-$hesk_settings['hesk_url'] ??= 'http://example.com/hesk'
+$hesk_settings['hesk_url'] ??= 'http://example.com/hesk';
 $hesk_settings['customer_api_base_url'] ??= rtrim(strval($hesk_settings['hesk_url'] ?? ''), '\/') . '/hesk-admin/api'; // Aplicacao Laravel
 
 /**
