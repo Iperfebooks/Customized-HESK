@@ -42,6 +42,18 @@ if (!function_exists('load_dot_env_file')) {
             return preg_match($regex, $name) === 1 ? $name : null;
         };
 
+        $removeStringInvalidQuotes = function (?string $value): ?string {
+            if (substr($value, 0, 1) === '"' && substr($value, -1) === '"') {
+                return substr($value, 1, -1);
+            }
+
+            if (substr($value, 0, 1) === "'" && substr($value, -1) === "'") {
+                return substr($value, 1, -1);
+            }
+
+            return $value;
+        };
+
         foreach ($lines as $line) {
             // Ignore the lines started with '#'
             if (strpos(trim($line), '#') === 0) {
@@ -60,7 +72,7 @@ if (!function_exists('load_dot_env_file')) {
             list($key, $value) = explode('=', $line, 2);
 
             $varName = $validateVarName($key);
-            $value = trim($value);
+            $value = $removeStringInvalidQuotes(trim($value));
 
             if (!$varName) {
                 continue;
