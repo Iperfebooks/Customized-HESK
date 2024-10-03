@@ -9,3 +9,4 @@ hesk_settings.inc.php
 error_log
 .vscode
 hesk-admin
+.env
