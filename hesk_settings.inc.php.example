@@ -15,7 +15,7 @@ $hesk_settings['hesk_url']='http://www.example.com/helpdesk';
 $hesk_settings['webmaster_mail']='support@example.com';
 $hesk_settings['site_theme']='hesk3';
 $hesk_settings['admin_css']=0;
-$hesk_settings['loading_color']='#2C59A4';
+$hesk_settings['loading_color']='#1483c5';
 $hesk_settings['admin_css_url']='https://www.example.com/hesk-style.css';
 
 // --> Language settings

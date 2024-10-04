@@ -6,7 +6,7 @@
 <style>
 /* HTML: <div class="loader"></div> */
 .loader-container {
-    background: <?= $hesk_settings['loading_color'] ?? '#2C59A4' ?>;
+    background: <?= $hesk_settings['loading_color'] ?? '#1483c5' ?>;
     width: 100%;
     height: 100vh;
     position: fixed;
