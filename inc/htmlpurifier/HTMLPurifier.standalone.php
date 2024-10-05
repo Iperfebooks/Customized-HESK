@@ -2460,7 +2460,7 @@ class HTMLPurifier_Config
     {
         return $this->getDefinition('HTML', true, true);
     }
-    
+
     /**
      * @return HTMLPurifier_CSSDefinition|null
      */
@@ -2468,7 +2468,7 @@ class HTMLPurifier_Config
     {
         return $this->getDefinition('CSS', true, true);
     }
-    
+
     /**
      * @return HTMLPurifier_URIDefinition|null
      */
@@ -22661,6 +22661,3 @@ class HTMLPurifier_VarParser_Native extends HTMLPurifier_VarParser
         return $var;
     }
 }
-
-
-

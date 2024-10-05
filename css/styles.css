@@ -126,14 +126,14 @@
 }
 
 .customer-info ul li {
-    background: gray;
+    background: #d0d0d0;
     padding: 0.2rem 0.7rem;
     border: solid 1px #fff;
     cursor: pointer;
 }
 
 .customer-info ul li:hover {
-    background: #fff;
+    background: #f1f1f1;
 }
 
 .cursor-pointer {
