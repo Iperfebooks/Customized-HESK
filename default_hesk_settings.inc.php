@@ -8,7 +8,7 @@
  * https://github.com/tiagofrancafernandes/WIP-Help-Desk-System-Laravel
  */
 
- if ($_REQUEST['_debug'] ?? null || $hesk_settings['debug_mode'] ?? false) {
+if ($_REQUEST['_debug'] ?? null || $hesk_settings['debug_mode'] ?? false) {
     error_reporting(E_ALL);
     ini_set('display_errors', 1); // Enable displaying errors
     ini_set('display_startup_errors', 1); // Enable displaying startup errors

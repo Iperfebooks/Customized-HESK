@@ -11,6 +11,8 @@
  *
  */
 
+require_once __DIR__ . '/../boot.php';
+
 /* Check if this is a valid include */
 if (!defined('IN_SCRIPT')) {die('Invalid attempt');}
 
@@ -112,7 +114,7 @@ function hesk_getTime($in)
     if ($h > 838)
     {
     	return '838:59:59';
-    }    
+    }
 
 	/* That's it, let's send out formatted time string */
     return str_pad($h, 2, "0", STR_PAD_LEFT) . ':' . str_pad($m, 2, "0", STR_PAD_LEFT) . ':' . str_pad($s, 2, "0", STR_PAD_LEFT);
@@ -276,7 +278,7 @@ function hesk_updateStaffDefaults()
     $_SESSION['default_list'] = $default_list;
 
     return true;
-    
+
 } // END hesk_updateStaffDefaults()
 
 

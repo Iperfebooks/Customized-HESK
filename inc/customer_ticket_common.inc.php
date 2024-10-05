@@ -3,8 +3,10 @@
  * Custom file
  */
 
+require_once __DIR__ . '/../boot.php';
+
 // Get all the required files and functions
-require(HESK_PATH . 'hesk_settings.inc.php');
+require_once HESK_PATH . 'hesk_settings.inc.php';
 
 if (!defined('HESK_BASE_PATH')) {
     define('HESK_BASE_PATH', realpath(__DIR__ . '/..'));
