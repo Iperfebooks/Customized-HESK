@@ -40,7 +40,7 @@ if (!defined('IN_SCRIPT')) {
                 <div class="header__inner">
                     <a href="<?php echo $hesk_settings['hesk_url']; ?>" class="header__logo">
                         <?php echo $hesk_settings['hesk_title']; ?>
-                        <img src="./img/favicon/simbolo.svg" alt="" width="25px" height="25px" style="vertical-align: -3px;">
+                        <img src="<?php echo $hesk_settings['hesk_url']; ?>/img/favicon/simbolo.svg" alt="logo_iperf" width="25px" height="25px" style="vertical-align: -3px;">
                     </a>
                 </div>
             </div>
